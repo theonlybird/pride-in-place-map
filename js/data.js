@@ -8,10 +8,10 @@ const LOCATIONS = [
         "lng": -1.2518767,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Ashfield District",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "127,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -28,10 +28,10 @@ const LOCATIONS = [
         "lng": -0.0237923,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Boston Borough",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "70,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -48,10 +48,10 @@ const LOCATIONS = [
         "lng": -1.4290929,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Chesterfield Borough",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "104,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -60,7 +60,7 @@ const LOCATIONS = [
             "name": "Chesterfield",
             "league": "League Two",
             "stadium": "Local Stadium",
-            "capacity": 0,
+            "capacity": 10600,
             "communityArm": "Chesterfield Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": true
@@ -76,10 +76,10 @@ const LOCATIONS = [
         "lng": -1.1814134,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Nottingham City",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "22,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -96,10 +96,10 @@ const LOCATIONS = [
         "lng": -1.1964165,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Mansfield District",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "110,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -108,7 +108,7 @@ const LOCATIONS = [
             "name": "Mansfield Town",
             "league": "League One",
             "stadium": "Local Stadium",
-            "capacity": 0,
+            "capacity": 9186,
             "communityArm": "Mansfield Town Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": true
@@ -124,10 +124,10 @@ const LOCATIONS = [
         "lng": -0.8092339,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Newark and Sherwood",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "28,000",
+            "imdDecile": 4,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -144,10 +144,10 @@ const LOCATIONS = [
         "lng": 0.3405228,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "East Lindsey",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "21,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -164,10 +164,10 @@ const LOCATIONS = [
         "lng": -0.148526,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "South Holland",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "31,000",
+            "imdDecile": 4,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -184,10 +184,10 @@ const LOCATIONS = [
         "lng": -1.1246168,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Bassetlaw",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "41,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -204,10 +204,10 @@ const LOCATIONS = [
         "lng": 1.1527865,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Tendring",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "50,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -224,10 +224,10 @@ const LOCATIONS = [
         "lng": 1.7314845,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Great Yarmouth Borough",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "99,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -244,10 +244,10 @@ const LOCATIONS = [
         "lng": 0.0793235,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Barking and Dagenham",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "212,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -264,10 +264,10 @@ const LOCATIONS = [
         "lng": 0.21807,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Dartford Borough",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "112,000",
+            "imdDecile": 5,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -284,10 +284,10 @@ const LOCATIONS = [
         "lng": -1.5099726,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Northumberland",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "37,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -304,10 +304,10 @@ const LOCATIONS = [
         "lng": -1.1440011,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Redcar and Cleveland",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "7,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -324,10 +324,10 @@ const LOCATIONS = [
         "lng": -1.2093696,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Hartlepool Borough",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "92,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -344,10 +344,10 @@ const LOCATIONS = [
         "lng": -1.4908447,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "South Tyneside",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "43,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -364,10 +364,10 @@ const LOCATIONS = [
         "lng": -1.601153,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "County Durham",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "19,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -384,10 +384,10 @@ const LOCATIONS = [
         "lng": -1.528827,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Sunderland City",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "68,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -404,10 +404,10 @@ const LOCATIONS = [
         "lng": -2.3655434,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Hyndburn",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "35,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -416,7 +416,7 @@ const LOCATIONS = [
             "name": "Accrington Stanley",
             "league": "League Two",
             "stadium": "Local Stadium",
-            "capacity": 0,
+            "capacity": 5450,
             "communityArm": "Accrington Stanley Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": true
@@ -432,10 +432,10 @@ const LOCATIONS = [
         "lng": -2.098691,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Tameside",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "45,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -452,10 +452,10 @@ const LOCATIONS = [
         "lng": -2.2439196,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Burnley Borough",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "73,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -472,10 +472,10 @@ const LOCATIONS = [
         "lng": -2.1378267,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Oldham Borough",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "34,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -492,10 +492,10 @@ const LOCATIONS = [
         "lng": -2.4665093,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Blackburn with Darwen",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "28,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -512,10 +512,10 @@ const LOCATIONS = [
         "lng": -2.3969984,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Bolton Borough",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "30,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -532,10 +532,10 @@ const LOCATIONS = [
         "lng": -2.2239715,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Rochdale Borough",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "28,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -552,10 +552,10 @@ const LOCATIONS = [
         "lng": -2.8886045,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Knowsley",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "41,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -572,10 +572,10 @@ const LOCATIONS = [
         "lng": -2.5171495,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Wigan Borough",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "41,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -592,10 +592,10 @@ const LOCATIONS = [
         "lng": -2.2116469,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Pendle",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "29,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -612,10 +612,10 @@ const LOCATIONS = [
         "lng": -6.2192038,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Antrim and Newtownabbey",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "23,000",
+            "imdDecile": 4,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -632,10 +632,10 @@ const LOCATIONS = [
         "lng": -6.2760159,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Mid and East Antrim",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "29,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -652,10 +652,10 @@ const LOCATIONS = [
         "lng": -6.2714623,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Armagh City, Banbridge and Craigavon",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "16,000",
+            "imdDecile": 5,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -672,10 +672,10 @@ const LOCATIONS = [
         "lng": -5.8073112,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Mid and East Antrim",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "27,000",
+            "imdDecile": 4,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -692,10 +692,10 @@ const LOCATIONS = [
         "lng": -6.671861,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Causeway Coast and Glens",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "24,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -712,10 +712,10 @@ const LOCATIONS = [
         "lng": -6.3921622,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Armagh City, Banbridge and Craigavon",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "16,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -732,10 +732,10 @@ const LOCATIONS = [
         "lng": -7.638907,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Fermanagh and Omagh",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "13,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -752,10 +752,10 @@ const LOCATIONS = [
         "lng": -5.8183116,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Mid and East Antrim",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "18,000",
+            "imdDecile": 4,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -772,10 +772,10 @@ const LOCATIONS = [
         "lng": -6.9505134,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Causeway Coast and Glens",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "12,000",
+            "imdDecile": 4,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -792,10 +792,10 @@ const LOCATIONS = [
         "lng": -6.337506,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Newry, Mourne and Down",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "26,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -812,10 +812,10 @@ const LOCATIONS = [
         "lng": -7.3029907,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Fermanagh and Omagh",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "21,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -832,10 +832,10 @@ const LOCATIONS = [
         "lng": -7.4627993,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Derry City and Strabane",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "13,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -852,10 +852,10 @@ const LOCATIONS = [
         "lng": -4.6302502,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "South Ayrshire",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "46,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -872,10 +872,10 @@ const LOCATIONS = [
         "lng": -4.4034151,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "West Dunbartonshire",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "28,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -892,10 +892,10 @@ const LOCATIONS = [
         "lng": -4.5708479,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "West Dunbartonshire",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "19,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -912,10 +912,10 @@ const LOCATIONS = [
         "lng": -3.6106856,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Dumfries and Galloway",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "33,000",
+            "imdDecile": 4,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -932,10 +932,10 @@ const LOCATIONS = [
         "lng": -3.4616183,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Fife",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "50,000",
+            "imdDecile": 4,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -952,10 +952,10 @@ const LOCATIONS = [
         "lng": -3.3148459,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Moray",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "23,000",
+            "imdDecile": 5,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -972,10 +972,10 @@ const LOCATIONS = [
         "lng": -4.7564721,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Inverclyde",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "44,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -992,10 +992,10 @@ const LOCATIONS = [
         "lng": -4.6696399,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "North Ayrshire",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "33,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1012,10 +1012,10 @@ const LOCATIONS = [
         "lng": -4.4964652,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "East Ayrshire",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "46,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1032,10 +1032,10 @@ const LOCATIONS = [
         "lng": -3.1582296,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Fife",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "49,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1052,10 +1052,10 @@ const LOCATIONS = [
         "lng": -3.9360012,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Stirling",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "36,000",
+            "imdDecile": 5,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1072,10 +1072,10 @@ const LOCATIONS = [
         "lng": 0.4709063,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Rother",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "44,000",
+            "imdDecile": 4,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1092,10 +1092,10 @@ const LOCATIONS = [
         "lng": 0.5821779,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Hastings Borough",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "92,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1112,10 +1112,10 @@ const LOCATIONS = [
         "lng": -1.1603699,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Isle of Wight",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "23,000",
+            "imdDecile": 4,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1132,10 +1132,10 @@ const LOCATIONS = [
         "lng": -3.5211361,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Torbay",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "65,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1152,10 +1152,10 @@ const LOCATIONS = [
         "lng": -3.2666925,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Vale of Glamorgan",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "54,000",
+            "imdDecile": 4,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1172,10 +1172,10 @@ const LOCATIONS = [
         "lng": -3.5756674,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Bridgend",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "49,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1192,10 +1192,10 @@ const LOCATIONS = [
         "lng": -3.0208217,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Torfaen",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "48,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1212,10 +1212,10 @@ const LOCATIONS = [
         "lng": -3.8039117,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Neath Port Talbot",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "19,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1232,10 +1232,10 @@ const LOCATIONS = [
         "lng": -2.9974967,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Newport",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "153,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1244,7 +1244,7 @@ const LOCATIONS = [
             "name": "Newport County",
             "league": "League Two",
             "stadium": "Local Stadium",
-            "capacity": 0,
+            "capacity": 7850,
             "communityArm": "Newport County Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": true
@@ -1260,10 +1260,10 @@ const LOCATIONS = [
         "lng": -3.3449362,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Rhondda Cynon Taf",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "32,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1280,10 +1280,10 @@ const LOCATIONS = [
         "lng": -3.7824148,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Neath Port Talbot",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "37,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1300,10 +1300,10 @@ const LOCATIONS = [
         "lng": -3.4907258,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Denbighshire",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "25,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1320,10 +1320,10 @@ const LOCATIONS = [
         "lng": -2.9937869,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Wrexham",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "61,000",
+            "imdDecile": 3,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1332,7 +1332,7 @@ const LOCATIONS = [
             "name": "Wrexham",
             "league": "Championship",
             "stadium": "Local Stadium",
-            "capacity": 0,
+            "capacity": 12600,
             "communityArm": "Wrexham Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": true
@@ -1348,10 +1348,10 @@ const LOCATIONS = [
         "lng": -2.0822333,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Wolverhampton",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "25,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1368,10 +1368,10 @@ const LOCATIONS = [
         "lng": -2.0355619,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Walsall",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "18,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1388,10 +1388,10 @@ const LOCATIONS = [
         "lng": -2.0816813,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Dudley",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "79,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1408,10 +1408,10 @@ const LOCATIONS = [
         "lng": -1.9739174,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Sandwell",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "48,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1428,10 +1428,10 @@ const LOCATIONS = [
         "lng": -1.4827755,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Barnsley",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "91,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1440,7 +1440,7 @@ const LOCATIONS = [
             "name": "Barnsley",
             "league": "League One",
             "stadium": "Local Stadium",
-            "capacity": 0,
+            "capacity": 23287,
             "communityArm": "Barnsley Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": true
@@ -1456,10 +1456,10 @@ const LOCATIONS = [
         "lng": -1.3517218,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Wakefield",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "39,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1476,10 +1476,10 @@ const LOCATIONS = [
         "lng": -1.1335312,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Doncaster",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "109,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1488,7 +1488,7 @@ const LOCATIONS = [
             "name": "Doncaster Rovers",
             "league": "League One",
             "stadium": "Local Stadium",
-            "capacity": 0,
+            "capacity": 15231,
             "communityArm": "Doncaster Rovers Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": true
@@ -1504,10 +1504,10 @@ const LOCATIONS = [
         "lng": -0.0788045,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "North East Lincolnshire",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "88,000",
+            "imdDecile": 1,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1516,7 +1516,7 @@ const LOCATIONS = [
             "name": "Grimsby Town",
             "league": "League Two",
             "stadium": "Local Stadium",
-            "capacity": 0,
+            "capacity": 9052,
             "communityArm": "Grimsby Town Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": true
@@ -1532,10 +1532,10 @@ const LOCATIONS = [
         "lng": -1.3562051,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "Rotherham",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "109,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
@@ -1544,7 +1544,7 @@ const LOCATIONS = [
             "name": "Rotherham United",
             "league": "League One",
             "stadium": "Local Stadium",
-            "capacity": 0,
+            "capacity": 12021,
             "communityArm": "Rotherham United Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": true
@@ -1560,10 +1560,10 @@ const LOCATIONS = [
         "lng": -0.6450841,
         "phase": "phase_1",
         "place": {
-            "localAuthority": "Pending Data",
+            "localAuthority": "North Lincolnshire",
             "region": "UK",
-            "population": "N/A",
-            "imdDecile": "N/A",
+            "population": "79,000",
+            "imdDecile": 2,
             "deprivationNotes": "Phase 1 area.",
             "boardStatus": "Established",
             "pipFunding": "\u00a320m (10 years)"
