@@ -35,13 +35,6 @@
         </div>
         
         <div class="filters-panel glass-panel">
-            <h3>Appearance</h3>
-            <div class="filter-group">
-                <select id="themeToggle">
-                    <option value="light">Light Mode</option>
-                    <option value="dark">Dark Mode</option>
-                </select>
-            </div>
             <h3>Filters</h3>
             <div class="filter-group">
                 <label><input type="checkbox" id="filter-green" checked> <span class="dot green"></span> PiP + EFL Board Membership</label>
@@ -55,9 +48,14 @@
                 <select id="phaseFilter">
                     <option value="all">All Phases</option>
                     <option value="phase_1">Phase 1 (Original 75)</option>
-                    <option value="phase_2">Phase 2</option>
-                    <option value="expansion_2026">2026 Expansion</option>
-                    <option value="impact_fund">Impact Fund</option>
+                    <option value="phase_2">Phase 2 (Pending)</option>
+                </select>
+            </div>
+            <h3>Appearance</h3>
+            <div class="filter-group">
+                <select id="themeToggle">
+                    <option value="light">Light Mode</option>
+                    <option value="dark">Dark Mode</option>
                 </select>
             </div>
         </div>
@@ -80,7 +78,7 @@
         </div>
         <hr>
         <div class="legend-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16l4-3-1.5-5h-5L8 13z"></path><path d="M16 13l5.5 1.5"></path><path d="M8 13l-5.5 1.5"></path><path d="M10.5 8L8.5 2.5"></path><path d="M13.5 8l2-5.5"></path><path d="M12 16v6"></path></svg>
             <span>Football icon indicates EFL club presence.</span>
         </div>
     </div>
@@ -115,7 +113,7 @@
             </div>
 
             <div id="sb-club-details" class="sb-section hidden">
-                <h3 class="club-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="club-icon"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg> <span id="val-clubname">Club Name</span></h3>
+                <h3 class="club-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="club-icon"><circle cx="12" cy="12" r="10"></circle><path d="M12 16l4-3-1.5-5h-5L8 13z"></path><path d="M16 13l5.5 1.5"></path><path d="M8 13l-5.5 1.5"></path><path d="M10.5 8L8.5 2.5"></path><path d="M13.5 8l2-5.5"></path><path d="M12 16v6"></path></svg> <span id="val-clubname">Club Name</span></h3>
                 <div class="data-grid">
                     <div class="data-item"><span class="label">League</span><span class="value" id="val-league"></span></div>
                     <div class="data-item"><span class="label">Stadium</span><span class="value" id="val-stadium"></span></div>

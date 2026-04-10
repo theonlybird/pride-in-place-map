@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let iconHtml = '';
             if (loc.club) {
                 // Football icon
-                iconHtml = `<svg class="marker-icon-overlay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>`;
+                iconHtml = `<svg class="marker-icon-overlay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16l4-3-1.5-5h-5L8 13z"></path><path d="M16 13l5.5 1.5"></path><path d="M8 13l-5.5 1.5"></path><path d="M10.5 8L8.5 2.5"></path><path d="M13.5 8l2-5.5"></path><path d="M12 16v6"></path></svg>`;
             } else {
                 // Plain PiP dot
                 iconHtml = `<div class="pip-dot"></div>`;
