@@ -9,12 +9,36 @@ document.addEventListener('DOMContentLoaded', () => {
         position: 'bottomright'
     }).addTo(map);
 
-    // Dark Map Tiles (CartoDB Dark Matter is excellent for premium looks without API keys)
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    // Map Tiles
+    const darkTiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
         subdomains: 'abcd',
         maxZoom: 20
-    }).addTo(map);
+    });
+
+    const lightTiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 20
+    });
+
+    // Default to light tiles
+    lightTiles.addTo(map);
+
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('change', (e) => {
+            if (e.target.value === 'dark') {
+                document.body.classList.remove('light-theme');
+                map.removeLayer(lightTiles);
+                darkTiles.addTo(map);
+            } else {
+                document.body.classList.add('light-theme');
+                map.removeLayer(darkTiles);
+                lightTiles.addTo(map);
+            }
+        });
+    }
 
     // 2. Data & Clustering Setup
     const locations = window.getLocations();
@@ -72,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 iconHtml = `<svg class="marker-icon-overlay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>`;
             } else {
                 // Plain PiP dot
-                iconHtml = `<div style="width: 6px; height: 6px; background-color: white; border-radius: 50%;"></div>`;
+                iconHtml = `<div class="pip-dot"></div>`;
             }
 
             // Create custom divIcon

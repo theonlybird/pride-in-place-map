@@ -22,7 +22,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="light-theme">
     
     <!-- Map Container -->
     <div id="map"></div>
@@ -35,6 +35,13 @@
         </div>
         
         <div class="filters-panel glass-panel">
+            <h3>Appearance</h3>
+            <div class="filter-group">
+                <select id="themeToggle">
+                    <option value="light">Light Mode</option>
+                    <option value="dark">Dark Mode</option>
+                </select>
+            </div>
             <h3>Filters</h3>
             <div class="filter-group">
                 <label><input type="checkbox" id="filter-green" checked> <span class="dot green"></span> PiP + EFL Board Membership</label>

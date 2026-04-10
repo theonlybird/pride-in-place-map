@@ -15,6 +15,15 @@
     --color-accent: #6366f1;
 }
 
+body.light-theme {
+    --bg-color: #f8fafc;
+    --surface-color: rgba(255, 255, 255, 0.85);
+    --surface-solid: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --border-color: rgba(0, 0, 0, 0.1);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -34,6 +43,9 @@ body {
     z-index: 1;
     background: #0b1120;
 }
+body.light-theme #map {
+    background: #e2e8f0;
+}
 
 /* Glassmorphism helpers */
 .glass-panel {
@@ -43,6 +55,9 @@ body {
     border: 1px solid var(--border-color);
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+body.light-theme .glass-panel {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 /* Top Controls */
@@ -106,6 +121,9 @@ body {
 .search-result-item:hover {
     background: rgba(255, 255, 255, 0.05);
 }
+body.light-theme .search-result-item:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
 
 .search-result-item:last-child {
     border-bottom: none;
@@ -152,6 +170,9 @@ body {
     border-radius: 4px;
     font-family: inherit;
     outline: none;
+}
+body.light-theme .filter-group select {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 /* Dots for legend & filters */
@@ -269,6 +290,9 @@ body {
 .close-btn:hover {
     color: #fff;
 }
+body.light-theme .close-btn:hover {
+    color: var(--text-primary);
+}
 
 .sidebar-content {
     flex: 1;
@@ -302,6 +326,9 @@ body {
     font-size: 16px !important;
     text-transform: none !important;
     letter-spacing: 0 !important;
+}
+body.light-theme .club-title {
+    color: var(--text-primary) !important;
 }
 
 .club-icon {
@@ -347,13 +374,13 @@ body {
     margin-top: 15px;
     font-size: 13px;
     line-height: 1.5;
-    color: #cbd5e1;
+    color: var(--text-secondary);
     font-style: italic;
 }
 #val-notes {
     font-size: 13px;
     line-height: 1.5;
-    color: #cbd5e1;
+    color: var(--text-secondary);
 }
 
 .default-msg p {
@@ -381,6 +408,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+body.light-theme .marker-inner {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
 
 .custom-marker:hover .marker-inner, .custom-marker.active .marker-inner {
     transform: scale(1.3);
@@ -391,10 +421,27 @@ body {
 .status-orange .marker-inner { border-color: var(--color-orange); box-shadow: 0 0 12px var(--color-orange-glow); }
 .status-grey .marker-inner { border-color: var(--color-grey); box-shadow: 0 0 12px var(--color-grey-glow); }
 
+body.light-theme .status-green .marker-inner { box-shadow: 0 0 8px var(--color-green-glow); }
+body.light-theme .status-orange .marker-inner { box-shadow: 0 0 8px var(--color-orange-glow); }
+body.light-theme .status-grey .marker-inner { box-shadow: 0 0 8px var(--color-grey-glow); }
+
 .marker-icon-overlay {
     width: 10px;
     height: 10px;
     color: white;
+}
+body.light-theme .marker-icon-overlay {
+    color: var(--text-primary);
+}
+
+.pip-dot {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+}
+body.light-theme .pip-dot {
+    background-color: var(--text-primary);
 }
 
 /* Marker clustering overrides */
@@ -408,10 +455,13 @@ body {
     font-weight: 600;
 }
 
-/* Leaflet Dark Theme tweaks */
+/* Leaflet Theme tweaks */
 .leaflet-container {
     background: #0b1120;
     font-family: 'Inter', sans-serif;
+}
+body.light-theme .leaflet-container {
+    background: #e2e8f0;
 }
 .leaflet-bar a {
     background-color: var(--surface-solid) !important;
@@ -420,6 +470,9 @@ body {
 }
 .leaflet-bar a:hover {
     background-color: #334155 !important;
+}
+body.light-theme .leaflet-bar a:hover {
+    background-color: #e2e8f0 !important;
 }
 
 /* Responsive */
