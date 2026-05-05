@@ -1,28 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Map Initialization
-    const map = L.map('map', {
-        zoomControl: false // We reposition it later if needed, or hide to keep clean look
-    }).setView([53.8, -2.0], 6); // Centered on UK
+    // 1. Map Init
+    const map = L.map('map', { zoomControl: false }).setView([53.8, -2.0], 6);
+    L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-    // Add zoom control to bottom right
-    L.control.zoom({
-        position: 'bottomright'
-    }).addTo(map);
-
-    // Map Tiles
     const darkTiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd',
-        maxZoom: 20
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd', maxZoom: 20
     });
-
     const lightTiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd',
-        maxZoom: 20
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd', maxZoom: 20
     });
-
-    // Default to light tiles
     lightTiles.addTo(map);
 
     const themeToggle = document.getElementById('themeToggle');
@@ -30,104 +18,270 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggle.addEventListener('change', (e) => {
             if (e.target.value === 'dark') {
                 document.body.classList.remove('light-theme');
-                map.removeLayer(lightTiles);
-                darkTiles.addTo(map);
+                map.removeLayer(lightTiles); darkTiles.addTo(map);
             } else {
                 document.body.classList.add('light-theme');
-                map.removeLayer(darkTiles);
-                lightTiles.addTo(map);
+                map.removeLayer(darkTiles); lightTiles.addTo(map);
             }
         });
     }
 
-    // 2. Data & Clustering Setup
-    const locations = window.getLocations();
-    const markersMap = new Map(); // Store references mapping location ID to marker obj
+    // 2. Merge all data sources into unified locations
+    const rawLocations = window.getLocations();
+    const sePlaces = window.SE_PLACES || [];
+    const ntcPlaces = window.NTC_PLACES || [];
 
-    // Initialize MarkerClusterGroup
+    function normalise(str) {
+        return str.toLowerCase().replace(/[^a-z0-9]/g, '');
+    }
+
+    // Build merged location map keyed by normalised name
+    const locMap = new Map();
+
+    function getOrCreate(name, lat, lng) {
+        const key = normalise(name);
+        if (locMap.has(key)) return locMap.get(key);
+        const loc = { id: key, name, lat, lng, pip: null, efl: null, se: null, ntc: null, notes: '' };
+        locMap.set(key, loc);
+        return loc;
+    }
+
+    // Import PiP + EFL from existing data
+    rawLocations.forEach(raw => {
+        const loc = getOrCreate(raw.name, raw.lat, raw.lng);
+        if (raw.type === 'pip_only' || raw.type === 'pip_efl') {
+            loc.pip = {
+                phase: raw.phase,
+                status: raw.status,
+                localAuthority: raw.place?.localAuthority || '',
+                region: raw.place?.region || 'UK',
+                population: raw.place?.population || '',
+                imdDecile: raw.place?.imdDecile || '',
+                boardStatus: raw.place?.boardStatus || '',
+                pipFunding: raw.place?.pipFunding || '',
+                deprivationNotes: raw.place?.deprivationNotes || ''
+            };
+        }
+        if (raw.club) {
+            loc.efl = {
+                name: raw.club.name,
+                league: raw.club.league,
+                stadium: raw.club.stadium,
+                capacity: raw.club.capacity,
+                communityArm: raw.club.communityArm,
+                communityArmWebsite: raw.club.communityArmWebsite,
+                onNeighbourhoodBoard: raw.club.onNeighbourhoodBoard
+            };
+        }
+        if (raw.notes) loc.notes = raw.notes;
+    });
+
+    // Also add EFL-only entries
+    rawLocations.forEach(raw => {
+        if (raw.type === 'efl_only') {
+            const loc = getOrCreate(raw.name, raw.lat, raw.lng);
+            if (raw.club) {
+                loc.efl = {
+                    name: raw.club.name,
+                    league: raw.club.league,
+                    stadium: raw.club.stadium,
+                    capacity: raw.club.capacity,
+                    communityArm: raw.club.communityArm,
+                    communityArmWebsite: raw.club.communityArmWebsite,
+                    onNeighbourhoodBoard: raw.club.onNeighbourhoodBoard
+                };
+            }
+            if (raw.notes) loc.notes = raw.notes;
+        }
+    });
+
+    // Import SE places - match by name or LA
+    const laToLocKey = new Map();
+    locMap.forEach((loc, key) => {
+        if (loc.pip && loc.pip.localAuthority) {
+            laToLocKey.set(normalise(loc.pip.localAuthority), key);
+        }
+    });
+
+    sePlaces.forEach(se => {
+        const key = normalise(se.name);
+        let loc;
+        if (locMap.has(key)) {
+            loc = locMap.get(key);
+        } else if (laToLocKey.has(key)) {
+            loc = locMap.get(laToLocKey.get(key));
+        } else {
+            loc = getOrCreate(se.name, se.lat, se.lng);
+        }
+        loc.se = { type: se.type, coverage: se.coverage };
+    });
+
+    // Import NTC places
+    ntcPlaces.forEach(ntc => {
+        const key = normalise(ntc.name);
+        let loc;
+        if (locMap.has(key)) {
+            loc = locMap.get(key);
+        } else {
+            loc = getOrCreate(ntc.name, ntc.lat, ntc.lng);
+        }
+        loc.ntc = { type: ntc.type, project: ntc.project };
+    });
+
+    // Compute overlap counts
+    const allLocations = [];
+    locMap.forEach(loc => {
+        loc.overlapCount = (loc.pip ? 1 : 0) + (loc.efl ? 1 : 0) + (loc.se ? 1 : 0) + (loc.ntc ? 1 : 0);
+        loc.activeLayers = [];
+        if (loc.pip) loc.activeLayers.push('pip');
+        if (loc.efl) loc.activeLayers.push('efl');
+        if (loc.se) loc.activeLayers.push('se');
+        if (loc.ntc) loc.activeLayers.push('ntc');
+        allLocations.push(loc);
+    });
+
+    console.log(`Merged ${allLocations.length} unique locations`);
+
+    // 3. Marker rendering
+    const markersMap = new Map();
     const markersGroup = L.markerClusterGroup({
-        maxClusterRadius: 40,
+        maxClusterRadius: 35,
         spiderfyOnMaxZoom: true,
         showCoverageOnHover: false,
-        iconCreateFunction: function(cluster) {
+        iconCreateFunction(cluster) {
             const count = cluster.getChildCount();
             let size = 'small';
             if (count > 10) size = 'medium';
             if (count > 30) size = 'large';
-            
-            return L.divIcon({ 
-                html: '<div><span>' + count + '</span></div>', 
-                className: 'marker-cluster marker-cluster-' + size, 
-                iconSize: new L.Point(40, 40) 
+            return L.divIcon({
+                html: '<div><span>' + count + '</span></div>',
+                className: 'marker-cluster marker-cluster-' + size,
+                iconSize: new L.Point(40, 40)
             });
         }
     });
 
-    // Sidebar DOM Elements
     const sidebar = document.getElementById('sidebar');
     const closeSidebarBtn = document.getElementById('close-sidebar');
-    
-    // 3. Render Markers
+    let minOverlap = 1;
+
+    function isLayerActive(loc) {
+        const showPip = document.getElementById('layer-pip').checked;
+        const showEfl = document.getElementById('layer-efl').checked;
+        const showSe = document.getElementById('layer-se').checked;
+        const showNtc = document.getElementById('layer-ntc').checked;
+
+        let visibleCount = 0;
+        let hasVisibleLayer = false;
+
+        if (loc.pip && showPip) {
+            const phase = loc.pip.phase;
+            const p1 = document.getElementById('pip-phase1').checked;
+            const p2 = document.getElementById('pip-phase2').checked;
+            if ((phase === 'phase_1' && p1) || (phase === 'phase_2' && p2) || (phase !== 'phase_1' && phase !== 'phase_2' && (p1 || p2))) {
+                visibleCount++;
+                hasVisibleLayer = true;
+            }
+        }
+        if (loc.efl && showEfl) { visibleCount++; hasVisibleLayer = true; }
+        if (loc.se && showSe) {
+            const t = loc.se.type;
+            const ldp = document.getElementById('se-existing-ldp').checked;
+            const tc = document.getElementById('se-transition-core').checked;
+            const exp = document.getElementById('se-expansion').checked;
+            if ((t === 'existing_ldp' && ldp) || (t === 'transition_core' && tc) || (t === 'place_expansion' && exp)) {
+                visibleCount++;
+                hasVisibleLayer = true;
+            }
+        }
+        if (loc.ntc && showNtc) {
+            const nt = loc.ntc.type;
+            const acc = document.getElementById('ntc-accredited').checked;
+            const gr = document.getElementById('ntc-grant').checked;
+            if (((nt === 'accredited_city' || nt === 'accredited_town') && acc) || (nt === 'grant' && gr)) {
+                visibleCount++;
+                hasVisibleLayer = true;
+            }
+        }
+
+        return hasVisibleLayer && visibleCount >= minOverlap ? visibleCount : 0;
+    }
+
+    function buildMarkerIcon(loc, visCount) {
+        const layers = [];
+        if (loc.pip) layers.push('pip');
+        if (loc.efl) layers.push('efl');
+        if (loc.se) layers.push('se');
+        if (loc.ntc) layers.push('ntc');
+
+        if (layers.length === 1) {
+            const layer = layers[0];
+            let innerHtml = '';
+            if (layer === 'efl') {
+                innerHtml = `<svg class="marker-icon-overlay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16l4-3-1.5-5h-5L8 13z"></path></svg>`;
+            } else {
+                const icons = { pip: '●', se: '▲', ntc: '🌿' };
+                innerHtml = `<span style="font-size:8px;color:white">${icons[layer] || '●'}</span>`;
+            }
+            return L.divIcon({
+                className: `custom-marker layer-${layer}-only`,
+                html: `<div class="marker-inner">${innerHtml}</div>`,
+                iconSize: [22, 22], iconAnchor: [11, 11]
+            });
+        }
+
+        // Multi-layer marker with stacked rings
+        const colors = { pip: 'var(--color-pip)', efl: 'var(--color-efl)', se: 'var(--color-se)', ntc: 'var(--color-ntc)' };
+        let ringsHtml = '';
+        const ringCount = layers.length;
+        layers.forEach((l, i) => {
+            const size = 22 - i * 4;
+            const offset = i * 2;
+            ringsHtml += `<span class="ring r-${l}" style="width:${size}px;height:${size}px;top:${offset}px;left:${offset}px;border-width:2px;"></span>`;
+        });
+
+        const multiClass = ringCount >= 3 ? 'marker-multi marker-multi-3' : 'marker-multi';
+
+        return L.divIcon({
+            className: `custom-marker ${multiClass}`,
+            html: `<div class="marker-inner">${ringsHtml}<span class="overlap-count">${ringCount}</span></div>`,
+            iconSize: [22, 22], iconAnchor: [11, 11]
+        });
+    }
+
     function renderMarkers() {
         markersGroup.clearLayers();
         markersMap.clear();
+        let counts = { pip: 0, efl: 0, se: 0, ntc: 0, total: 0, overlap2: 0, overlap3: 0, overlap4: 0 };
 
-        // Get filter states
-        const showGreen = document.getElementById('filter-green').checked;
-        const showOrange = document.getElementById('filter-orange').checked;
-        const showGrey = document.getElementById('filter-grey').checked;
-        const eflOnly = document.getElementById('filter-efl-only').checked;
-        const phaseFilter = document.getElementById('phaseFilter').value;
+        allLocations.forEach(loc => {
+            const visCount = isLayerActive(loc);
+            if (!visCount) return;
 
-        locations.forEach(loc => {
-            // Check filters
-            if (!showGreen && loc.status === 'green') return;
-            if (!showOrange && loc.status === 'orange') return;
-            if (!showGrey && loc.status === 'grey') return;
-            
-            if (eflOnly && !loc.club) return;
-            
-            if (phaseFilter !== 'all' && loc.phase !== phaseFilter) return;
+            if (loc.pip) counts.pip++;
+            if (loc.efl) counts.efl++;
+            if (loc.se) counts.se++;
+            if (loc.ntc) counts.ntc++;
+            counts.total++;
+            if (loc.overlapCount >= 2) counts.overlap2++;
+            if (loc.overlapCount >= 3) counts.overlap3++;
+            if (loc.overlapCount >= 4) counts.overlap4++;
 
-            // Determine Icon HTML
-            let iconHtml = '';
-            if (loc.club) {
-                // Football icon
-                iconHtml = `<svg class="marker-icon-overlay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16l4-3-1.5-5h-5L8 13z"></path><path d="M16 13l5.5 1.5"></path><path d="M8 13l-5.5 1.5"></path><path d="M10.5 8L8.5 2.5"></path><path d="M13.5 8l2-5.5"></path><path d="M12 16v6"></path></svg>`;
-            } else {
-                // Plain PiP dot
-                iconHtml = `<div class="pip-dot"></div>`;
-            }
-
-            // Create custom divIcon
-            const customIcon = L.divIcon({
-                className: `custom-marker status-${loc.status}`,
-                html: `<div class="marker-inner">${iconHtml}</div>`,
-                iconSize: [24, 24],
-                iconAnchor: [12, 12]
-            });
-
-            const marker = L.marker([loc.lat, loc.lng], { icon: customIcon });
-            
-            // Attach data for click handler
+            const icon = buildMarkerIcon(loc, visCount);
+            const marker = L.marker([loc.lat, loc.lng], { icon });
             marker.locData = loc;
-            
+
             marker.on('click', () => {
-                // Remove active class from all
                 document.querySelectorAll('.custom-marker').forEach(el => el.classList.remove('active'));
-                
-                // We add a tiny delay to allow the DOM element to be generated/accessible by Leaflet if part of a cluster
-                setTimeout(() => {
-                    if (marker._icon) {
-                        marker._icon.classList.add('active');
-                    }
-                }, 10);
-                
+                setTimeout(() => { if (marker._icon) marker._icon.classList.add('active'); }, 10);
                 openSidebar(loc);
                 
-                // Gently pan to center marker (slightly offset to accommodate right sidebar)
-                const offsetLng = map.getSize().x > 768 ? loc.lng - 0.5 : loc.lng;
-                map.flyTo([loc.lat, offsetLng], Math.max(map.getZoom(), 10), { duration: 0.5 });
+                // Center marker in the visible area (offset for sidebar)
+                const sidebarWidth = map.getSize().x > 768 ? 400 : 0;
+                const targetPoint = map.latLngToContainerPoint([loc.lat, loc.lng]);
+                const offsetPoint = L.point(targetPoint.x - sidebarWidth / 2, targetPoint.y);
+                const offsetLatLng = map.containerPointToLatLng(offsetPoint);
+                map.flyTo(offsetLatLng, Math.max(map.getZoom(), 10), { duration: 0.5 });
             });
 
             markersMap.set(loc.id, marker);
@@ -135,65 +289,110 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         map.addLayer(markersGroup);
+
+        // Update counts
+        document.getElementById('count-pip').textContent = counts.pip;
+        document.getElementById('count-efl').textContent = counts.efl;
+        document.getElementById('count-se').textContent = counts.se;
+        document.getElementById('count-ntc').textContent = counts.ntc;
+
+        const overlapText = minOverlap > 1
+            ? `Showing ${counts.total} locations in ${minOverlap}+ layers`
+            : `${counts.total} locations shown`;
+        document.getElementById('overlap-result').textContent = overlapText;
     }
 
-    // 4. Sidebar Interaction
+    // 4. Sidebar
     function openSidebar(loc) {
         document.getElementById('sb-default').classList.add('hidden');
-        
-        // Header
+
+        // Title
         document.getElementById('sb-title').textContent = loc.name;
-        
-        const badge = document.getElementById('sb-status-badge');
-        badge.className = `badge ${loc.status}`;
-        badge.textContent = loc.status === 'green' ? 'EFL on Board' : (loc.status === 'orange' ? 'Allocated' : 'Pending');
 
-        const phaseBadge = document.getElementById('sb-phase-badge');
-        if(loc.phase === 'none') {
-            phaseBadge.style.display = 'none';
+        // Badges
+        const badgesEl = document.getElementById('sb-badges');
+        badgesEl.innerHTML = '';
+        if (loc.pip) badgesEl.innerHTML += '<span class="badge pip">Pride in Place</span>';
+        if (loc.efl) badgesEl.innerHTML += '<span class="badge efl">EFL</span>';
+        if (loc.se) badgesEl.innerHTML += '<span class="badge se">Sport England</span>';
+        if (loc.ntc) badgesEl.innerHTML += '<span class="badge ntc">Nature T&C</span>';
+
+        // Overlap banner
+        const overlapSection = document.getElementById('sb-overlap');
+        const overlapBanner = document.getElementById('overlap-banner');
+        if (loc.overlapCount >= 2) {
+            overlapSection.classList.remove('hidden');
+            overlapBanner.textContent = `⭐ This location appears in ${loc.overlapCount} of 4 layers — high crossover potential`;
         } else {
-            phaseBadge.style.display = 'inline-block';
-            phaseBadge.textContent = loc.phase.replace('_', ' ').toUpperCase();
+            overlapSection.classList.add('hidden');
         }
 
-        // PiP Place Info
-        const placeSection = document.getElementById('sb-place-details');
-        if (loc.place && loc.phase !== 'none') {
-            placeSection.classList.remove('hidden');
-            document.getElementById('val-la').textContent = loc.place.localAuthority;
-            document.getElementById('val-region').textContent = loc.place.region;
-            document.getElementById('val-pop').textContent = loc.place.population.toLocaleString();
-            document.getElementById('val-imd').textContent = loc.place.imdDecile;
-            document.getElementById('val-funding').textContent = loc.place.pipFunding;
-            document.getElementById('val-board').textContent = loc.place.boardStatus;
-            document.getElementById('val-deprivation-notes').textContent = loc.place.deprivationNotes;
+        // PiP details
+        const pipSection = document.getElementById('sb-pip-details');
+        if (loc.pip) {
+            pipSection.classList.remove('hidden');
+            document.getElementById('val-la').textContent = loc.pip.localAuthority;
+            document.getElementById('val-region').textContent = loc.pip.region;
+            document.getElementById('val-pop').textContent = loc.pip.population;
+            document.getElementById('val-imd').textContent = loc.pip.imdDecile;
+            document.getElementById('val-funding').textContent = loc.pip.pipFunding;
+            document.getElementById('val-board').textContent = loc.pip.boardStatus;
         } else {
-            placeSection.classList.add('hidden');
+            pipSection.classList.add('hidden');
         }
 
-        // Club Info
-        const clubSection = document.getElementById('sb-club-details');
-        if (loc.club) {
-            clubSection.classList.remove('hidden');
-            document.getElementById('val-clubname').textContent = loc.club.name;
-            document.getElementById('val-league').textContent = loc.club.league;
-            document.getElementById('val-stadium').textContent = loc.club.stadium;
-            document.getElementById('val-capacity').textContent = loc.club.capacity.toLocaleString();
-            
+        // EFL details
+        const eflSection = document.getElementById('sb-efl-details');
+        if (loc.efl) {
+            eflSection.classList.remove('hidden');
+            document.getElementById('val-clubname').textContent = loc.efl.name;
+            document.getElementById('val-league').textContent = loc.efl.league;
+            document.getElementById('val-stadium').textContent = loc.efl.stadium;
+            document.getElementById('val-capacity').textContent = loc.efl.capacity ? loc.efl.capacity.toLocaleString() : 'N/A';
             const commLink = document.getElementById('val-community-link');
-            commLink.textContent = loc.club.communityArm;
-            if (loc.club.communityArmWebsite !== '#') {
-                commLink.href = loc.club.communityArmWebsite;
+            commLink.textContent = loc.efl.communityArm;
+            if (loc.efl.communityArmWebsite !== '#') {
+                commLink.href = loc.efl.communityArmWebsite;
                 commLink.style.pointerEvents = 'auto';
             } else {
                 commLink.removeAttribute('href');
                 commLink.style.pointerEvents = 'none';
             }
         } else {
-            clubSection.classList.add('hidden');
+            eflSection.classList.add('hidden');
         }
 
-        // Context
+        // SE details
+        const seSection = document.getElementById('sb-se-details');
+        if (loc.se) {
+            seSection.classList.remove('hidden');
+            const typeLabels = {
+                existing_ldp: 'Existing Place Partner (LDP)',
+                transition_core: 'Transition / Core City',
+                place_expansion: 'Place Expansion'
+            };
+            document.getElementById('val-se-type').textContent = typeLabels[loc.se.type] || loc.se.type;
+            document.getElementById('val-se-coverage').textContent = loc.se.coverage;
+        } else {
+            seSection.classList.add('hidden');
+        }
+
+        // NTC details
+        const ntcSection = document.getElementById('sb-ntc-details');
+        if (loc.ntc) {
+            ntcSection.classList.remove('hidden');
+            const ntcLabels = {
+                accredited_city: 'Accredited Nature City',
+                accredited_town: 'Accredited Nature Town',
+                grant: 'Grant Recipient'
+            };
+            document.getElementById('val-ntc-type').textContent = ntcLabels[loc.ntc.type] || loc.ntc.type;
+            document.getElementById('val-ntc-project').textContent = loc.ntc.project;
+        } else {
+            ntcSection.classList.add('hidden');
+        }
+
+        // Notes
         const contextSection = document.getElementById('sb-context');
         if (loc.notes) {
             contextSection.classList.remove('hidden');
@@ -210,45 +409,44 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.custom-marker').forEach(el => el.classList.remove('active'));
     });
 
-    // 5. Search Logic
+    // 5. Search
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
 
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.toLowerCase().trim();
         searchResults.innerHTML = '';
-        
-        if (query.length < 2) {
-            searchResults.classList.add('hidden');
-            return;
-        }
+        if (query.length < 2) { searchResults.classList.add('hidden'); return; }
 
-        const matches = locations.filter(loc => {
-            return loc.name.toLowerCase().includes(query) || 
-                   (loc.club && loc.club.name.toLowerCase().includes(query)) ||
-                   (loc.place && loc.place.localAuthority.toLowerCase().includes(query));
-        }).slice(0, 5); // Limit to 5 results
+        const matches = allLocations.filter(loc => {
+            return loc.name.toLowerCase().includes(query) ||
+                (loc.efl && loc.efl.name.toLowerCase().includes(query)) ||
+                (loc.pip && loc.pip.localAuthority.toLowerCase().includes(query)) ||
+                (loc.ntc && loc.ntc.project.toLowerCase().includes(query));
+        }).slice(0, 6);
 
         if (matches.length > 0) {
             searchResults.classList.remove('hidden');
             matches.forEach(match => {
                 const div = document.createElement('div');
                 div.className = 'search-result-item';
+                let badges = '';
+                if (match.pip) badges += '<span class="micro-badge pip">PiP</span>';
+                if (match.efl) badges += '<span class="micro-badge efl">EFL</span>';
+                if (match.se) badges += '<span class="micro-badge se">SE</span>';
+                if (match.ntc) badges += '<span class="micro-badge ntc">NTC</span>';
+
                 div.innerHTML = `
-                    <div class="search-result-name">${match.name} ${match.club ? `- ${match.club.name}` : ''}</div>
-                    <div class="search-result-desc">${match.place ? match.place.localAuthority : ''}</div>
+                    <div class="search-result-name">${match.name}${match.efl ? ' — ' + match.efl.name : ''}</div>
+                    <div class="search-result-desc">${match.pip ? match.pip.localAuthority : (match.se ? match.se.coverage : '')}</div>
+                    <div class="search-result-badges">${badges}</div>
                 `;
-                
                 div.addEventListener('click', () => {
                     searchInput.value = match.name;
                     searchResults.classList.add('hidden');
-                    
-                    // Trigger marker click if it is on map
                     const targetMarker = markersMap.get(match.id);
                     if (targetMarker) {
-                        markersGroup.zoomToShowLayer(targetMarker, () => {
-                            targetMarker.fire('click');
-                        });
+                        markersGroup.zoomToShowLayer(targetMarker, () => { targetMarker.fire('click'); });
                     }
                 });
                 searchResults.appendChild(div);
@@ -258,20 +456,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Hide search results when clicking outside
     document.addEventListener('click', (e) => {
-        if (!e.target.closest('.search-box')) {
-            searchResults.classList.add('hidden');
-        }
+        if (!e.target.closest('.search-box')) searchResults.classList.add('hidden');
     });
 
-    // 6. Bind Filter Events
-    document.getElementById('filter-green').addEventListener('change', renderMarkers);
-    document.getElementById('filter-orange').addEventListener('change', renderMarkers);
-    document.getElementById('filter-grey').addEventListener('change', renderMarkers);
-    document.getElementById('filter-efl-only').addEventListener('change', renderMarkers);
-    document.getElementById('phaseFilter').addEventListener('change', renderMarkers);
+    // 6. Wire up layer toggles
+    const allCheckboxes = document.querySelectorAll('.layers-panel input[type="checkbox"]');
+    allCheckboxes.forEach(cb => cb.addEventListener('change', renderMarkers));
 
-    // Initial render
+    // Overlap finder buttons
+    document.querySelectorAll('.overlap-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.overlap-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            minOverlap = parseInt(btn.dataset.min);
+            renderMarkers();
+        });
+    });
+
+    // 7. Initial render
     renderMarkers();
 });

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Pride in Place × EFL Interactive Map</title>
+    <title>Pride in Place – Multi-Layer Map</title>
     
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,32 +27,78 @@
     <!-- Map Container -->
     <div id="map"></div>
 
-    <!-- UI Overlay Controls (Search & Filters) -->
+    <!-- UI Overlay Controls -->
     <div class="top-controls">
         <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Search places or clubs...">
+            <input type="text" id="searchInput" placeholder="Search places, clubs or programmes...">
             <div id="searchResults" class="search-results hidden"></div>
         </div>
         
-        <div class="filters-panel glass-panel">
-            <h3>Filters</h3>
-            <div class="filter-group">
-                <label><input type="checkbox" id="filter-green" checked> <span class="dot green"></span> PiP + EFL Board Membership</label>
-                <label><input type="checkbox" id="filter-orange" checked> <span class="dot orange"></span> PiP Allocated (No Board)</label>
-                <label><input type="checkbox" id="filter-grey" checked> <span class="dot grey"></span> PiP Priority / Pending</label>
+        <div class="layers-panel glass-panel">
+            <h3>🗺️ Map Layers</h3>
+            
+            <div class="layer-group">
+                <label class="layer-toggle">
+                    <input type="checkbox" id="layer-se" checked>
+                    <span class="layer-swatch se"></span>
+                    <span class="layer-label">Sport England Places</span>
+                    <span class="layer-count" id="count-se"></span>
+                </label>
+                <div class="layer-sub" id="sub-se">
+                    <label><input type="checkbox" id="se-existing-ldp" checked> Existing Partner (LDP)</label>
+                    <label><input type="checkbox" id="se-transition-core" checked> Transition / Core City</label>
+                    <label><input type="checkbox" id="se-expansion" checked> Place Expansion</label>
+                </div>
             </div>
-            <div class="filter-group">
-                <label><input type="checkbox" id="filter-efl-only"> EFL Clubs Only</label>
+
+            <div class="layer-group">
+                <label class="layer-toggle">
+                    <input type="checkbox" id="layer-pip" checked>
+                    <span class="layer-swatch pip"></span>
+                    <span class="layer-label">Pride in Place</span>
+                    <span class="layer-count" id="count-pip"></span>
+                </label>
+                <div class="layer-sub" id="sub-pip">
+                    <label><input type="checkbox" id="pip-phase1" checked> Phase 1 (Original 75)</label>
+                    <label><input type="checkbox" id="pip-phase2" checked> Phase 2 (Pending)</label>
+                </div>
             </div>
-            <div class="filter-group">
-                <select id="phaseFilter">
-                    <option value="all">All Phases</option>
-                    <option value="phase_1">Phase 1 (Original 75)</option>
-                    <option value="phase_2">Phase 2 (Pending)</option>
-                </select>
+
+            <div class="layer-group">
+                <label class="layer-toggle">
+                    <input type="checkbox" id="layer-ntc" checked>
+                    <span class="layer-swatch ntc"></span>
+                    <span class="layer-label">Nature Towns & Cities</span>
+                    <span class="layer-count" id="count-ntc"></span>
+                </label>
+                <div class="layer-sub" id="sub-ntc">
+                    <label><input type="checkbox" id="ntc-accredited" checked> Accredited</label>
+                    <label><input type="checkbox" id="ntc-grant" checked> Grant Recipients</label>
+                </div>
             </div>
-            <h3>Appearance</h3>
-            <div class="filter-group">
+
+            <div class="layer-group">
+                <label class="layer-toggle">
+                    <input type="checkbox" id="layer-efl" checked>
+                    <span class="layer-swatch efl"></span>
+                    <span class="layer-label">EFL Clubs</span>
+                    <span class="layer-count" id="count-efl"></span>
+                </label>
+            </div>
+
+            <div class="overlap-finder">
+                <h3>🔍 Overlap Finder</h3>
+                <div class="overlap-btns">
+                    <button class="overlap-btn active" data-min="1">All</button>
+                    <button class="overlap-btn" data-min="2">2+</button>
+                    <button class="overlap-btn" data-min="3">3+</button>
+                    <button class="overlap-btn" data-min="4">4</button>
+                </div>
+                <div class="overlap-result" id="overlap-result"></div>
+            </div>
+
+            <div class="appearance-section">
+                <h3>⚙ Appearance</h3>
                 <select id="themeToggle">
                     <option value="light">Light Mode</option>
                     <option value="dark">Dark Mode</option>
@@ -63,33 +109,21 @@
 
     <!-- Legend -->
     <div class="legend glass-panel">
-        <h4>Status Legend</h4>
-        <div class="legend-item">
-            <span class="dot green"></span>
-            <span><strong>EFL on Board:</strong> Active PiP Neighbourhood Board with EFL representation.</span>
-        </div>
-        <div class="legend-item">
-            <span class="dot orange"></span>
-            <span><strong>Funding Allocated:</strong> PiP funding confirmed, but Neighbourhood Board not yet established or EFL not involved.</span>
-        </div>
-        <div class="legend-item">
-            <span class="dot grey"></span>
-            <span><strong>Pending/Priority:</strong> Area identified for priority funding.</span>
-        </div>
+        <h4>Layer Legend</h4>
+        <div class="legend-item"><span class="layer-swatch se small"></span><span><strong>Sport England</strong> — Place Partnerships</span></div>
+        <div class="legend-item"><span class="layer-swatch pip small"></span><span><strong>Pride in Place</strong> — Gov't neighbourhood funding</span></div>
+        <div class="legend-item"><span class="layer-swatch ntc small"></span><span><strong>Nature Towns</strong> — Nat. Lottery / Natural England</span></div>
+        <div class="legend-item"><span class="layer-swatch efl small"></span><span><strong>EFL Clubs</strong> — Football League presence</span></div>
         <hr>
-        <div class="legend-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16l4-3-1.5-5h-5L8 13z"></path><path d="M16 13l5.5 1.5"></path><path d="M8 13l-5.5 1.5"></path><path d="M10.5 8L8.5 2.5"></path><path d="M13.5 8l2-5.5"></path><path d="M12 16v6"></path></svg>
-            <span>Football icon indicates EFL club presence.</span>
-        </div>
+        <div class="legend-item"><span class="overlap-indicator-demo">3</span><span>Number = active layers at location</span></div>
     </div>
 
-    <!-- Sidebar Panel for Details -->
+    <!-- Sidebar Panel -->
     <div id="sidebar" class="sidebar glass-panel right closed">
         <div class="sidebar-header">
             <div class="header-titles">
                 <h2 id="sb-title">Place Name</h2>
-                <span id="sb-status-badge" class="badge">Status</span>
-                <span id="sb-phase-badge" class="badge outlined">Phase</span>
+                <div id="sb-badges"></div>
             </div>
             <button id="close-sidebar" class="close-btn">&times;</button>
         </div>
@@ -99,8 +133,12 @@
                 <p>Select a location on the map to view details.</p>
             </div>
 
-            <div id="sb-place-details" class="sb-section hidden">
-                <h3>Pride in Place Details</h3>
+            <div id="sb-overlap" class="sb-section hidden">
+                <div class="overlap-banner" id="overlap-banner"></div>
+            </div>
+
+            <div id="sb-pip-details" class="sb-section hidden">
+                <h3><span class="layer-swatch pip small"></span> Pride in Place</h3>
                 <div class="data-grid">
                     <div class="data-item"><span class="label">Local Authority</span><span class="value" id="val-la"></span></div>
                     <div class="data-item"><span class="label">Region</span><span class="value" id="val-region"></span></div>
@@ -109,19 +147,35 @@
                     <div class="data-item full-width"><span class="label">Funding</span><span class="value" id="val-funding"></span></div>
                     <div class="data-item full-width"><span class="label">Board Status</span><span class="value" id="val-board"></span></div>
                 </div>
-                <p class="notes" id="val-deprivation-notes"></p>
             </div>
 
-            <div id="sb-club-details" class="sb-section hidden">
-                <h3 class="club-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="club-icon"><circle cx="12" cy="12" r="10"></circle><path d="M12 16l4-3-1.5-5h-5L8 13z"></path><path d="M16 13l5.5 1.5"></path><path d="M8 13l-5.5 1.5"></path><path d="M10.5 8L8.5 2.5"></path><path d="M13.5 8l2-5.5"></path><path d="M12 16v6"></path></svg> <span id="val-clubname">Club Name</span></h3>
+            <div id="sb-efl-details" class="sb-section hidden">
+                <h3><span class="layer-swatch efl small"></span> EFL Club</h3>
                 <div class="data-grid">
+                    <div class="data-item"><span class="label">Club</span><span class="value" id="val-clubname"></span></div>
                     <div class="data-item"><span class="label">League</span><span class="value" id="val-league"></span></div>
                     <div class="data-item"><span class="label">Stadium</span><span class="value" id="val-stadium"></span></div>
                     <div class="data-item"><span class="label">Capacity</span><span class="value" id="val-capacity"></span></div>
-                    <div class="data-item full-width"><span class="label">Community Arm</span><span class="value"><a href="#" target="_blank" id="val-community-link">Title</a></span></div>
+                    <div class="data-item full-width"><span class="label">Community Arm</span><span class="value"><a href="#" target="_blank" id="val-community-link">Name</a></span></div>
                 </div>
             </div>
-            
+
+            <div id="sb-se-details" class="sb-section hidden">
+                <h3><span class="layer-swatch se small"></span> Sport England Place</h3>
+                <div class="data-grid">
+                    <div class="data-item"><span class="label">Partnership Type</span><span class="value" id="val-se-type"></span></div>
+                    <div class="data-item"><span class="label">Coverage</span><span class="value" id="val-se-coverage"></span></div>
+                </div>
+            </div>
+
+            <div id="sb-ntc-details" class="sb-section hidden">
+                <h3><span class="layer-swatch ntc small"></span> Nature Towns & Cities</h3>
+                <div class="data-grid">
+                    <div class="data-item"><span class="label">Status</span><span class="value" id="val-ntc-type"></span></div>
+                    <div class="data-item full-width"><span class="label">Project</span><span class="value" id="val-ntc-project"></span></div>
+                </div>
+            </div>
+
              <div id="sb-context" class="sb-section hidden">
                 <h3>Context Notes</h3>
                 <p id="val-notes"></p>
@@ -129,8 +183,9 @@
         </div>
     </div>
 
-    <!-- Custom Data & App Logic -->
+    <!-- Data & App Logic -->
     <script src="js/data.js"></script>
+    <script src="js/layers_data.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
