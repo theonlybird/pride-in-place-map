@@ -128,6 +128,40 @@ document.addEventListener('DOMContentLoaded', () => {
         loc.ntc = { type: ntc.type, project: ntc.project };
     });
 
+    // Link PiP neighbourhoods to parent LA locations
+    // Build map: normalised LA name → array of PiP neighbourhood locations
+    const laNeighbourhoods = new Map();
+    locMap.forEach(loc => {
+        if (loc.pip && loc.pip.localAuthority) {
+            const laKey = normalise(loc.pip.localAuthority);
+            if (!laNeighbourhoods.has(laKey)) laNeighbourhoods.set(laKey, []);
+            laNeighbourhoods.get(laKey).push(loc);
+        }
+    });
+
+    // For locations without PiP that match an LA name with PiP neighbourhoods, inherit PiP
+    locMap.forEach(loc => {
+        if (loc.pip) return; // already has direct PiP data
+        const locKey = normalise(loc.name);
+        if (laNeighbourhoods.has(locKey)) {
+            const hoods = laNeighbourhoods.get(locKey);
+            // Use the first neighbourhood's data as a base, but mark as inherited
+            const first = hoods[0];
+            loc.pip = {
+                phase: first.pip.phase,
+                inherited: true,
+                neighbourhoods: hoods.map(h => h.name),
+                localAuthority: first.pip.localAuthority,
+                region: first.pip.region,
+                population: first.pip.population,
+                imdDecile: first.pip.imdDecile,
+                boardStatus: first.pip.boardStatus,
+                pipFunding: first.pip.pipFunding,
+                deprivationNotes: first.pip.deprivationNotes
+            };
+        }
+    });
+
     // Compute overlap counts
     const allLocations = [];
     locMap.forEach(loc => {
@@ -343,6 +377,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // PiP details
         const pipSection = document.getElementById('sb-pip-details');
+        const pipHoodsEl = document.getElementById('val-pip-neighbourhoods');
+        const pipHoodsRow = pipHoodsEl ? pipHoodsEl.closest('.data-item') : null;
         if (loc.pip) {
             pipSection.classList.remove('hidden');
             document.getElementById('val-la').textContent = loc.pip.localAuthority;
@@ -351,6 +387,15 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('val-imd').textContent = loc.pip.imdDecile;
             document.getElementById('val-funding').textContent = loc.pip.pipFunding;
             document.getElementById('val-board').textContent = loc.pip.boardStatus;
+            // Show linked neighbourhoods if inherited from LA
+            if (pipHoodsRow && pipHoodsEl) {
+                if (loc.pip.inherited && loc.pip.neighbourhoods) {
+                    pipHoodsRow.classList.remove('hidden');
+                    pipHoodsEl.textContent = loc.pip.neighbourhoods.join(', ');
+                } else {
+                    pipHoodsRow.classList.add('hidden');
+                }
+            }
         } else {
             pipSection.classList.add('hidden');
         }
