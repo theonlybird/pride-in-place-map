@@ -276,12 +276,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => { if (marker._icon) marker._icon.classList.add('active'); }, 10);
                 openSidebar(loc);
                 
-                // Center marker in the visible area (offset for sidebar)
-                const sidebarWidth = map.getSize().x > 768 ? 400 : 0;
-                const targetPoint = map.latLngToContainerPoint([loc.lat, loc.lng]);
-                const offsetPoint = L.point(targetPoint.x - sidebarWidth / 2, targetPoint.y);
-                const offsetLatLng = map.containerPointToLatLng(offsetPoint);
-                map.flyTo(offsetLatLng, Math.max(map.getZoom(), 10), { duration: 0.5 });
+                // Center marker in the visible area (offset for panels)
+                const targetZoom = Math.max(map.getZoom(), 10);
+                const mapSize = map.getSize();
+                const isMobile = mapSize.x <= 768;
+                
+                const sidebarWidth = isMobile ? 0 : 400;
+                const leftPanelWidth = isMobile ? 0 : 320;
+                const bottomSidebarHeight = isMobile ? mapSize.y * 0.55 : 0;
+                
+                const visibleCenterX = leftPanelWidth + (mapSize.x - leftPanelWidth - sidebarWidth) / 2;
+                const visibleCenterY = (mapSize.y - bottomSidebarHeight) / 2;
+                
+                const centerOffsetX = visibleCenterX - (mapSize.x / 2);
+                const centerOffsetY = visibleCenterY - (mapSize.y / 2);
+                
+                const markerPoint = map.project([loc.lat, loc.lng], targetZoom);
+                const targetCenterPoint = L.point(markerPoint.x - centerOffsetX, markerPoint.y - centerOffsetY);
+                const targetCenterLatLng = map.unproject(targetCenterPoint, targetZoom);
+                
+                map.flyTo(targetCenterLatLng, targetZoom, { duration: 0.5 });
             });
 
             markersMap.set(loc.id, marker);
