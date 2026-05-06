@@ -326,10 +326,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Badges
         const badgesEl = document.getElementById('sb-badges');
         badgesEl.innerHTML = '';
-        if (loc.pip) badgesEl.innerHTML += '<span class="badge pip">Pride in Place</span>';
-        if (loc.efl) badgesEl.innerHTML += '<span class="badge efl">EFL</span>';
         if (loc.se) badgesEl.innerHTML += '<span class="badge se">Sport England</span>';
+        if (loc.pip) badgesEl.innerHTML += '<span class="badge pip">Pride in Place</span>';
         if (loc.ntc) badgesEl.innerHTML += '<span class="badge ntc">Nature T&C</span>';
+        if (loc.efl) badgesEl.innerHTML += '<span class="badge efl">EFL</span>';
 
         // Overlap banner
         const overlapSection = document.getElementById('sb-overlap');
