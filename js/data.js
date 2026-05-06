@@ -3334,6 +3334,3387 @@ const LOCATIONS = [
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
+    },
+    // === Phase 2 Neighbourhoods (169 places from gov.uk Phase 2 methodology note) ===
+    {
+            "id": "hawkesley",
+            "name": "Hawkesley",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.483,
+            "lng": -1.889,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Birmingham",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Birmingham. 8 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "druids_heath",
+            "name": "Druids Heath",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.475,
+            "lng": -1.881,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Birmingham",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Birmingham. 8 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "glebe_farm",
+            "name": "Glebe Farm",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.499,
+            "lng": -1.905,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Birmingham",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Birmingham. 8 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "kingstanding_south_east",
+            "name": "Kingstanding South East",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.459,
+            "lng": -1.865,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Birmingham",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Birmingham. 8 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "woodgate",
+            "name": "Woodgate",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.515,
+            "lng": -1.921,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Birmingham",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Birmingham. 8 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "sparkbrook_north",
+            "name": "Sparkbrook North",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.443,
+            "lng": -1.849,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Birmingham",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Birmingham. 8 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "fox_hollies",
+            "name": "Fox Hollies",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.531,
+            "lng": -1.937,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Birmingham",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Birmingham. 8 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "nechells",
+            "name": "Nechells",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.427,
+            "lng": -1.833,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Birmingham",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Birmingham. 8 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "speke_east",
+            "name": "Speke East",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.408,
+            "lng": -2.992,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Liverpool",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Liverpool. 4 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "everton_east",
+            "name": "Everton East",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.4,
+            "lng": -2.984,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Liverpool",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Liverpool. 4 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "norris_green_east",
+            "name": "Norris Green East",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.424,
+            "lng": -3.008,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Liverpool",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Liverpool. 4 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "fairfield_west_newsham_park",
+            "name": "Fairfield West & Newsham Park",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.384,
+            "lng": -2.968,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Liverpool",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Liverpool. 4 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "benchill_south_wythenshawe_central",
+            "name": "Benchill South & Wythenshawe Central",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.483,
+            "lng": -2.244,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Manchester",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Manchester. 4 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "hapurhey_south_monsall",
+            "name": "Hapurhey South & Monsall",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.475,
+            "lng": -2.236,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Manchester",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Manchester. 4 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "clayton_vale",
+            "name": "Clayton Vale",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.499,
+            "lng": -2.26,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Manchester",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Manchester. 4 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "gorton_south",
+            "name": "Gorton South",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.459,
+            "lng": -2.22,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Manchester",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Manchester. 4 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "middleton_park_avenue",
+            "name": "Middleton Park Avenue",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.8,
+            "lng": -1.549,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Leeds",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Leeds. 4 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "seacroft_north_monkswood",
+            "name": "Seacroft North & Monkswood",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.792,
+            "lng": -1.541,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Leeds",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Leeds. 4 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "farnley_east",
+            "name": "Farnley East",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.816,
+            "lng": -1.565,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Leeds",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Leeds. 4 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "armley_new_wortley",
+            "name": "Armley & New Wortley",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.776,
+            "lng": -1.525,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Leeds",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Leeds. 4 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "orchard_park",
+            "name": "Orchard Park",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.744,
+            "lng": -0.339,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Kingston upon Hull, City of",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Kingston upon Hull, City of. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "greatfield",
+            "name": "Greatfield",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.736,
+            "lng": -0.331,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Kingston upon Hull, City of",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Kingston upon Hull, City of. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "boulevard_st_andrews_quay",
+            "name": "Boulevard & St Andrew's Quay",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.76,
+            "lng": -0.355,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Kingston upon Hull, City of",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Kingston upon Hull, City of. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "birkenhead_central",
+            "name": "Birkenhead Central",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.374,
+            "lng": -3.031,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Wirral",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Wirral. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "seacombe",
+            "name": "Seacombe",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.366,
+            "lng": -3.023,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Wirral",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Wirral. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "woodchurch",
+            "name": "Woodchurch",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.39,
+            "lng": -3.047,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Wirral",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Wirral. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "peterlee_east",
+            "name": "Peterlee East",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.7,
+            "lng": -1.6,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "County Durham",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in County Durham. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "stanley_south",
+            "name": "Stanley South",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.692,
+            "lng": -1.592,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "County Durham",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in County Durham. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "crook_north_tow_law",
+            "name": "Crook North & Tow Law",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.716,
+            "lng": -1.616,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "County Durham",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in County Durham. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "eyres_monsell",
+            "name": "Eyres Monsell",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.623,
+            "lng": -1.135,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Leicester",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Leicester. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "braunstone_park_west",
+            "name": "Braunstone Park West",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.615,
+            "lng": -1.127,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Leicester",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Leicester. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "thurnby_lodge",
+            "name": "Thurnby Lodge",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.639,
+            "lng": -1.151,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Leicester",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Leicester. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "corby_kingswood",
+            "name": "Corby Kingswood",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.4,
+            "lng": -0.69,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "North Northamptonshire",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in North Northamptonshire. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "queensway_north_northamptonshire",
+            "name": "Queensway (North Northamptonshire)",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.392,
+            "lng": -0.682,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "North Northamptonshire",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in North Northamptonshire. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "kettering_avondale_grange",
+            "name": "Kettering Avondale Grange",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.416,
+            "lng": -0.706,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "North Northamptonshire",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in North Northamptonshire. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "raffles_morton",
+            "name": "Raffles & Morton",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.66,
+            "lng": -2.9,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Cumberland",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Cumberland. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "flimby_ellenborough_broughton_moor",
+            "name": "Flimby, Ellenborough & Broughton Moor",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.652,
+            "lng": -2.892,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Cumberland",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Cumberland. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "mirehouse_kells_woodhouse",
+            "name": "Mirehouse, Kells & Woodhouse",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.676,
+            "lng": -2.916,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Cumberland",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Cumberland. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "conisbrough_north",
+            "name": "Conisbrough North",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.523,
+            "lng": -1.134,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Doncaster",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Doncaster. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "new_rossington",
+            "name": "New Rossington",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.515,
+            "lng": -1.126,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Doncaster",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Doncaster. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "mexborough_west",
+            "name": "Mexborough West",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.539,
+            "lng": -1.15,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Doncaster",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Doncaster. 3 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "bentilee_ubberley",
+            "name": "Bentilee & Ubberley",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.006,
+            "lng": -2.178,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Stoke-on-Trent",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Stoke-on-Trent. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "meir_north",
+            "name": "Meir North",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.998,
+            "lng": -2.17,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Stoke-on-Trent",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Stoke-on-Trent. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "thorntree",
+            "name": "Thorntree",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.576,
+            "lng": -1.234,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Middlesbrough",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Middlesbrough. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "park_end",
+            "name": "Park End",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.568,
+            "lng": -1.226,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Middlesbrough",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Middlesbrough. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "batemoor_jordanthorpe",
+            "name": "Batemoor & Jordanthorpe",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.383,
+            "lng": -1.47,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Sheffield",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Sheffield. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "parson_cross",
+            "name": "Parson Cross",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.375,
+            "lng": -1.462,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Sheffield",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Sheffield. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "holme_wood",
+            "name": "Holme Wood",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.794,
+            "lng": -1.752,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Bradford",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Bradford. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "ravenscliffe",
+            "name": "Ravenscliffe",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.786,
+            "lng": -1.744,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Bradford",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Bradford. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "laithwaite_marsh_green",
+            "name": "Laithwaite & Marsh Green",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.545,
+            "lng": -2.632,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Wigan",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Wigan. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "platt_bridge_spring_view",
+            "name": "Platt Bridge & Spring View",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.537,
+            "lng": -2.624,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Wigan",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Wigan. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "penhill",
+            "name": "Penhill",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.562,
+            "lng": -1.785,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Swindon",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Swindon. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "walcot_east",
+            "name": "Walcot East",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.554,
+            "lng": -1.777,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Swindon",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Swindon. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "walker_north",
+            "name": "Walker North",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.978,
+            "lng": -1.612,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Newcastle upon Tyne",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Newcastle upon Tyne. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "elswick_south",
+            "name": "Elswick South",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.97,
+            "lng": -1.604,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Newcastle upon Tyne",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Newcastle upon Tyne. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "pendleton",
+            "name": "Pendleton",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.483,
+            "lng": -2.29,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Salford",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Salford. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "peel_green",
+            "name": "Peel Green",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.475,
+            "lng": -2.282,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Salford",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Salford. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "broxtowe_cinderhill",
+            "name": "Broxtowe & Cinderhill",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.95,
+            "lng": -1.15,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Nottingham",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Nottingham. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "st_anns_east",
+            "name": "St Ann's East",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.942,
+            "lng": -1.142,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Nottingham",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Nottingham. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "paulsgrove_east",
+            "name": "Paulsgrove East",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 50.8,
+            "lng": -1.091,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Portsmouth",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Portsmouth. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "fratton_west",
+            "name": "Fratton West",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 50.792,
+            "lng": -1.083,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Portsmouth",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Portsmouth. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "lupset",
+            "name": "Lupset",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.683,
+            "lng": -1.499,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Wakefield",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Wakefield. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "featherstone",
+            "name": "Featherstone",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.675,
+            "lng": -1.491,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Wakefield",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Wakefield. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "devonport_mount_wise_morice_town",
+            "name": "Devonport, Mount Wise & Morice Town",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 50.376,
+            "lng": -4.143,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Plymouth",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Plymouth. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "st_budeaux",
+            "name": "St Budeaux",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 50.368,
+            "lng": -4.135,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Plymouth",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Plymouth. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "leigh_park",
+            "name": "Leigh Park",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 50.855,
+            "lng": -0.984,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Havant",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Havant. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "cowplain_west",
+            "name": "Cowplain West",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 50.847,
+            "lng": -0.976,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Havant",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Havant. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "orton_malborne_goldhay",
+            "name": "Orton Malborne & Goldhay",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.573,
+            "lng": -0.24,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Peterborough",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Peterborough. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "paston",
+            "name": "Paston",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.565,
+            "lng": -0.232,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Peterborough",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Peterborough. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "lowestoft_central",
+            "name": "Lowestoft Central",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.35,
+            "lng": 1.5,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "East Suffolk",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in East Suffolk. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "felixstowe_west",
+            "name": "Felixstowe West",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.342,
+            "lng": 1.508,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "East Suffolk",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in East Suffolk. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "bridlington_west",
+            "name": "Bridlington West",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.843,
+            "lng": -0.7,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "East Riding of Yorkshire",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in East Riding of Yorkshire. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "withernsea_east_patrington",
+            "name": "Withernsea East & Patrington",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.835,
+            "lng": -0.692,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "East Riding of Yorkshire",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in East Riding of Yorkshire. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "weston_southampton",
+            "name": "Weston (Southampton)",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 50.903,
+            "lng": -1.404,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Southampton",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Southampton. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "redbridge_millbrook_west",
+            "name": "Redbridge & Millbrook West",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 50.895,
+            "lng": -1.396,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Southampton",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Southampton. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "chalvedon",
+            "name": "Chalvedon",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.572,
+            "lng": 0.463,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Basildon",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Basildon. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "laindon_central",
+            "name": "Laindon Central",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.564,
+            "lng": 0.471,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Basildon",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Basildon. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "thorney_close_plains_farm",
+            "name": "Thorney Close & Plains Farm",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.906,
+            "lng": -1.381,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Sunderland",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Sunderland. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "hendon_docks",
+            "name": "Hendon & Docks",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.898,
+            "lng": -1.373,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Sunderland",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Sunderland. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "blacon_south",
+            "name": "Blacon South",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.19,
+            "lng": -2.75,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Cheshire West and Chester",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Cheshire West and Chester. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "ellesmere_port_town_rossmore",
+            "name": "Ellesmere Port Town & Rossmore",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.182,
+            "lng": -2.742,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Cheshire West and Chester",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Cheshire West and Chester. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "bowthorpe_west_earlham",
+            "name": "Bowthorpe & West Earlham",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.63,
+            "lng": 1.297,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Norwich",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Norwich. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "heartsease_pilling_park",
+            "name": "Heartsease & Pilling Park",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.622,
+            "lng": 1.305,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Norwich",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Norwich. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "little_layton_little_carleton",
+            "name": "Little Layton & Little Carleton",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.818,
+            "lng": -3.051,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Blackpool",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Blackpool. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "brinnington",
+            "name": "Brinnington",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.41,
+            "lng": -2.157,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Stockport",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Stockport. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "hattersley",
+            "name": "Hattersley",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.487,
+            "lng": -2.099,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Tameside",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Tameside. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "hartcliffe",
+            "name": "Hartcliffe",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.454,
+            "lng": -2.597,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Bristol, City of",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Bristol, City of. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "warndon_west",
+            "name": "Warndon West",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.192,
+            "lng": -2.221,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Worcester",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Worcester. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "page_moss_fincham",
+            "name": "Page Moss & Fincham",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.482,
+            "lng": -2.889,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Knowsley",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Knowsley. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "parkwood_senacre",
+            "name": "Parkwood & Senacre",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.272,
+            "lng": 0.529,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Maidstone",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Maidstone. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "bootle_south",
+            "name": "Bootle South",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.503,
+            "lng": -3.006,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Sefton",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Sefton. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "birchwood_west",
+            "name": "Birchwood West",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.234,
+            "lng": -0.538,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Lincoln",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Lincoln. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "hough_green",
+            "name": "Hough Green",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.36,
+            "lng": -2.7,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Halton",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Halton. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "central_stockton_portrack",
+            "name": "Central Stockton & Portrack",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.568,
+            "lng": -1.318,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Stockton-on-Tees",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Stockton-on-Tees. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "barrow_central",
+            "name": "Barrow Central",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.11,
+            "lng": -2.74,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Westmorland and Furness",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Westmorland and Furness. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "willenhall",
+            "name": "Willenhall",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.407,
+            "lng": -1.51,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Coventry",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Coventry. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "cotmanhay",
+            "name": "Cotmanhay",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.93,
+            "lng": -1.32,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Erewash",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Erewash. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "sheppey_east",
+            "name": "Sheppey East",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.36,
+            "lng": 0.76,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Swale",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Swale. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "mablethorpe",
+            "name": "Mablethorpe",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.143,
+            "lng": 0.341,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "East Lindsey",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in East Lindsey. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "friar_park",
+            "name": "Friar Park",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.506,
+            "lng": -2.011,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Sandwell",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Sandwell. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "hurstead_smallbridge",
+            "name": "Hurstead & Smallbridge",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.611,
+            "lng": -2.161,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Rochdale",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Rochdale. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "harold_hill_east",
+            "name": "Harold Hill East",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.577,
+            "lng": 0.212,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Havering",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Havering. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "woodside",
+            "name": "Woodside",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.676,
+            "lng": -2.449,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Telford and Wrekin",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Telford and Wrekin. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "breightmet_north",
+            "name": "Breightmet North",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.577,
+            "lng": -2.428,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Bolton",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Bolton. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "whitehawk",
+            "name": "Whitehawk",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 50.843,
+            "lng": -0.131,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Brighton and Hove",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Brighton and Hove. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "skelmersdale_south_east",
+            "name": "Skelmersdale South East",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.62,
+            "lng": -2.81,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "West Lancashire",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in West Lancashire. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "greenstead",
+            "name": "Greenstead",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.889,
+            "lng": 0.904,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Colchester",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Colchester. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "chelmsley_wood_east",
+            "name": "Chelmsley Wood East",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.413,
+            "lng": -1.778,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Solihull",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Solihull. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "maltby_east",
+            "name": "Maltby East",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.431,
+            "lng": -1.356,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Rotherham",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Rotherham. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "biddick_hill",
+            "name": "Biddick Hill",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.981,
+            "lng": -1.491,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "South Tyneside",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in South Tyneside. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "birchen_coppice",
+            "name": "Birchen Coppice",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.38,
+            "lng": -2.24,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Wyre Forest",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Wyre Forest. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "ribbleton",
+            "name": "Ribbleton",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.763,
+            "lng": -2.703,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Preston",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Preston. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "beacon_lough_wrekenton",
+            "name": "Beacon Lough & Wrekenton",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.96,
+            "lng": -1.6,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Gateshead",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Gateshead. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "morecambe_west_end",
+            "name": "Morecambe West End",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 54.046,
+            "lng": -2.801,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Lancaster",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Lancaster. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "town_centre_east_fingerpost",
+            "name": "Town Centre East & Fingerpost",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.454,
+            "lng": -2.737,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "St. Helens",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in St. Helens. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "mixenden",
+            "name": "Mixenden",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.72,
+            "lng": -1.86,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Calderdale",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Calderdale. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "hulme",
+            "name": "Hulme",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.39,
+            "lng": -2.6,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Warrington",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Warrington. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "bridgwater_south",
+            "name": "Bridgwater South",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.03,
+            "lng": -2.93,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Somerset",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Somerset. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "new_addington_north",
+            "name": "New Addington North",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.376,
+            "lng": -0.099,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Croydon",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Croydon. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "hereford_south_west",
+            "name": "Hereford South West",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.056,
+            "lng": -2.716,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Herefordshire, County of",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Herefordshire, County of. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "fleetwood_town",
+            "name": "Fleetwood Town",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.9,
+            "lng": -2.96,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Wyre",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Wyre. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "blakenall_south",
+            "name": "Blakenall South",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.585,
+            "lng": -1.982,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Walsall",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Walsall. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "weston_bournville",
+            "name": "Weston Bournville",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.38,
+            "lng": -2.81,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "North Somerset",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in North Somerset. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "gainsborough_west",
+            "name": "Gainsborough West",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.39,
+            "lng": -0.61,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "West Lindsey",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in West Lindsey. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "shadsworth_intack",
+            "name": "Shadsworth & Intack",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.75,
+            "lng": -2.484,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Blackburn with Darwen",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Blackburn with Darwen. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "greenlands",
+            "name": "Greenlands",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.306,
+            "lng": -1.945,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Redditch",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Redditch. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "low_hill",
+            "name": "Low Hill",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.587,
+            "lng": -2.128,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Wolverhampton",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Wolverhampton. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "percy_main",
+            "name": "Percy Main",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 55.02,
+            "lng": -1.48,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "North Tyneside",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in North Tyneside. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "broadwey_littlemoor",
+            "name": "Broadwey & Littlemoor",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 50.72,
+            "lng": -2.44,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Dorset",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Dorset. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "glascote_heath",
+            "name": "Glascote Heath",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.634,
+            "lng": -1.691,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Tamworth",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Tamworth. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "rowner",
+            "name": "Rowner",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 50.795,
+            "lng": -1.124,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Gosport",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Gosport. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "grassmoor_holmewood",
+            "name": "Grassmoor & Holmewood",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.2,
+            "lng": -1.42,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "North East Derbyshire",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in North East Derbyshire. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "blatchcombe_blagdon",
+            "name": "Blatchcombe & Blagdon",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 50.462,
+            "lng": -3.525,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Torbay",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Torbay. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "bewbush",
+            "name": "Bewbush",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.109,
+            "lng": -0.187,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Crawley",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Crawley. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "chaddesden_west",
+            "name": "Chaddesden West",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.919,
+            "lng": -1.468,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Derby",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Derby. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "alt",
+            "name": "Alt",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.541,
+            "lng": -2.118,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Oldham",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Oldham. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "immingham_habrough",
+            "name": "Immingham & Habrough",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.567,
+            "lng": -0.079,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "North East Lincolnshire",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in North East Lincolnshire. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "salisbury_bemerton",
+            "name": "Salisbury Bemerton",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.071,
+            "lng": -1.795,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Wiltshire",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Wiltshire. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "camp_hill",
+            "name": "Camp Hill",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.523,
+            "lng": -1.468,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Nuneaton and Bedworth",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Nuneaton and Bedworth. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "shoeburyness",
+            "name": "Shoeburyness",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.538,
+            "lng": 0.714,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Southend-on-Sea",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Southend-on-Sea. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "radcliffe",
+            "name": "Radcliffe",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.593,
+            "lng": -2.298,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Bury",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Bury. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "greater_leys",
+            "name": "Greater Leys",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.752,
+            "lng": -1.258,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Oxford",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Oxford. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "wick_toddington",
+            "name": "Wick & Toddington",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 50.81,
+            "lng": -0.55,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Arun",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Arun. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "twerton",
+            "name": "Twerton",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.378,
+            "lng": -2.359,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Bath and North East Somerset",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Bath and North East Somerset. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "lakenheath",
+            "name": "Lakenheath",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 52.25,
+            "lng": 0.72,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "West Suffolk",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in West Suffolk. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "buckland_st_radigunds",
+            "name": "Buckland & St Radigunds",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.127,
+            "lng": 1.313,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Dover",
+                    "region": "England",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Dover. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "north_locality_priority_neighbourhood_cu",
+            "name": "North Locality Priority Neighbourhood / Cummings Park, Heathryfold and Middlefield, Northfield, Mastrick",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 57.15,
+            "lng": -2.094,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Aberdeen City",
+                    "region": "Scotland",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Aberdeen City. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "bingham_magdalene_the_christians_and_nid",
+            "name": "Bingham, Magdalene, The Christians and Niddrie",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 55.953,
+            "lng": -3.189,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "City of Edinburgh",
+                    "region": "Scotland",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in City of Edinburgh. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "the_forgotten_villages_braes_villages_an",
+            "name": "The Forgotten Villages / Braes Villages and Hallglen",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 56.001,
+            "lng": -3.784,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Falkirk",
+                    "region": "Scotland",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Falkirk. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "methil_and_buckhaven",
+            "name": "Methil and Buckhaven",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 56.208,
+            "lng": -3.15,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Fife",
+                    "region": "Scotland",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Fife. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "west_fife_villages_oakley_comrie_and_bla",
+            "name": "West Fife Villages / Oakley Comrie and Blairhall, Valleyfield Culross and Torryburn, Kincardine, Saline and Gowkhall",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 56.2,
+            "lng": -3.142,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Fife",
+                    "region": "Scotland",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Fife. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "castlemilk",
+            "name": "Castlemilk",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 55.861,
+            "lng": -4.25,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Glasgow City",
+                    "region": "Scotland",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Glasgow City. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "springburn_and_sighthill",
+            "name": "Springburn and Sighthill",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 55.853,
+            "lng": -4.242,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Glasgow City",
+                    "region": "Scotland",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Glasgow City. 2 neighbourhoods selected in this local authority."
+    },
+    {
+            "id": "north_west_and_east_sutherland",
+            "name": "North, West and East Sutherland",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 57.5,
+            "lng": -5,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Highland",
+                    "region": "Scotland",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Highland. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "three_towns_ardrossan_saltcoats_and_stev",
+            "name": "Three Towns / Ardrossan, Saltcoats, and Stevenston",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 55.687,
+            "lng": -4.67,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "North Ayrshire",
+                    "region": "Scotland",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in North Ayrshire. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "forgewood_north_motherwell_and_town_cent",
+            "name": "Forgewood, North Motherwell and town centre",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 55.86,
+            "lng": -3.96,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "North Lanarkshire",
+                    "region": "Scotland",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in North Lanarkshire. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "northern_ayr_and_town_centre_regeneratio",
+            "name": "Northern Ayr and Town Centre Regeneration Corridor",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 55.458,
+            "lng": -4.63,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "South Ayrshire",
+                    "region": "Scotland",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in South Ayrshire. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "hamilton_town_centre",
+            "name": "Hamilton Town Centre",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 55.677,
+            "lng": -3.781,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "South Lanarkshire",
+                    "region": "Scotland",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in South Lanarkshire. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "stornoway_and_lewis",
+            "name": "Stornoway and Lewis",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 58.21,
+            "lng": -6.385,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Na h-Eileanan Siar",
+                    "region": "Scotland",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Na h-Eileanan Siar. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "fauldhouse_whitburn_and_blackburn",
+            "name": "Fauldhouse, Whitburn and Blackburn",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 55.907,
+            "lng": -3.55,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "West Lothian",
+                    "region": "Scotland",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in West Lothian. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "sirhowy_valley",
+            "name": "Sirhowy Valley",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.725,
+            "lng": -3.204,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Blaenau Gwent",
+                    "region": "Wales",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Blaenau Gwent. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "upper_afan_valley",
+            "name": "Upper Afan Valley",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.595,
+            "lng": -3.782,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Neath Port Talbot",
+                    "region": "Wales",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Neath Port Talbot. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "high_street_and_dyfatty",
+            "name": "High Street and Dyfatty",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.622,
+            "lng": -3.943,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Swansea",
+                    "region": "Wales",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Swansea. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "newport_central_cluster",
+            "name": "Newport Central Cluster",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.584,
+            "lng": -2.998,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Newport",
+                    "region": "Wales",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Newport. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "rhondda_fach",
+            "name": "Rhondda Fach",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.607,
+            "lng": -3.434,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Rhondda Cynon Taf",
+                    "region": "Wales",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Rhondda Cynon Taf. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "ely_caerau",
+            "name": "Ely & Caerau",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.481,
+            "lng": -3.179,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Cardiff",
+                    "region": "Wales",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Cardiff. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "bargoed_aberbargoed_and_new_tredegar",
+            "name": "Bargoed, Aberbargoed and New Tredegar",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.579,
+            "lng": -3.218,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Caerphilly",
+                    "region": "Wales",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Caerphilly. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "llanelli_tyisha_glanymor_and_town_centre",
+            "name": "Llanelli: Tyisha, Glanymor and Town Centre",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 51.855,
+            "lng": -4.146,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Carmarthenshire",
+                    "region": "Wales",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Carmarthenshire. 1 neighbourhood selected in this local authority."
+    },
+    {
+            "id": "llandudno_tudno_2_tudno_1_and_mostyn_2",
+            "name": "Llandudno (Tudno 2, Tudno 1 and Mostyn 2)",
+            "type": "pip_only",
+            "status": "orange",
+            "lat": 53.28,
+            "lng": -3.829,
+            "phase": "phase_2",
+            "place": {
+                    "localAuthority": "Conwy",
+                    "region": "Wales",
+                    "population": "N/A",
+                    "imdDecile": "N/A",
+                    "deprivationNotes": "Phase 2 neighbourhood. Selected via combined IMD and CNI methodology.",
+                    "boardStatus": "Pending",
+                    "pipFunding": "£20m (10 years)"
+            },
+            "club": null,
+            "notes": "Phase 2 neighbourhood in Conwy. 1 neighbourhood selected in this local authority."
     }
 ];
 
