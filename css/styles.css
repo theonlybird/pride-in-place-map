@@ -27,6 +27,8 @@ body.light-theme {
     --border-color: rgba(0, 0, 0, 0.1);
 }
 
+.hidden { display: none !important; }
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
