@@ -392,6 +392,13 @@ body.light-theme .marker-inner { box-shadow: 0 0 8px rgba(0,0,0,0.15); }
 
 /* Single-layer border colours */
 .layer-pip-only .marker-inner { border-color: var(--color-pip); box-shadow: 0 0 10px var(--color-pip-glow); }
+
+/* Smaller dot for individual PiP neighbourhoods (phase 2/3) */
+.marker-small .marker-inner {
+    width: 14px; height: 14px;
+    border-width: 2px;
+    box-shadow: 0 0 6px var(--color-pip-glow);
+}
 .layer-efl-only .marker-inner { border-color: var(--color-efl); box-shadow: 0 0 10px var(--color-efl-glow); }
 .layer-se-only .marker-inner { border-color: var(--color-se); box-shadow: 0 0 10px var(--color-se-glow); }
 .layer-ntc-only .marker-inner { border-color: var(--color-ntc); box-shadow: 0 0 10px var(--color-ntc-glow); }

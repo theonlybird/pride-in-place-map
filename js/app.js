@@ -76,10 +76,62 @@ document.addEventListener('DOMContentLoaded', () => {
         if (raw.notes) loc.notes = raw.notes;
     });
 
-    // Also add EFL-only entries
+    // EFL clubs attach to their overarching place (town/city/borough) so that
+    // crossovers are computed at place level. Format: club name -> [place, LA alias (optional)]
+    const EFL_PLACE_MAP = {
+        'Birmingham City': ['Birmingham'], 'Blackburn Rovers': ['Blackburn', 'Blackburn with Darwen'],
+        'Bristol City': ['Bristol'], 'Charlton Athletic': ['Greenwich'], 'Coventry City': ['Coventry'],
+        'Derby County': ['Derby'], 'Hull City': ['Hull'], 'Ipswich Town': ['Ipswich'],
+        'Leicester City': ['Leicester'], 'Middlesbrough': ['Middlesbrough'], 'Millwall': ['Lewisham'],
+        'Norwich City': ['Norwich'], 'Oxford United': ['Oxford'], 'Portsmouth': ['Portsmouth'],
+        'Preston North End': ['Preston'], 'Queens Park Rangers': ['Hammersmith and Fulham'],
+        'Sheffield United': ['Sheffield'], 'Sheffield Wednesday': ['Sheffield'],
+        'Southampton': ['Southampton'], 'Stoke City': ['Stoke-on-Trent'], 'Swansea City': ['Swansea'],
+        'Watford': ['Watford'], 'West Bromwich Albion': ['West Bromwich', 'Sandwell'],
+        'AFC Wimbledon': ['Merton'], 'Blackpool': ['Blackpool'], 'Bolton Wanderers': ['Bolton'],
+        'Bradford City': ['Bradford'], 'Burton Albion': ['Burton upon Trent', 'East Staffordshire'],
+        'Cardiff City': ['Cardiff'], 'Exeter City': ['Exeter'], 'Huddersfield Town': ['Huddersfield', 'Kirklees'],
+        'Leyton Orient': ['Waltham Forest'], 'Lincoln City': ['Lincoln'], 'Luton Town': ['Luton'],
+        'Northampton Town': ['Northampton', 'West Northamptonshire'], 'Peterborough United': ['Peterborough'],
+        'Plymouth Argyle': ['Plymouth'], 'Port Vale': ['Stoke-on-Trent'], 'Reading': ['Reading'],
+        'Stevenage': ['Stevenage'], 'Stockport County': ['Stockport'], 'Wigan Athletic': ['Wigan'],
+        'Wycombe Wanderers': ['High Wycombe', 'Buckinghamshire'], 'Barnet': ['Barnet'],
+        'Barrow': ['Barrow-in-Furness', 'Westmorland and Furness'], 'Bristol Rovers': ['Bristol'],
+        'Bromley': ['Bromley'], 'Cambridge United': ['Cambridge'], 'Cheltenham Town': ['Cheltenham'],
+        'Colchester United': ['Colchester'], 'Crawley Town': ['Crawley'],
+        'Crewe Alexandra': ['Crewe', 'Cheshire East'], 'Fleetwood Town': ['Fleetwood', 'Wyre'],
+        'Gillingham': ['Gillingham', 'Medway'], 'Harrogate Town': ['Harrogate', 'North Yorkshire'],
+        'Milton Keynes Dons': ['Milton Keynes'], 'Notts County': ['Nottingham'],
+        'Oldham Athletic': ['Oldham'], 'Salford City': ['Salford'],
+        'Shrewsbury Town': ['Shrewsbury', 'Shropshire'], 'Swindon Town': ['Swindon'],
+        'Tranmere Rovers': ['Birkenhead', 'Wirral'], 'Walsall': ['Walsall']
+    };
+
+    // Place-name -> local authority aliases (so parent places inherit PiP data held under a differently-named LA)
+    const LA_ALIASES = {
+        'hull': 'Kingston upon Hull, City of',
+        'bristol': 'Bristol, City of',
+        'bournemouth': 'Bournemouth, Christchurch and Poole',
+        'herefordshire': 'Herefordshire, County of'
+    };
+
+    // Also add EFL-only entries — merged into their parent place where possible
     rawLocations.forEach(raw => {
         if (raw.type === 'efl_only') {
-            const loc = getOrCreate(raw.name, raw.lat, raw.lng);
+            let loc;
+            const mapping = raw.club ? EFL_PLACE_MAP[raw.club.name] : null;
+            if (mapping) {
+                const parent = getOrCreate(mapping[0], raw.lat, raw.lng);
+                if (!parent.efl) {
+                    loc = parent;
+                    if (mapping[1]) loc.laAlias = mapping[1];
+                } else {
+                    // Second club in the same place (e.g. Sheffield Wednesday) stays standalone
+                    loc = getOrCreate(raw.name, raw.lat, raw.lng);
+                }
+            } else {
+                loc = getOrCreate(raw.name, raw.lat, raw.lng);
+            }
             if (raw.club) {
                 loc.efl = {
                     name: raw.club.name,
@@ -95,24 +147,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Import SE places - match by name or LA
-    const laToLocKey = new Map();
-    locMap.forEach((loc, key) => {
-        if (loc.pip && loc.pip.localAuthority) {
-            laToLocKey.set(normalise(loc.pip.localAuthority), key);
-        }
-    });
-
+    // Import SE places - always at the overarching place (never attached to an individual
+    // PiP neighbourhood). PiP presence in the same LA is inherited onto the place below.
     sePlaces.forEach(se => {
         const key = normalise(se.name);
-        let loc;
-        if (locMap.has(key)) {
-            loc = locMap.get(key);
-        } else if (laToLocKey.has(key)) {
-            loc = locMap.get(laToLocKey.get(key));
-        } else {
-            loc = getOrCreate(se.name, se.lat, se.lng);
-        }
+        const loc = locMap.has(key) ? locMap.get(key) : getOrCreate(se.name, se.lat, se.lng);
         loc.se = { type: se.type, coverage: se.coverage };
     });
 
@@ -142,7 +181,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // For locations without PiP that match an LA name with PiP neighbourhoods, inherit PiP
     locMap.forEach(loc => {
         if (loc.pip) return; // already has direct PiP data
-        const locKey = normalise(loc.name);
+        const aliasLA = loc.laAlias || LA_ALIASES[normalise(loc.name)];
+        const locKey = normalise(aliasLA || loc.name);
         if (laNeighbourhoods.has(locKey)) {
             const hoods = laNeighbourhoods.get(locKey);
             // Use the first neighbourhood's data as a base, but mark as inherited
@@ -252,17 +292,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (layers.length === 1) {
             const layer = layers[0];
+            // Individual PiP neighbourhoods (phase 2/3) render as smaller dots to
+            // differentiate them from overarching place markers
+            const isNeighbourhood = layer === 'pip' && loc.pip && !loc.pip.inherited &&
+                (loc.pip.phase === 'phase_2' || loc.pip.phase === 'phase_3');
             let innerHtml = '';
             if (layer === 'efl') {
                 innerHtml = `<svg class="marker-icon-overlay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16l4-3-1.5-5h-5L8 13z"></path></svg>`;
-            } else {
+            } else if (!isNeighbourhood) {
                 const icons = { pip: '●', se: '▲', ntc: '🌿' };
                 innerHtml = `<span style="font-size:8px;color:white">${icons[layer] || '●'}</span>`;
             }
+            const size = isNeighbourhood ? 14 : 22;
             return L.divIcon({
-                className: `custom-marker layer-${layer}-only`,
+                className: `custom-marker layer-${layer}-only${isNeighbourhood ? ' marker-small' : ''}`,
                 html: `<div class="marker-inner">${innerHtml}</div>`,
-                iconSize: [22, 22], iconAnchor: [11, 11]
+                iconSize: [size, size], iconAnchor: [size / 2, size / 2]
             });
         }
 
