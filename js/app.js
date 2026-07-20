@@ -212,7 +212,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const phase = loc.pip.phase;
             const p1 = document.getElementById('pip-phase1').checked;
             const p2 = document.getElementById('pip-phase2').checked;
-            if ((phase === 'phase_1' && p1) || (phase === 'phase_2' && p2) || (phase !== 'phase_1' && phase !== 'phase_2' && (p1 || p2))) {
+            const p3 = document.getElementById('pip-phase3').checked;
+            if ((phase === 'phase_1' && p1) || (phase === 'phase_2' && p2) || (phase === 'phase_3' && p3) ||
+                (phase !== 'phase_1' && phase !== 'phase_2' && phase !== 'phase_3' && (p1 || p2 || p3))) {
                 visibleCount++;
                 hasVisibleLayer = true;
             }

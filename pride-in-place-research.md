@@ -37,7 +37,7 @@ The programme is the successor to and expansion of the previous government's **L
 | **April 2026** | Phase 1 delivery funding released to lead local authorities — official start of the delivery phase |
 | **April 2026** | 2026–2027 capacity funding payment issued to all participating places |
 | **17 July 2026** | Deadline for 169 Phase 2 Neighbourhood Boards to finalise membership and confirm area boundaries |
-| **March 2026** | Expansion of 40 additional communities announced under the social cohesion action plan "Protecting What Matters" |
+| **4 Feb 2026** | Expansion to 40 additional communities announced (£800m); the 40 neighbourhoods named on 20 March 2026 |
 | **Ongoing to 2035** | 10-year delivery period for all funded areas |
 
 ---
@@ -65,12 +65,12 @@ The programme is the successor to and expansion of the previous government's **L
 - Board membership and boundaries to be finalised by July 2026
 - Delivery funding commencing from mid-2026 onwards
 
-#### March 2026 Expansion — 40 Additional Communities
-- Announced as part of the **"Protecting What Matters"** social cohesion action plan
+#### 2026 Expansion — 40 Additional Communities (Phase 3)
+- Announced 4 February 2026; the 40 neighbourhoods named 20 March 2026
 - **Additional investment:** £800 million over 10 years
 - Each area eligible for up to £20 million
-- Selected using a new **"community cohesion filter"** alongside the existing Index of Multiple Deprivation and Community Needs Index
-- Specifically targets areas where social cohesion is under the greatest pressure (using the Community Life Survey)
+- All 40 are in England, selected using an updated methodology (full methodology note to be published by MHCLG)
+- Brings the core programme to 284 communities (379 areas including the Impact Fund)
 
 ### 3.3 Pride in Place Impact Fund
 
