@@ -393,11 +393,19 @@ body.light-theme .marker-inner { box-shadow: 0 0 8px rgba(0,0,0,0.15); }
 /* Single-layer border colours */
 .layer-pip-only .marker-inner { border-color: var(--color-pip); box-shadow: 0 0 10px var(--color-pip-glow); }
 
-/* Smaller dot for individual PiP neighbourhoods (phase 2/3) */
-.marker-small .marker-inner {
-    width: 14px; height: 14px;
-    border-width: 2px;
+/* Tier 2: smaller SOLID dots for localised areas (PiP neighbourhoods, SE places) */
+.marker-tier2 .marker-inner {
+    width: 12px; height: 12px;
+    border-width: 1px;
+    border-color: rgba(255,255,255,0.85);
+}
+.marker-tier2-pip .marker-inner {
+    background-color: var(--color-pip);
     box-shadow: 0 0 6px var(--color-pip-glow);
+}
+.marker-tier2-se .marker-inner {
+    background-color: var(--color-se);
+    box-shadow: 0 0 6px var(--color-se-glow);
 }
 .layer-efl-only .marker-inner { border-color: var(--color-efl); box-shadow: 0 0 10px var(--color-efl-glow); }
 .layer-se-only .marker-inner { border-color: var(--color-se); box-shadow: 0 0 10px var(--color-se-glow); }

@@ -46,8 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return loc;
     }
 
-    // Import PiP + EFL from existing data
+    // Import PiP + EFL from existing data (EFL-only clubs are handled separately below,
+    // so they attach to their overarching place rather than creating a club-named marker)
     rawLocations.forEach(raw => {
+        if (raw.type === 'efl_only') return;
         const loc = getOrCreate(raw.name, raw.lat, raw.lng);
         if (raw.type === 'pip_only' || raw.type === 'pip_efl') {
             loc.pip = {
@@ -104,7 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Milton Keynes Dons': ['Milton Keynes'], 'Notts County': ['Nottingham'],
         'Oldham Athletic': ['Oldham'], 'Salford City': ['Salford'],
         'Shrewsbury Town': ['Shrewsbury', 'Shropshire'], 'Swindon Town': ['Swindon'],
-        'Tranmere Rovers': ['Birkenhead', 'Wirral'], 'Walsall': ['Walsall']
+        'Tranmere Rovers': ['Birkenhead', 'Wirral'], 'Walsall': ['Walsall'],
+        'Newport County': ['Newport']
     };
 
     // Place-name -> local authority aliases (so parent places inherit PiP data held under a differently-named LA)
@@ -115,40 +118,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'herefordshire': 'Herefordshire, County of'
     };
 
-    // Also add EFL-only entries — merged into their parent place where possible
-    rawLocations.forEach(raw => {
-        if (raw.type === 'efl_only') {
-            let loc;
-            const mapping = raw.club ? EFL_PLACE_MAP[raw.club.name] : null;
-            if (mapping) {
-                const parent = getOrCreate(mapping[0], raw.lat, raw.lng);
-                if (!parent.efl) {
-                    loc = parent;
-                    if (mapping[1]) loc.laAlias = mapping[1];
-                } else {
-                    // Second club in the same place (e.g. Sheffield Wednesday) stays standalone
-                    loc = getOrCreate(raw.name, raw.lat, raw.lng);
-                }
-            } else {
-                loc = getOrCreate(raw.name, raw.lat, raw.lng);
-            }
-            if (raw.club) {
-                loc.efl = {
-                    name: raw.club.name,
-                    league: raw.club.league,
-                    stadium: raw.club.stadium,
-                    capacity: raw.club.capacity,
-                    communityArm: raw.club.communityArm,
-                    communityArmWebsite: raw.club.communityArmWebsite,
-                    onNeighbourhoodBoard: raw.club.onNeighbourhoodBoard
-                };
-            }
-            if (raw.notes) loc.notes = raw.notes;
-        }
-    });
-
     // Import SE places - always at the overarching place (never attached to an individual
     // PiP neighbourhood). PiP presence in the same LA is inherited onto the place below.
+    // Imported BEFORE EFL clubs so Tier 1 markers take town/city-centre coordinates.
     sePlaces.forEach(se => {
         const key = normalise(se.name);
         const loc = locMap.has(key) ? locMap.get(key) : getOrCreate(se.name, se.lat, se.lng);
@@ -175,6 +147,41 @@ document.addEventListener('DOMContentLoaded', () => {
             const laKey = normalise(loc.pip.localAuthority);
             if (!laNeighbourhoods.has(laKey)) laNeighbourhoods.set(laKey, []);
             laNeighbourhoods.get(laKey).push(loc);
+        }
+    });
+
+    // Add EFL-only clubs. A club merges into its town/city/borough marker only when that
+    // place has (or will inherit) other layers; otherwise it stands alone at its stadium.
+    rawLocations.forEach(raw => {
+        if (raw.type === 'efl_only') {
+            let loc = null;
+            const mapping = raw.club ? EFL_PLACE_MAP[raw.club.name] : null;
+            if (mapping) {
+                const placeKey = normalise(mapping[0]);
+                const laKey = normalise(mapping[1] || LA_ALIASES[placeKey] || mapping[0]);
+                const placeHasOtherLayers = locMap.has(placeKey) || laNeighbourhoods.has(laKey);
+                if (placeHasOtherLayers) {
+                    const parent = getOrCreate(mapping[0], raw.lat, raw.lng);
+                    if (!parent.efl) {
+                        loc = parent;
+                        if (mapping[1]) loc.laAlias = mapping[1];
+                    }
+                    // Second club in the same place (e.g. Sheffield Wednesday) stays standalone
+                }
+            }
+            if (!loc) loc = getOrCreate(raw.name, raw.lat, raw.lng);
+            if (raw.club) {
+                loc.efl = {
+                    name: raw.club.name,
+                    league: raw.club.league,
+                    stadium: raw.club.stadium,
+                    capacity: raw.club.capacity,
+                    communityArm: raw.club.communityArm,
+                    communityArmWebsite: raw.club.communityArmWebsite,
+                    onNeighbourhoodBoard: raw.club.onNeighbourhoodBoard
+                };
+            }
+            if (raw.notes) loc.notes = raw.notes;
         }
     });
 
@@ -292,20 +299,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (layers.length === 1) {
             const layer = layers[0];
-            // Individual PiP neighbourhoods (phase 2/3) render as smaller dots to
-            // differentiate them from overarching place markers
-            const isNeighbourhood = layer === 'pip' && loc.pip && !loc.pip.inherited &&
-                (loc.pip.phase === 'phase_2' || loc.pip.phase === 'phase_3');
+            // Tier 2: localised single-layer areas render as smaller SOLID dots —
+            // PiP phase 2/3 neighbourhoods (orange) and standalone SE places (blue).
+            // Tier 1 keeps the larger ring style: phase 1 towns, standalone NTC (leaf icon)
+            // and standalone EFL clubs (football icon).
+            const isTier2 =
+                (layer === 'pip' && loc.pip && !loc.pip.inherited &&
+                    (loc.pip.phase === 'phase_2' || loc.pip.phase === 'phase_3')) ||
+                layer === 'se';
             let innerHtml = '';
             if (layer === 'efl') {
                 innerHtml = `<svg class="marker-icon-overlay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16l4-3-1.5-5h-5L8 13z"></path></svg>`;
-            } else if (!isNeighbourhood) {
+            } else if (!isTier2) {
                 const icons = { pip: '●', se: '▲', ntc: '🌿' };
                 innerHtml = `<span style="font-size:8px;color:white">${icons[layer] || '●'}</span>`;
             }
-            const size = isNeighbourhood ? 14 : 22;
+            const size = isTier2 ? 12 : 22;
             return L.divIcon({
-                className: `custom-marker layer-${layer}-only${isNeighbourhood ? ' marker-small' : ''}`,
+                className: `custom-marker layer-${layer}-only${isTier2 ? ' marker-tier2 marker-tier2-' + layer : ''}`,
                 html: `<div class="marker-inner">${innerHtml}</div>`,
                 iconSize: [size, size], iconAnchor: [size / 2, size / 2]
             });

@@ -828,15 +828,15 @@ const LOCATIONS = [
         "name": "Newport",
         "type": "efl_only",
         "status": "blue",
-        "lat": 51.5882332,
-        "lng": -2.9974967,
+        "lat": 51.5886,
+        "lng": -2.988,
         "phase": "none",
         "place": null,
         "club": {
             "name": "Newport County",
             "league": "League Two",
-            "stadium": "Local Stadium",
-            "capacity": 7850,
+            "stadium": "Rodney Parade",
+            "capacity": 8700,
             "communityArm": "Newport County Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": true
@@ -1128,8 +1128,8 @@ const LOCATIONS = [
         "name": "Birmingham City",
         "type": "efl_only",
         "status": "grey",
-        "lat": 52.4822706,
-        "lng": -1.8888148,
+        "lat": 52.4756,
+        "lng": -1.8683,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1143,8 +1143,8 @@ const LOCATIONS = [
         "club": {
             "name": "Birmingham City",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "St Andrew's @ Knighthead Park",
+            "capacity": 29409,
             "communityArm": "Birmingham City Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1156,8 +1156,8 @@ const LOCATIONS = [
         "name": "Blackburn Rovers",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.8281097,
-        "lng": -2.4585002,
+        "lat": 53.7286,
+        "lng": -2.4893,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1171,8 +1171,8 @@ const LOCATIONS = [
         "club": {
             "name": "Blackburn Rovers",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Ewood Park",
+            "capacity": 31367,
             "communityArm": "Blackburn Rovers Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1184,8 +1184,8 @@ const LOCATIONS = [
         "name": "Bristol City",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.4538022,
-        "lng": -2.5972985,
+        "lat": 51.44,
+        "lng": -2.6202,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1199,8 +1199,8 @@ const LOCATIONS = [
         "club": {
             "name": "Bristol City",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Ashton Gate",
+            "capacity": 27000,
             "communityArm": "Bristol City Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1212,8 +1212,8 @@ const LOCATIONS = [
         "name": "Charlton Athletic",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.4436971,
-        "lng": 0.072226,
+        "lat": 51.4865,
+        "lng": 0.0364,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1227,8 +1227,8 @@ const LOCATIONS = [
         "club": {
             "name": "Charlton Athletic",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "The Valley",
+            "capacity": 27111,
             "communityArm": "Charlton Athletic Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1240,8 +1240,8 @@ const LOCATIONS = [
         "name": "Coventry City",
         "type": "efl_only",
         "status": "grey",
-        "lat": 52.4481581,
-        "lng": -1.4970174,
+        "lat": 52.4481,
+        "lng": -1.4956,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1255,8 +1255,8 @@ const LOCATIONS = [
         "club": {
             "name": "Coventry City",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Coventry Building Society Arena",
+            "capacity": 32609,
             "communityArm": "Coventry City Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1268,8 +1268,8 @@ const LOCATIONS = [
         "name": "Derby County",
         "type": "efl_only",
         "status": "grey",
-        "lat": 52.9188239,
-        "lng": -1.4675517,
+        "lat": 52.9149,
+        "lng": -1.4472,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1283,8 +1283,8 @@ const LOCATIONS = [
         "club": {
             "name": "Derby County",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Pride Park Stadium",
+            "capacity": 33597,
             "communityArm": "Derby County Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1296,8 +1296,8 @@ const LOCATIONS = [
         "name": "Hull City",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.7435722,
-        "lng": -0.3394758,
+        "lat": 53.7466,
+        "lng": -0.3676,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1311,8 +1311,8 @@ const LOCATIONS = [
         "club": {
             "name": "Hull City",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "MKM Stadium",
+            "capacity": 25586,
             "communityArm": "Hull City Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1324,8 +1324,8 @@ const LOCATIONS = [
         "name": "Ipswich Town",
         "type": "efl_only",
         "status": "grey",
-        "lat": 52.0576673,
-        "lng": 1.1525137,
+        "lat": 52.055,
+        "lng": 1.1447,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1339,8 +1339,8 @@ const LOCATIONS = [
         "club": {
             "name": "Ipswich Town",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Portman Road",
+            "capacity": 30056,
             "communityArm": "Ipswich Town Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1352,8 +1352,8 @@ const LOCATIONS = [
         "name": "Leicester City",
         "type": "efl_only",
         "status": "grey",
-        "lat": 52.6232734,
-        "lng": -1.1350487,
+        "lat": 52.6204,
+        "lng": -1.1422,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1367,8 +1367,8 @@ const LOCATIONS = [
         "club": {
             "name": "Leicester City",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "King Power Stadium",
+            "capacity": 32312,
             "communityArm": "Leicester City Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1380,8 +1380,8 @@ const LOCATIONS = [
         "name": "Middlesbrough",
         "type": "efl_only",
         "status": "grey",
-        "lat": 54.5760419,
-        "lng": -1.2344047,
+        "lat": 54.5781,
+        "lng": -1.217,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1395,8 +1395,8 @@ const LOCATIONS = [
         "club": {
             "name": "Middlesbrough",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Riverside Stadium",
+            "capacity": 34742,
             "communityArm": "Middlesbrough Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1408,8 +1408,8 @@ const LOCATIONS = [
         "name": "Millwall",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.4933423,
-        "lng": -0.0212187,
+        "lat": 51.4859,
+        "lng": -0.0509,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1423,8 +1423,8 @@ const LOCATIONS = [
         "club": {
             "name": "Millwall",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "The Den",
+            "capacity": 20146,
             "communityArm": "Millwall Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1436,8 +1436,8 @@ const LOCATIONS = [
         "name": "Norwich City",
         "type": "efl_only",
         "status": "grey",
-        "lat": 52.6285576,
-        "lng": 1.2923954,
+        "lat": 52.6221,
+        "lng": 1.3091,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1451,8 +1451,8 @@ const LOCATIONS = [
         "club": {
             "name": "Norwich City",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Carrow Road",
+            "capacity": 27359,
             "communityArm": "Norwich City Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1464,8 +1464,8 @@ const LOCATIONS = [
         "name": "Oxford United",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.7161609,
-        "lng": -1.2097875,
+        "lat": 51.7166,
+        "lng": -1.2087,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1479,8 +1479,8 @@ const LOCATIONS = [
         "club": {
             "name": "Oxford United",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Kassam Stadium",
+            "capacity": 12500,
             "communityArm": "Oxford United Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1492,8 +1492,8 @@ const LOCATIONS = [
         "name": "Portsmouth",
         "type": "efl_only",
         "status": "grey",
-        "lat": 50.800031,
-        "lng": -1.0906023,
+        "lat": 50.7964,
+        "lng": -1.0639,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1507,8 +1507,8 @@ const LOCATIONS = [
         "club": {
             "name": "Portsmouth",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Fratton Park",
+            "capacity": 20620,
             "communityArm": "Portsmouth Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1520,8 +1520,8 @@ const LOCATIONS = [
         "name": "Preston North End",
         "type": "efl_only",
         "status": "grey",
-        "lat": 50.8130099,
-        "lng": -1.0698025,
+        "lat": 53.7722,
+        "lng": -2.6881,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1535,8 +1535,8 @@ const LOCATIONS = [
         "club": {
             "name": "Preston North End",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Deepdale",
+            "capacity": 23404,
             "communityArm": "Preston North End Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1548,8 +1548,8 @@ const LOCATIONS = [
         "name": "Queens Park Rangers",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.510754,
-        "lng": -0.2300894,
+        "lat": 51.5093,
+        "lng": -0.2321,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1563,8 +1563,8 @@ const LOCATIONS = [
         "club": {
             "name": "Queens Park Rangers",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Loftus Road",
+            "capacity": 18439,
             "communityArm": "Queens Park Rangers Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1576,8 +1576,8 @@ const LOCATIONS = [
         "name": "Sheffield United",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.5107145,
-        "lng": -0.1494268,
+        "lat": 53.3703,
+        "lng": -1.4709,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1591,8 +1591,8 @@ const LOCATIONS = [
         "club": {
             "name": "Sheffield United",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Bramall Lane",
+            "capacity": 32050,
             "communityArm": "Sheffield United Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1604,8 +1604,8 @@ const LOCATIONS = [
         "name": "Sheffield Wednesday",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.4140245,
-        "lng": -1.4124535,
+        "lat": 53.4114,
+        "lng": -1.5006,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1619,8 +1619,8 @@ const LOCATIONS = [
         "club": {
             "name": "Sheffield Wednesday",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Hillsborough",
+            "capacity": 39732,
             "communityArm": "Sheffield Wednesday Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1632,8 +1632,8 @@ const LOCATIONS = [
         "name": "Southampton",
         "type": "efl_only",
         "status": "grey",
-        "lat": 50.9025349,
-        "lng": -1.404189,
+        "lat": 50.9058,
+        "lng": -1.3911,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1647,8 +1647,8 @@ const LOCATIONS = [
         "club": {
             "name": "Southampton",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "St Mary's Stadium",
+            "capacity": 32384,
             "communityArm": "Southampton Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1660,8 +1660,8 @@ const LOCATIONS = [
         "name": "Stoke City",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.006213,
-        "lng": -2.1777554,
+        "lat": 52.9884,
+        "lng": -2.1754,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1675,8 +1675,8 @@ const LOCATIONS = [
         "club": {
             "name": "Stoke City",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "bet365 Stadium",
+            "capacity": 30089,
             "communityArm": "Stoke City Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1688,8 +1688,8 @@ const LOCATIONS = [
         "name": "Swansea City",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.6195955,
-        "lng": -3.9459248,
+        "lat": 51.6423,
+        "lng": -3.9351,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1703,8 +1703,8 @@ const LOCATIONS = [
         "club": {
             "name": "Swansea City",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Swansea.com Stadium",
+            "capacity": 21088,
             "communityArm": "Swansea City Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1716,8 +1716,8 @@ const LOCATIONS = [
         "name": "Watford",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.6553875,
-        "lng": -0.3957425,
+        "lat": 51.6499,
+        "lng": -0.4015,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1731,8 +1731,8 @@ const LOCATIONS = [
         "club": {
             "name": "Watford",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Vicarage Road",
+            "capacity": 22200,
             "communityArm": "Watford Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1744,8 +1744,8 @@ const LOCATIONS = [
         "name": "West Bromwich Albion",
         "type": "efl_only",
         "status": "grey",
-        "lat": 52.5153087,
-        "lng": -2.0206248,
+        "lat": 52.509,
+        "lng": -1.9639,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1759,8 +1759,8 @@ const LOCATIONS = [
         "club": {
             "name": "West Bromwich Albion",
             "league": "Championship",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "The Hawthorns",
+            "capacity": 26850,
             "communityArm": "West Bromwich Albion Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1772,8 +1772,8 @@ const LOCATIONS = [
         "name": "AFC Wimbledon",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.4315282,
-        "lng": -0.1867047,
+        "lat": 51.4318,
+        "lng": -0.1872,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1787,8 +1787,8 @@ const LOCATIONS = [
         "club": {
             "name": "AFC Wimbledon",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Plough Lane",
+            "capacity": 9215,
             "communityArm": "AFC Wimbledon Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1800,8 +1800,8 @@ const LOCATIONS = [
         "name": "Blackpool",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.8179442,
-        "lng": -3.0509812,
+        "lat": 53.8046,
+        "lng": -3.048,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1815,8 +1815,8 @@ const LOCATIONS = [
         "club": {
             "name": "Blackpool",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Bloomfield Road",
+            "capacity": 16616,
             "communityArm": "Blackpool Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1828,8 +1828,8 @@ const LOCATIONS = [
         "name": "Bolton Wanderers",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.5794299,
-        "lng": -2.5159163,
+        "lat": 53.5805,
+        "lng": -2.5355,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1843,8 +1843,8 @@ const LOCATIONS = [
         "club": {
             "name": "Bolton Wanderers",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Toughsheet Community Stadium",
+            "capacity": 28723,
             "communityArm": "Bolton Wanderers Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1856,8 +1856,8 @@ const LOCATIONS = [
         "name": "Bradford City",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.7944229,
-        "lng": -1.7519186,
+        "lat": 53.8044,
+        "lng": -1.759,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1871,8 +1871,8 @@ const LOCATIONS = [
         "club": {
             "name": "Bradford City",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Valley Parade",
+            "capacity": 25136,
             "communityArm": "Bradford City Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1884,8 +1884,8 @@ const LOCATIONS = [
         "name": "Burton Albion",
         "type": "efl_only",
         "status": "grey",
-        "lat": 52.8219259,
-        "lng": -1.6268679,
+        "lat": 52.8218,
+        "lng": -1.627,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1899,8 +1899,8 @@ const LOCATIONS = [
         "club": {
             "name": "Burton Albion",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Pirelli Stadium",
+            "capacity": 6912,
             "communityArm": "Burton Albion Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1912,8 +1912,8 @@ const LOCATIONS = [
         "name": "Cardiff City",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.4816546,
-        "lng": -3.1791934,
+        "lat": 51.4728,
+        "lng": -3.203,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1927,8 +1927,8 @@ const LOCATIONS = [
         "club": {
             "name": "Cardiff City",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Cardiff City Stadium",
+            "capacity": 33280,
             "communityArm": "Cardiff City Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1940,8 +1940,8 @@ const LOCATIONS = [
         "name": "Exeter City",
         "type": "efl_only",
         "status": "grey",
-        "lat": 50.7115272,
-        "lng": -3.5295485,
+        "lat": 50.7307,
+        "lng": -3.5211,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1955,8 +1955,8 @@ const LOCATIONS = [
         "club": {
             "name": "Exeter City",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "St James Park",
+            "capacity": 8696,
             "communityArm": "Exeter City Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1968,8 +1968,8 @@ const LOCATIONS = [
         "name": "Huddersfield Town",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.6466645,
-        "lng": -1.7822482,
+        "lat": 53.6543,
+        "lng": -1.7683,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -1983,8 +1983,8 @@ const LOCATIONS = [
         "club": {
             "name": "Huddersfield Town",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "John Smith's Stadium",
+            "capacity": 24121,
             "communityArm": "Huddersfield Town Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -1996,8 +1996,8 @@ const LOCATIONS = [
         "name": "Leyton Orient",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.5599794,
-        "lng": -0.013533,
+        "lat": 51.5601,
+        "lng": -0.0126,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2011,8 +2011,8 @@ const LOCATIONS = [
         "club": {
             "name": "Leyton Orient",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Brisbane Road",
+            "capacity": 9271,
             "communityArm": "Leyton Orient Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2024,8 +2024,8 @@ const LOCATIONS = [
         "name": "Lincoln City",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.2293545,
-        "lng": -0.5404819,
+        "lat": 53.2184,
+        "lng": -0.5407,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2039,8 +2039,8 @@ const LOCATIONS = [
         "club": {
             "name": "Lincoln City",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "LNER Stadium",
+            "capacity": 10669,
             "communityArm": "Lincoln City Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2052,8 +2052,8 @@ const LOCATIONS = [
         "name": "Luton Town",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.8784385,
-        "lng": -0.4152837,
+        "lat": 51.8842,
+        "lng": -0.4316,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2067,8 +2067,8 @@ const LOCATIONS = [
         "club": {
             "name": "Luton Town",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Kenilworth Road",
+            "capacity": 11500,
             "communityArm": "Luton Town Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2080,8 +2080,8 @@ const LOCATIONS = [
         "name": "Northampton Town",
         "type": "efl_only",
         "status": "grey",
-        "lat": 52.2354372,
-        "lng": -0.8933993,
+        "lat": 52.2354,
+        "lng": -0.9335,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2095,8 +2095,8 @@ const LOCATIONS = [
         "club": {
             "name": "Northampton Town",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Sixfields Stadium",
+            "capacity": 8199,
             "communityArm": "Northampton Town Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2108,8 +2108,8 @@ const LOCATIONS = [
         "name": "Peterborough United",
         "type": "efl_only",
         "status": "grey",
-        "lat": 54,
-        "lng": -2,
+        "lat": 52.5648,
+        "lng": -0.2405,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2123,8 +2123,8 @@ const LOCATIONS = [
         "club": {
             "name": "Peterborough United",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Weston Homes Stadium",
+            "capacity": 15314,
             "communityArm": "Peterborough United Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2136,8 +2136,8 @@ const LOCATIONS = [
         "name": "Plymouth Argyle",
         "type": "efl_only",
         "status": "grey",
-        "lat": 54,
-        "lng": -2,
+        "lat": 50.3881,
+        "lng": -4.1509,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2151,8 +2151,8 @@ const LOCATIONS = [
         "club": {
             "name": "Plymouth Argyle",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Home Park",
+            "capacity": 17900,
             "communityArm": "Plymouth Argyle Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2164,8 +2164,8 @@ const LOCATIONS = [
         "name": "Port Vale",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.7992041,
-        "lng": -0.084422,
+        "lat": 53.0499,
+        "lng": -2.1925,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2179,8 +2179,8 @@ const LOCATIONS = [
         "club": {
             "name": "Port Vale",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Vale Park",
+            "capacity": 15036,
             "communityArm": "Port Vale Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2192,8 +2192,8 @@ const LOCATIONS = [
         "name": "Reading",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.4514953,
-        "lng": -0.9836342,
+        "lat": 51.4222,
+        "lng": -0.9826,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2207,8 +2207,8 @@ const LOCATIONS = [
         "club": {
             "name": "Reading",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Select Car Leasing Stadium",
+            "capacity": 24161,
             "communityArm": "Reading Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2220,8 +2220,8 @@ const LOCATIONS = [
         "name": "Stevenage",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.9016663,
-        "lng": -0.2027155,
+        "lat": 51.8898,
+        "lng": -0.1937,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2235,8 +2235,8 @@ const LOCATIONS = [
         "club": {
             "name": "Stevenage",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Lamex Stadium",
+            "capacity": 7800,
             "communityArm": "Stevenage Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2248,8 +2248,8 @@ const LOCATIONS = [
         "name": "Stockport County",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.4067172,
-        "lng": -2.1563726,
+        "lat": 53.4004,
+        "lng": -2.1688,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2263,8 +2263,8 @@ const LOCATIONS = [
         "club": {
             "name": "Stockport County",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Edgeley Park",
+            "capacity": 10852,
             "communityArm": "Stockport County Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2276,8 +2276,8 @@ const LOCATIONS = [
         "name": "Wigan Athletic",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.5637677,
-        "lng": -2.6697973,
+        "lat": 53.5477,
+        "lng": -2.6538,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2291,8 +2291,8 @@ const LOCATIONS = [
         "club": {
             "name": "Wigan Athletic",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Brick Community Stadium",
+            "capacity": 25138,
             "communityArm": "Wigan Athletic Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2304,8 +2304,8 @@ const LOCATIONS = [
         "name": "Wycombe Wanderers",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.603859,
-        "lng": -0.8068998,
+        "lat": 51.6306,
+        "lng": -0.8002,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2319,8 +2319,8 @@ const LOCATIONS = [
         "club": {
             "name": "Wycombe Wanderers",
             "league": "League One",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Adams Park",
+            "capacity": 10137,
             "communityArm": "Wycombe Wanderers Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2332,8 +2332,8 @@ const LOCATIONS = [
         "name": "Barnet",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.65309,
-        "lng": -0.2002261,
+        "lat": 51.603,
+        "lng": -0.2933,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2347,8 +2347,8 @@ const LOCATIONS = [
         "club": {
             "name": "Barnet",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "The Hive Stadium",
+            "capacity": 6500,
             "communityArm": "Barnet Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2360,8 +2360,8 @@ const LOCATIONS = [
         "name": "Barrow",
         "type": "efl_only",
         "status": "grey",
-        "lat": 54.1007661,
-        "lng": -3.2087524,
+        "lat": 54.1225,
+        "lng": -3.2337,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2375,8 +2375,8 @@ const LOCATIONS = [
         "club": {
             "name": "Barrow",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Holker Street",
+            "capacity": 5045,
             "communityArm": "Barrow Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2388,8 +2388,8 @@ const LOCATIONS = [
         "name": "Bristol Rovers",
         "type": "efl_only",
         "status": "grey",
-        "lat": 54,
-        "lng": -2,
+        "lat": 51.4862,
+        "lng": -2.583,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2403,8 +2403,8 @@ const LOCATIONS = [
         "club": {
             "name": "Bristol Rovers",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Memorial Stadium",
+            "capacity": 9832,
             "communityArm": "Bristol Rovers Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2416,8 +2416,8 @@ const LOCATIONS = [
         "name": "Bromley",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.4028046,
-        "lng": 0.0148142,
+        "lat": 51.391,
+        "lng": 0.0217,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2431,8 +2431,8 @@ const LOCATIONS = [
         "club": {
             "name": "Bromley",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Hayes Lane",
+            "capacity": 5000,
             "communityArm": "Bromley Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2444,8 +2444,8 @@ const LOCATIONS = [
         "name": "Cambridge United",
         "type": "efl_only",
         "status": "grey",
-        "lat": 52.2120297,
-        "lng": 0.1541831,
+        "lat": 52.2122,
+        "lng": 0.1544,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2459,8 +2459,8 @@ const LOCATIONS = [
         "club": {
             "name": "Cambridge United",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Abbey Stadium",
+            "capacity": 8127,
             "communityArm": "Cambridge United Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2472,8 +2472,8 @@ const LOCATIONS = [
         "name": "Cheltenham Town",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.8971284,
-        "lng": -2.0777875,
+        "lat": 51.9062,
+        "lng": -2.0602,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2487,8 +2487,8 @@ const LOCATIONS = [
         "club": {
             "name": "Cheltenham Town",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Whaddon Road",
+            "capacity": 7066,
             "communityArm": "Cheltenham Town Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2500,8 +2500,8 @@ const LOCATIONS = [
         "name": "Colchester United",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.9223325,
-        "lng": 0.8944479,
+        "lat": 51.9234,
+        "lng": 0.8977,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2515,8 +2515,8 @@ const LOCATIONS = [
         "club": {
             "name": "Colchester United",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "JobServe Community Stadium",
+            "capacity": 10105,
             "communityArm": "Colchester United Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2528,8 +2528,8 @@ const LOCATIONS = [
         "name": "Crawley Town",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.1115683,
-        "lng": -0.2067909,
+        "lat": 51.0995,
+        "lng": -0.1949,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2543,8 +2543,8 @@ const LOCATIONS = [
         "club": {
             "name": "Crawley Town",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Broadfield Stadium",
+            "capacity": 6134,
             "communityArm": "Crawley Town Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2556,8 +2556,8 @@ const LOCATIONS = [
         "name": "Crewe Alexandra",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.0861101,
-        "lng": -2.4355394,
+        "lat": 53.0875,
+        "lng": -2.4356,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2571,8 +2571,8 @@ const LOCATIONS = [
         "club": {
             "name": "Crewe Alexandra",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Gresty Road",
+            "capacity": 10153,
             "communityArm": "Crewe Alexandra Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2584,8 +2584,8 @@ const LOCATIONS = [
         "name": "Fleetwood Town",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.9246318,
-        "lng": -3.0076372,
+        "lat": 53.9166,
+        "lng": -3.0246,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2599,8 +2599,8 @@ const LOCATIONS = [
         "club": {
             "name": "Fleetwood Town",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Highbury Stadium",
+            "capacity": 5327,
             "communityArm": "Fleetwood Town Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2612,8 +2612,8 @@ const LOCATIONS = [
         "name": "Gillingham",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.3871701,
-        "lng": 0.5461611,
+        "lat": 51.3842,
+        "lng": 0.5606,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2627,8 +2627,8 @@ const LOCATIONS = [
         "club": {
             "name": "Gillingham",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Priestfield Stadium",
+            "capacity": 11582,
             "communityArm": "Gillingham Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2640,8 +2640,8 @@ const LOCATIONS = [
         "name": "Harrogate Town",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.9917212,
-        "lng": -1.5144875,
+        "lat": 53.988,
+        "lng": -1.5127,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2655,8 +2655,8 @@ const LOCATIONS = [
         "club": {
             "name": "Harrogate Town",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Wetherby Road",
+            "capacity": 5000,
             "communityArm": "Harrogate Town Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2668,8 +2668,8 @@ const LOCATIONS = [
         "name": "Milton Keynes Dons",
         "type": "efl_only",
         "status": "grey",
-        "lat": 54,
-        "lng": -2,
+        "lat": 52.0096,
+        "lng": -0.7334,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2683,8 +2683,8 @@ const LOCATIONS = [
         "club": {
             "name": "Milton Keynes Dons",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Stadium MK",
+            "capacity": 30500,
             "communityArm": "Milton Keynes Dons Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2696,8 +2696,8 @@ const LOCATIONS = [
         "name": "Notts County",
         "type": "efl_only",
         "status": "grey",
-        "lat": 52.9418058,
-        "lng": -1.1243607,
+        "lat": 52.9425,
+        "lng": -1.1373,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2711,8 +2711,8 @@ const LOCATIONS = [
         "club": {
             "name": "Notts County",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Meadow Lane",
+            "capacity": 19841,
             "communityArm": "Notts County Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2724,8 +2724,8 @@ const LOCATIONS = [
         "name": "Oldham Athletic",
         "type": "efl_only",
         "status": "grey",
-        "lat": 54,
-        "lng": -2,
+        "lat": 53.5551,
+        "lng": -2.1284,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2739,8 +2739,8 @@ const LOCATIONS = [
         "club": {
             "name": "Oldham Athletic",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Boundary Park",
+            "capacity": 13512,
             "communityArm": "Oldham Athletic Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2752,8 +2752,8 @@ const LOCATIONS = [
         "name": "Salford City",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.4804127,
-        "lng": -2.2503992,
+        "lat": 53.5133,
+        "lng": -2.2765,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2767,8 +2767,8 @@ const LOCATIONS = [
         "club": {
             "name": "Salford City",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Peninsula Stadium",
+            "capacity": 5108,
             "communityArm": "Salford City Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2780,8 +2780,8 @@ const LOCATIONS = [
         "name": "Shrewsbury Town",
         "type": "efl_only",
         "status": "grey",
-        "lat": 52.7070718,
-        "lng": -2.756784,
+        "lat": 52.6886,
+        "lng": -2.7494,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2795,8 +2795,8 @@ const LOCATIONS = [
         "club": {
             "name": "Shrewsbury Town",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Croud Meadow",
+            "capacity": 9875,
             "communityArm": "Shrewsbury Town Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2808,8 +2808,8 @@ const LOCATIONS = [
         "name": "Swindon Town",
         "type": "efl_only",
         "status": "grey",
-        "lat": 51.5615327,
-        "lng": -1.7854322,
+        "lat": 51.5645,
+        "lng": -1.771,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2823,8 +2823,8 @@ const LOCATIONS = [
         "club": {
             "name": "Swindon Town",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "County Ground",
+            "capacity": 15728,
             "communityArm": "Swindon Town Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2836,8 +2836,8 @@ const LOCATIONS = [
         "name": "Tranmere Rovers",
         "type": "efl_only",
         "status": "grey",
-        "lat": 53.3738916,
-        "lng": -3.0317875,
+        "lat": 53.3736,
+        "lng": -3.0326,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2851,8 +2851,8 @@ const LOCATIONS = [
         "club": {
             "name": "Tranmere Rovers",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Prenton Park",
+            "capacity": 16587,
             "communityArm": "Tranmere Rovers Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
@@ -2864,8 +2864,8 @@ const LOCATIONS = [
         "name": "Walsall",
         "type": "efl_only",
         "status": "grey",
-        "lat": 52.5847949,
-        "lng": -1.9822687,
+        "lat": 52.5654,
+        "lng": -1.9905,
         "phase": "none",
         "place": {
             "localAuthority": "N/A",
@@ -2879,8 +2879,8 @@ const LOCATIONS = [
         "club": {
             "name": "Walsall",
             "league": "League Two",
-            "stadium": "Home Ground",
-            "capacity": 0,
+            "stadium": "Bescot Stadium",
+            "capacity": 11300,
             "communityArm": "Walsall Community Trust",
             "communityArmWebsite": "#",
             "onNeighbourhoodBoard": false
