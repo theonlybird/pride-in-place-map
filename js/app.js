@@ -152,6 +152,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add EFL-only clubs. A club merges into its town/city/borough marker only when that
     // place has (or will inherit) other layers; otherwise it stands alone at its stadium.
+    // Where a city has TWO clubs (Bristol, Sheffield, Stoke-on-Trent), both clubs stand
+    // alone at their stadiums for consistency, and the Tier 1 city marker keeps the EFL
+    // overlap with combined club info.
+    const clubsPerPlace = new Map();
+    rawLocations.forEach(raw => {
+        if (raw.type === 'efl_only' && raw.club && EFL_PLACE_MAP[raw.club.name]) {
+            const k = normalise(EFL_PLACE_MAP[raw.club.name][0]);
+            if (!clubsPerPlace.has(k)) clubsPerPlace.set(k, []);
+            clubsPerPlace.get(k).push(raw.club);
+        }
+    });
+
     rawLocations.forEach(raw => {
         if (raw.type === 'efl_only') {
             let loc = null;
@@ -161,12 +173,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 const laKey = normalise(mapping[1] || LA_ALIASES[placeKey] || mapping[0]);
                 const placeHasOtherLayers = locMap.has(placeKey) || laNeighbourhoods.has(laKey);
                 if (placeHasOtherLayers) {
-                    const parent = getOrCreate(mapping[0], raw.lat, raw.lng);
-                    if (!parent.efl) {
-                        loc = parent;
-                        if (mapping[1]) loc.laAlias = mapping[1];
+                    const cityClubs = clubsPerPlace.get(placeKey);
+                    if (cityClubs.length > 1) {
+                        // Multi-club city: club stays standalone; parent gets combined EFL info once
+                        const parent = getOrCreate(mapping[0], raw.lat, raw.lng);
+                        if (mapping[1]) parent.laAlias = mapping[1];
+                        if (!parent.efl) {
+                            parent.efl = {
+                                name: cityClubs.map(c => c.name).join(' & '),
+                                league: cityClubs.map(c => c.league).join(' / '),
+                                stadium: cityClubs.map(c => c.stadium).join(' / '),
+                                capacity: null,
+                                communityArm: 'See individual club markers',
+                                communityArmWebsite: '#',
+                                onNeighbourhoodBoard: false
+                            };
+                        }
+                    } else {
+                        const parent = getOrCreate(mapping[0], raw.lat, raw.lng);
+                        if (!parent.efl) {
+                            loc = parent;
+                            if (mapping[1]) loc.laAlias = mapping[1];
+                        }
                     }
-                    // Second club in the same place (e.g. Sheffield Wednesday) stays standalone
                 }
             }
             if (!loc) loc = getOrCreate(raw.name, raw.lat, raw.lng);
