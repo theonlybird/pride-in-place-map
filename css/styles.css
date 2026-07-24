@@ -104,10 +104,13 @@ body.light-theme .glass-panel { box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06); }
     align-items: center;
     gap: 16px;
 }
+.banner-logos a { display: block; line-height: 0; }
+.banner-logos a:hover img { opacity: 0.8; }
 .banner-logos img {
     height: 42px;
     width: auto;
     display: block;
+    transition: opacity 0.15s;
 }
 
 /* Top Controls */
