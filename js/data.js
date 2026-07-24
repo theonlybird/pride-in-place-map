@@ -8,6 +8,7 @@ const LOCATIONS = [
         "lng": -1.247,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.ashfield.gov.uk/regeneration/",
             "localAuthority": "Ashfield District",
             "region": "UK",
             "population": "27,000",
@@ -28,6 +29,7 @@ const LOCATIONS = [
         "lng": -0.0237923,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://bostontownboard.co.uk/",
             "localAuthority": "Boston Borough",
             "region": "UK",
             "population": "70,000",
@@ -48,6 +50,7 @@ const LOCATIONS = [
         "lng": -1.4290929,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://chesterfield.gov.uk/business-and-economic-growth/regeneration-and-economic-growth/pride-in-place-chesterfield-town-board/",
             "localAuthority": "Chesterfield Borough",
             "region": "UK",
             "population": "104,000",
@@ -76,6 +79,7 @@ const LOCATIONS = [
         "lng": -1.1814134,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.nottinghamcity.gov.uk/information-for-residents/community/communities/clifton-neighbourhood-board",
             "localAuthority": "Nottingham City",
             "region": "UK",
             "population": "22,000",
@@ -124,6 +128,7 @@ const LOCATIONS = [
         "lng": -0.8092339,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://newarktownboard.co.uk/",
             "localAuthority": "Newark and Sherwood",
             "region": "UK",
             "population": "28,000",
@@ -144,6 +149,7 @@ const LOCATIONS = [
         "lng": 0.3405228,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://togetherforskegness.co.uk/",
             "localAuthority": "East Lindsey",
             "region": "UK",
             "population": "21,000",
@@ -164,6 +170,7 @@ const LOCATIONS = [
         "lng": -0.148526,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://lovespalding.co.uk/",
             "localAuthority": "South Holland",
             "region": "UK",
             "population": "31,000",
@@ -184,6 +191,7 @@ const LOCATIONS = [
         "lng": -1.1246168,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.bassetlaw.gov.uk/community-and-living/worksop-together-board/",
             "localAuthority": "Bassetlaw",
             "region": "UK",
             "population": "41,000",
@@ -204,6 +212,7 @@ const LOCATIONS = [
         "lng": 1.1527865,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://loveclacton.org/",
             "localAuthority": "Tendring",
             "region": "UK",
             "population": "50,000",
@@ -244,6 +253,7 @@ const LOCATIONS = [
         "lng": -1.5099726,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.northumberland.gov.uk/BPIPP",
             "localAuthority": "Northumberland",
             "region": "UK",
             "population": "37,000",
@@ -264,6 +274,7 @@ const LOCATIONS = [
         "lng": -1.1440011,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.redcar-cleveland.gov.uk/developing-the-borough/ts6-together",
             "localAuthority": "Redcar and Cleveland",
             "region": "UK",
             "population": "7,000",
@@ -284,6 +295,7 @@ const LOCATIONS = [
         "lng": -1.2093696,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.hartlepool.gov.uk/homepage/114/hartlepool-pride-in-place",
             "localAuthority": "Hartlepool Borough",
             "region": "UK",
             "population": "92,000",
@@ -304,6 +316,7 @@ const LOCATIONS = [
         "lng": -1.4908447,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.southtyneside.gov.uk/article/22703/Overview",
             "localAuthority": "South Tyneside",
             "region": "UK",
             "population": "43,000",
@@ -324,6 +337,7 @@ const LOCATIONS = [
         "lng": -1.601153,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.durham.gov.uk/article/31127/Spennymoor-Pride-in-Place-Programme",
             "localAuthority": "County Durham",
             "region": "UK",
             "population": "19,000",
@@ -344,6 +358,7 @@ const LOCATIONS = [
         "lng": -1.528827,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.sunderland.gov.uk/Washington-Neighbourhood-Programme-Board",
             "localAuthority": "Sunderland City",
             "region": "UK",
             "population": "68,000",
@@ -364,6 +379,7 @@ const LOCATIONS = [
         "lng": -2.3655434,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://accringtontownsquare.com/plan-for-neighbourhoods/",
             "localAuthority": "Hyndburn",
             "region": "UK",
             "population": "35,000",
@@ -392,6 +408,7 @@ const LOCATIONS = [
         "lng": -2.098691,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.tameside.gov.uk/ashtonprideinplace",
             "localAuthority": "Tameside",
             "region": "UK",
             "population": "45,000",
@@ -412,6 +429,7 @@ const LOCATIONS = [
         "lng": -2.2439196,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://ourtownourplan.org.uk/",
             "localAuthority": "Burnley Borough",
             "region": "UK",
             "population": "73,000",
@@ -432,6 +450,7 @@ const LOCATIONS = [
         "lng": -2.1378267,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.oldham.gov.uk/info/201088/regeneration/3130/plan_for_neighbourhoods",
             "localAuthority": "Oldham Borough",
             "region": "UK",
             "population": "34,000",
@@ -472,6 +491,7 @@ const LOCATIONS = [
         "lng": -2.3969984,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://focusonfarnworth.org/",
             "localAuthority": "Bolton Borough",
             "region": "UK",
             "population": "30,000",
@@ -492,6 +512,7 @@ const LOCATIONS = [
         "lng": -2.2239715,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.theheywoodplan.com/",
             "localAuthority": "Rochdale Borough",
             "region": "UK",
             "population": "28,000",
@@ -512,6 +533,7 @@ const LOCATIONS = [
         "lng": -2.8886045,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://kirkbyneighbourhoodboard.co.uk/",
             "localAuthority": "Knowsley",
             "region": "UK",
             "population": "41,000",
@@ -532,6 +554,7 @@ const LOCATIONS = [
         "lng": -2.5171495,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.wigan.gov.uk/Council/Projects/Leigh-Town-Board.aspx",
             "localAuthority": "Wigan Borough",
             "region": "UK",
             "population": "41,000",
@@ -572,6 +595,7 @@ const LOCATIONS = [
         "lng": -6.671861,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.causewaycoastandglens.gov.uk/live/coleraine-future-town-fund",
             "localAuthority": "Causeway Coast and Glens",
             "region": "UK",
             "population": "24,000",
@@ -592,6 +616,7 @@ const LOCATIONS = [
         "lng": -4.4034151,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.west-dunbarton.gov.uk/business/regeneration/clydebank-town-centre/pride-in-place",
             "localAuthority": "West Dunbartonshire",
             "region": "UK",
             "population": "28,000",
@@ -612,6 +637,7 @@ const LOCATIONS = [
         "lng": -3.6106856,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://dumfriestownboard.uk/",
             "localAuthority": "Dumfries and Galloway",
             "region": "UK",
             "population": "33,000",
@@ -632,6 +658,7 @@ const LOCATIONS = [
         "lng": -3.3148459,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://mymoray.co.uk/elgin-regeneration-plan/",
             "localAuthority": "Moray",
             "region": "UK",
             "population": "23,000",
@@ -652,6 +679,7 @@ const LOCATIONS = [
         "lng": -4.7564721,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.inverclyde.gov.uk/greenock-pride-in-place-plan",
             "localAuthority": "Inverclyde",
             "region": "UK",
             "population": "44,000",
@@ -672,6 +700,7 @@ const LOCATIONS = [
         "lng": -4.6696399,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://northayrshire.community/irvine-neighbourhood-board/",
             "localAuthority": "North Ayrshire",
             "region": "UK",
             "population": "33,000",
@@ -692,6 +721,7 @@ const LOCATIONS = [
         "lng": -4.4964652,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://wemakekilmarnock.co.uk/",
             "localAuthority": "East Ayrshire",
             "region": "UK",
             "population": "46,000",
@@ -712,6 +742,7 @@ const LOCATIONS = [
         "lng": 0.4709063,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://bexhillneighbourhoodboard.co.uk/",
             "localAuthority": "Rother",
             "region": "UK",
             "population": "44,000",
@@ -732,6 +763,7 @@ const LOCATIONS = [
         "lng": 0.5821779,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.hastings.gov.uk/regeneration/pride-in-place",
             "localAuthority": "Hastings Borough",
             "region": "UK",
             "population": "92,000",
@@ -752,6 +784,7 @@ const LOCATIONS = [
         "lng": -1.1603699,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://rydeneighbourhoodboard.org.uk/",
             "localAuthority": "Isle of Wight",
             "region": "UK",
             "population": "23,000",
@@ -772,6 +805,7 @@ const LOCATIONS = [
         "lng": -3.5211361,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.torbay.gov.uk/DemocraticServices/mgCommitteeDetails.aspx?ID=1988",
             "localAuthority": "Torbay",
             "region": "UK",
             "population": "65,000",
@@ -792,6 +826,7 @@ const LOCATIONS = [
         "lng": -3.2666925,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://participate.valeofglamorgan.gov.uk/plan-for-barry",
             "localAuthority": "Vale of Glamorgan",
             "region": "UK",
             "population": "54,000",
@@ -812,6 +847,7 @@ const LOCATIONS = [
         "lng": -3.0208217,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://getinvolved.torfaen.gov.uk/cwmbran-futures",
             "localAuthority": "Torfaen",
             "region": "UK",
             "population": "48,000",
@@ -852,6 +888,7 @@ const LOCATIONS = [
         "lng": -3.4907258,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://ourrhyl.wales/",
             "localAuthority": "Denbighshire",
             "region": "UK",
             "population": "25,000",
@@ -872,6 +909,7 @@ const LOCATIONS = [
         "lng": -2.9937869,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.wrexham.gov.uk/service/plan-neighbourhoods",
             "localAuthority": "Wrexham",
             "region": "UK",
             "population": "61,000",
@@ -900,6 +938,7 @@ const LOCATIONS = [
         "lng": -2.0822333,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://wolverhampton.moderngov.co.uk/mgCommitteeDetails.aspx?ID=1072",
             "localAuthority": "Wolverhampton",
             "region": "UK",
             "population": "25,000",
@@ -920,6 +959,7 @@ const LOCATIONS = [
         "lng": -2.0355619,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.darlastonplan.co.uk/",
             "localAuthority": "Walsall",
             "region": "UK",
             "population": "18,000",
@@ -940,6 +980,7 @@ const LOCATIONS = [
         "lng": -2.0816813,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.regeneratingdudley.org.uk/plan-for-neighbourhoods",
             "localAuthority": "Dudley",
             "region": "UK",
             "population": "79,000",
@@ -960,6 +1001,7 @@ const LOCATIONS = [
         "lng": -1.9739174,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.sandwell.gov.uk/Smethwick-LTP/",
             "localAuthority": "Sandwell",
             "region": "UK",
             "population": "48,000",
@@ -980,6 +1022,7 @@ const LOCATIONS = [
         "lng": -1.4827755,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://barnsleymbc.moderngov.co.uk/mgCommitteeDetails.aspx?ID=662",
             "localAuthority": "Barnsley",
             "region": "UK",
             "population": "91,000",
@@ -1008,6 +1051,7 @@ const LOCATIONS = [
         "lng": -1.3517218,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.wakefield.gov.uk/regeneration/pride-in-place/pride-in-place-castleford",
             "localAuthority": "Wakefield",
             "region": "UK",
             "population": "39,000",
@@ -1028,6 +1072,7 @@ const LOCATIONS = [
         "lng": -1.1335312,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.teamdoncaster.org.uk/pride-in-place",
             "localAuthority": "Doncaster",
             "region": "UK",
             "population": "109,000",
@@ -1056,6 +1101,7 @@ const LOCATIONS = [
         "lng": -0.0788045,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.our-future.io/grimsby-together",
             "localAuthority": "North East Lincolnshire",
             "region": "UK",
             "population": "88,000",
@@ -1084,6 +1130,7 @@ const LOCATIONS = [
         "lng": -1.3562051,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.rotherham.gov.uk/local-economy/pride-in-place",
             "localAuthority": "Rotherham",
             "region": "UK",
             "population": "109,000",
@@ -1112,6 +1159,7 @@ const LOCATIONS = [
         "lng": -0.6450841,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.northlincs.gov.uk/jobs-business-and-regeneration/scunthorpe-neighbourhood-board/",
             "localAuthority": "North Lincolnshire",
             "region": "UK",
             "population": "79,000",
@@ -6276,6 +6324,7 @@ const LOCATIONS = [
         "lng": -2.586,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://ourarbroath.com/",
             "localAuthority": "Angus",
             "region": "UK",
             "population": "24,000",
@@ -6296,6 +6345,7 @@ const LOCATIONS = [
         "lng": -1.477,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.believeinbedworth.uk/",
             "localAuthority": "Nuneaton and Bedworth",
             "region": "UK",
             "population": "31,000",
@@ -6316,6 +6366,7 @@ const LOCATIONS = [
         "lng": 0.593,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.castlepoint.gov.uk/pride-in-place-canvey-island",
             "localAuthority": "Castle Point",
             "region": "UK",
             "population": "38,000",
@@ -6336,6 +6387,7 @@ const LOCATIONS = [
         "lng": -1.083,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.gedling.gov.uk/business-and-licences/greater-carlton-pride-place",
             "localAuthority": "Gedling",
             "region": "UK",
             "population": "37,000",
@@ -6356,6 +6408,7 @@ const LOCATIONS = [
         "lng": -4.026,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.northlanarkshire.gov.uk/regeneration-and-investment/towns-and-communities/town-centre-regeneration/pride-place-coatbridge",
             "localAuthority": "North Lanarkshire",
             "region": "UK",
             "population": "43,000",
@@ -6376,6 +6429,7 @@ const LOCATIONS = [
         "lng": -1.559,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.darlington.gov.uk/business-and-licensing/business/town-centre/regenerating-darlington/pride-in-place-governance/",
             "localAuthority": "Darlington",
             "region": "UK",
             "population": "93,000",
@@ -6396,6 +6450,7 @@ const LOCATIONS = [
         "lng": -7.309,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://growderrystrabane.com/pride-in-place/",
             "localAuthority": "Derry City and Strabane",
             "region": "UK",
             "population": "85,000",
@@ -6416,6 +6471,7 @@ const LOCATIONS = [
         "lng": -1.633,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.dewsburyneighbourhoodboard.co.uk/",
             "localAuthority": "Kirklees",
             "region": "UK",
             "population": "63,000",
@@ -6436,6 +6492,7 @@ const LOCATIONS = [
         "lng": 0.284,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://weareeastbourne.org.uk/",
             "localAuthority": "Eastbourne",
             "region": "UK",
             "population": "99,000",
@@ -6476,6 +6533,7 @@ const LOCATIONS = [
         "lng": -1.906,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.bradford.gov.uk/regeneration/keighley-towns-fund/keighley-towns-fund-board-and-minutes/",
             "localAuthority": "Bradford",
             "region": "UK",
             "population": "51,000",
@@ -6496,6 +6554,7 @@ const LOCATIONS = [
         "lng": 0.402,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.visionkingslynn.co.uk/kings-lynn-neighbourhood-board/",
             "localAuthority": "King's Lynn and West Norfolk",
             "region": "UK",
             "population": "43,000",
@@ -6516,6 +6575,7 @@ const LOCATIONS = [
         "lng": -3.381,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.merthyr.gov.uk/resident/regeneration/plan-for-neighbourhoods-programme",
             "localAuthority": "Merthyr Tydfil",
             "region": "UK",
             "population": "44,000",
@@ -6536,6 +6596,7 @@ const LOCATIONS = [
         "lng": -2.635,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.sthelens.gov.uk/article/11064/Newton-le-Willows-Neighbourhood-Board",
             "localAuthority": "St Helens",
             "region": "UK",
             "population": "23,000",
@@ -6556,6 +6617,7 @@ const LOCATIONS = [
         "lng": -2.96,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.theorkneyfund.org.uk/",
             "localAuthority": "Orkney Islands",
             "region": "UK",
             "population": "10,000",
@@ -6576,6 +6638,7 @@ const LOCATIONS = [
         "lng": -1.784,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://wearepeterhead.co.uk/",
             "localAuthority": "Aberdeenshire",
             "region": "UK",
             "population": "19,000",
@@ -6596,6 +6659,7 @@ const LOCATIONS = [
         "lng": 1.416,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.thanet.gov.uk/info-pages/ramsgate-neighbourhood-board/",
             "localAuthority": "Thanet",
             "region": "UK",
             "population": "42,000",
@@ -6616,6 +6680,7 @@ const LOCATIONS = [
         "lng": -2.291,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.rossendale.gov.uk/regeneration-3/pride-place",
             "localAuthority": "Rossendale",
             "region": "UK",
             "population": "23,000",
@@ -6636,6 +6701,7 @@ const LOCATIONS = [
         "lng": -1.822,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://suttoncoldfieldtowncouncil.gov.uk/prideinplace/",
             "localAuthority": "Birmingham",
             "region": "UK",
             "population": "96,000",
@@ -6676,6 +6742,7 @@ const LOCATIONS = [
         "lng": -0.4,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.northyorks.gov.uk/community-and-volunteering/community-projects/scarborough-and-whitby-town-deals/scarborough-neighbourhood-board",
             "localAuthority": "North Yorkshire",
             "region": "UK",
             "population": "62,000",
@@ -6696,6 +6763,7 @@ const LOCATIONS = [
         "lng": 0.744,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.breckland.gov.uk/thetford-plan-for-neighbourhoods",
             "localAuthority": "Breckland",
             "region": "UK",
             "population": "25,000",
@@ -6716,6 +6784,7 @@ const LOCATIONS = [
         "lng": 0.159,
         "phase": "phase_1",
         "place": {
+   "boardWebsite": "https://www.fenland.gov.uk/article/17990/The-Wisbech-Plan-For-Neighbourhoods-Investment",
             "localAuthority": "Fenland",
             "region": "UK",
             "population": "34,000",

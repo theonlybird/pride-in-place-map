@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loc.pip = {
                 phase: raw.phase,
                 status: raw.status,
+                boardWebsite: raw.place?.boardWebsite || '',
                 localAuthority: raw.place?.localAuthority || '',
                 region: raw.place?.region || 'UK',
                 population: raw.place?.population || '',
@@ -234,6 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loc.pip = {
                 phase: first.pip.phase,
                 inherited: true,
+                boardWebsite: first.pip.boardWebsite || '',
                 neighbourhoods: hoods.map(h => h.name),
                 localAuthority: first.pip.localAuthority,
                 region: first.pip.region,
@@ -490,6 +492,20 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('val-imd').textContent = loc.pip.imdDecile;
             document.getElementById('val-funding').textContent = loc.pip.pipFunding;
             document.getElementById('val-board').textContent = loc.pip.boardStatus;
+            // Neighbourhood board website (Phase 1 places where one exists)
+            const pipSiteLink = document.getElementById('val-pip-website');
+            const pipSiteRow = pipSiteLink.closest('.data-item');
+            if (loc.pip.boardWebsite) {
+                pipSiteRow.classList.remove('hidden');
+                pipSiteLink.href = loc.pip.boardWebsite;
+                try {
+                    pipSiteLink.textContent = new URL(loc.pip.boardWebsite).hostname.replace(/^www\./, '');
+                } catch (e) {
+                    pipSiteLink.textContent = 'Visit website';
+                }
+            } else {
+                pipSiteRow.classList.add('hidden');
+            }
             // Show linked neighbourhoods if inherited from LA
             if (pipHoodsRow && pipHoodsEl) {
                 if (loc.pip.inherited && loc.pip.neighbourhoods) {
