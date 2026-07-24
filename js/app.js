@@ -373,9 +373,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const multiClass = ringCount >= 3 ? 'marker-multi marker-multi-3' : 'marker-multi';
 
+        // With all 5 rings there's no room for the number — drop it to keep the marker clean
+        const countHtml = ringCount >= 5 ? '' : `<span class="overlap-count">${ringCount}</span>`;
+
         return L.divIcon({
             className: `custom-marker ${multiClass}`,
-            html: `<div class="marker-inner">${ringsHtml}<span class="overlap-count">${ringCount}</span></div>`,
+            html: `<div class="marker-inner">${ringsHtml}${countHtml}</div>`,
             iconSize: [22, 22], iconAnchor: [11, 11]
         });
     }

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Pride in Place – Multi-Layer Map</title>
-    
-    <!-- Google Fonts: Inter -->
+    <title>England Place-work Crossover Map</title>
+
+    <!-- Google Fonts: Inter + Hanken Grotesk (closest free match to GDS Transport, the UK Gov / Pride in Place brand font) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Hanken+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
     
     <!-- Leaflet JS & CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
@@ -24,6 +24,15 @@
 </head>
 <body class="light-theme">
     
+    <!-- Title Banner -->
+    <header class="map-banner glass-panel">
+        <h1>England Place-work Crossover Map</h1>
+        <div class="banner-logos">
+            <img src="assets/beat-the-street.png" alt="Beat the Street" onerror="this.style.display='none'">
+            <img src="assets/intelligent-health.png" alt="Intelligent Health" onerror="this.style.display='none'">
+        </div>
+    </header>
+
     <!-- Map Container -->
     <div id="map"></div>
 
