@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             loc = getOrCreate(ntc.name, ntc.lat, ntc.lng);
         }
-        loc.ntc = { type: ntc.type, project: ntc.project };
+        loc.ntc = { type: ntc.type, project: ntc.project, website: ntc.website || '' };
     });
 
     // Import Culture Priority Places (DCMS / Arts Council) - LA-level places
@@ -549,7 +549,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 grant: 'Grant Recipient'
             };
             document.getElementById('val-ntc-type').textContent = ntcLabels[loc.ntc.type] || loc.ntc.type;
-            document.getElementById('val-ntc-project').textContent = loc.ntc.project;
+            const ntcProjLink = document.getElementById('val-ntc-project');
+            ntcProjLink.textContent = loc.ntc.project;
+            if (loc.ntc.website) {
+                ntcProjLink.href = loc.ntc.website;
+                ntcProjLink.style.pointerEvents = 'auto';
+            } else {
+                ntcProjLink.removeAttribute('href');
+                ntcProjLink.style.pointerEvents = 'none';
+            }
         } else {
             ntcSection.classList.add('hidden');
         }

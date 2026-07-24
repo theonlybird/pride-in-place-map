@@ -103,31 +103,31 @@ const SE_PLACES = [
 // Categories: accredited_city, accredited_town, grant_recipient
 const NTC_PLACES = [
     // Accredited Nature Cities
-    {name:"Plymouth",type:"accredited_city",lat:50.38,lng:-4.14,project:"Plan for Nature and People"},
-    {name:"Birmingham",type:"accredited_city",lat:52.483,lng:-1.889,project:"City of Nature Plan"},
+    {name:"Plymouth",type:"accredited_city",lat:50.38,lng:-4.14,project:"Plan for Nature and People",website:"https://www.plymouth.gov.uk/plymouth-plan-nature-and-people"},
+    {name:"Birmingham",type:"accredited_city",lat:52.483,lng:-1.889,project:"City of Nature Plan",website:"https://naturallybirmingham.org/"},
     // Accredited Nature Towns
-    {name:"Bournemouth",type:"accredited_town",lat:50.72,lng:-1.88,project:"BCP Nature Towns"},
+    {name:"Bournemouth",type:"accredited_town",lat:50.72,lng:-1.88,project:"BCP Nature Towns",website:"https://bcpprojects.net/nature-towns/"},
     // Grant Recipients (19 partnerships, ~40 towns/cities)
-    {name:"Bradford",type:"grant",lat:53.794,lng:-1.752,project:"Green Blue Steppingstones"},
-    {name:"Blackpool",type:"grant",lat:53.818,lng:-3.051,project:"GreenWave: Transforming Urban Nature"},
-    {name:"Liverpool",type:"grant",lat:53.408,lng:-2.992,project:"Liverpool City Region Green Vision"},
-    {name:"Redcar and Cleveland",type:"grant",lat:54.616,lng:-1.059,project:"Tees Urban Nature Network"},
-    {name:"Manchester",type:"grant",lat:53.48,lng:-2.24,project:"Manchester & Salford Green Vision"},
-    {name:"Salford",type:"grant",lat:53.48,lng:-2.29,project:"Manchester & Salford Green Vision"},
-    {name:"Sunderland",type:"grant",lat:54.91,lng:-1.38,project:"Sunderland Urban Green Spaces"},
-    {name:"Bristol",type:"grant",lat:51.454,lng:-2.597,project:"Nature Together"},
-    {name:"Ealing",type:"grant",lat:51.51,lng:-0.31,project:"Regional Park Vision"},
-    {name:"Portsmouth",type:"grant",lat:50.800,lng:-1.091,project:"Green Vision: Urban Nature Revival"},
-    {name:"Lewisham",type:"grant",lat:51.44,lng:-0.01,project:"Lewisham Green Vision"},
-    {name:"Luton",type:"grant",lat:51.878,lng:-0.415,project:"Nature Connection Initiative"},
-    {name:"Norwich",type:"grant",lat:52.63,lng:1.30,project:"NatureCityNorwich"},
-    {name:"Walsall",type:"grant",lat:52.585,lng:-1.982,project:"Green Vision: Nature & Health"},
-    {name:"Coventry",type:"grant",lat:52.407,lng:-1.510,project:"Green Renaissance"},
-    {name:"Torfaen",type:"grant",lat:51.654,lng:-3.021,project:"Torfaen Nature Masterplan"},
-    {name:"Neath Port Talbot",type:"grant",lat:51.595,lng:-3.782,project:"Nature's Back in Town"},
-    {name:"Fife",type:"grant",lat:56.07,lng:-3.46,project:"Transforming Fife's Greenspace"},
-    {name:"North Lanarkshire",type:"grant",lat:55.86,lng:-3.96,project:"NL Nearer to Nature"},
-    {name:"Belfast",type:"grant",lat:54.60,lng:-5.93,project:"Belfast Nature Recovery Blueprint"}
+    {name:"Bradford",type:"grant",lat:53.794,lng:-1.752,project:"Green Blue Steppingstones",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Blackpool",type:"grant",lat:53.818,lng:-3.051,project:"GreenWave: Transforming Urban Nature",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Liverpool",type:"grant",lat:53.408,lng:-2.992,project:"Liverpool City Region Green Vision",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Redcar and Cleveland",type:"grant",lat:54.616,lng:-1.059,project:"Tees Urban Nature Network",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Manchester",type:"grant",lat:53.48,lng:-2.24,project:"Manchester & Salford Green Vision",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Salford",type:"grant",lat:53.48,lng:-2.29,project:"Manchester & Salford Green Vision",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Sunderland",type:"grant",lat:54.91,lng:-1.38,project:"Sunderland Urban Green Spaces",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Bristol",type:"grant",lat:51.454,lng:-2.597,project:"Nature Together",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Ealing",type:"grant",lat:51.51,lng:-0.31,project:"Regional Park Vision",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Portsmouth",type:"grant",lat:50.800,lng:-1.091,project:"Green Vision: Urban Nature Revival",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Lewisham",type:"grant",lat:51.44,lng:-0.01,project:"Lewisham Green Vision",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Luton",type:"grant",lat:51.878,lng:-0.415,project:"Nature Connection Initiative",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Norwich",type:"grant",lat:52.63,lng:1.30,project:"NatureCityNorwich",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Walsall",type:"grant",lat:52.585,lng:-1.982,project:"Green Vision: Nature & Health",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Coventry",type:"grant",lat:52.407,lng:-1.510,project:"Green Renaissance",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Torfaen",type:"grant",lat:51.654,lng:-3.021,project:"Torfaen Nature Masterplan",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Neath Port Talbot",type:"grant",lat:51.595,lng:-3.782,project:"Nature's Back in Town",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Fife",type:"grant",lat:56.07,lng:-3.46,project:"Transforming Fife's Greenspace",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"North Lanarkshire",type:"grant",lat:55.86,lng:-3.96,project:"NL Nearer to Nature",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Belfast",type:"grant",lat:54.60,lng:-5.93,project:"Belfast Nature Recovery Blueprint",website:"https://naturetownsandcities.org.uk/grants/"}
 ];
 
 // Culture Priority Places (DCMS / Arts Council England, published 22 May 2026)

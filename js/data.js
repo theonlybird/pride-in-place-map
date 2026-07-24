@@ -62,7 +62,7 @@ const LOCATIONS = [
             "stadium": "Local Stadium",
             "capacity": 10600,
             "communityArm": "Chesterfield Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://cfcct.org.uk/",
             "onNeighbourhoodBoard": true
         },
         "notes": "Generated from UK Parliament Phase 1 list."
@@ -110,7 +110,7 @@ const LOCATIONS = [
             "stadium": "Local Stadium",
             "capacity": 9186,
             "communityArm": "Mansfield Town Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://mansfieldtownfitc.net/",
             "onNeighbourhoodBoard": true
         },
         "notes": "Generated from UK Parliament Phase 1 list."
@@ -378,7 +378,7 @@ const LOCATIONS = [
             "stadium": "Local Stadium",
             "capacity": 5450,
             "communityArm": "Accrington Stanley Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "http://www.stanleytrust.co.uk/",
             "onNeighbourhoodBoard": true
         },
         "notes": "Generated from UK Parliament Phase 1 list."
@@ -838,7 +838,7 @@ const LOCATIONS = [
             "stadium": "Rodney Parade",
             "capacity": 8700,
             "communityArm": "Newport County Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.countyinthecommunity.co.uk/",
             "onNeighbourhoodBoard": true
         },
         "notes": "EFL club location. Removed from Pride in Place Phase 1 (not in official list — verified Jul 2026)."
@@ -886,7 +886,7 @@ const LOCATIONS = [
             "stadium": "Local Stadium",
             "capacity": 12600,
             "communityArm": "Wrexham Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.wrexhamafc.co.uk/wrexham-afc-foundation",
             "onNeighbourhoodBoard": true
         },
         "notes": "Generated from UK Parliament Phase 1 list."
@@ -994,7 +994,7 @@ const LOCATIONS = [
             "stadium": "Local Stadium",
             "capacity": 23287,
             "communityArm": "Barnsley Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "http://www.barnsleyfccommunity.co.uk/",
             "onNeighbourhoodBoard": true
         },
         "notes": "Generated from UK Parliament Phase 1 list."
@@ -1042,7 +1042,7 @@ const LOCATIONS = [
             "stadium": "Local Stadium",
             "capacity": 15231,
             "communityArm": "Doncaster Rovers Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.clubdoncasterfoundation.co.uk/",
             "onNeighbourhoodBoard": true
         },
         "notes": "Generated from UK Parliament Phase 1 list."
@@ -1070,7 +1070,7 @@ const LOCATIONS = [
             "stadium": "Local Stadium",
             "capacity": 9052,
             "communityArm": "Grimsby Town Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://grimsbytownfoundation.co.uk/",
             "onNeighbourhoodBoard": true
         },
         "notes": "Generated from UK Parliament Phase 1 list."
@@ -1098,7 +1098,7 @@ const LOCATIONS = [
             "stadium": "Local Stadium",
             "capacity": 12021,
             "communityArm": "Rotherham United Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.themillers.co.uk/club/community/",
             "onNeighbourhoodBoard": true
         },
         "notes": "Generated from UK Parliament Phase 1 list."
@@ -1146,7 +1146,7 @@ const LOCATIONS = [
             "stadium": "St Andrew's @ Knighthead Park",
             "capacity": 29409,
             "communityArm": "Birmingham City Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://bcfcfoundation.com/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1174,7 +1174,7 @@ const LOCATIONS = [
             "stadium": "Ewood Park",
             "capacity": 31367,
             "communityArm": "Blackburn Rovers Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.rovers.co.uk/community/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1202,7 +1202,7 @@ const LOCATIONS = [
             "stadium": "Ashton Gate",
             "capacity": 27000,
             "communityArm": "Bristol City Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.bcfc.co.uk/robins-foundation/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1230,7 +1230,7 @@ const LOCATIONS = [
             "stadium": "The Valley",
             "capacity": 27111,
             "communityArm": "Charlton Athletic Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "http://www.cact.org.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1258,7 +1258,7 @@ const LOCATIONS = [
             "stadium": "Coventry Building Society Arena",
             "capacity": 32609,
             "communityArm": "Coventry City Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.ccfc.co.uk/community/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1286,7 +1286,7 @@ const LOCATIONS = [
             "stadium": "Pride Park Stadium",
             "capacity": 33597,
             "communityArm": "Derby County Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.derbycountycommunitytrust.com/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1314,7 +1314,7 @@ const LOCATIONS = [
             "stadium": "MKM Stadium",
             "capacity": 25586,
             "communityArm": "Hull City Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.tigerstrust.co.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1342,7 +1342,7 @@ const LOCATIONS = [
             "stadium": "Portman Road",
             "capacity": 30056,
             "communityArm": "Ipswich Town Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.itfcfoundation.co.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1370,7 +1370,7 @@ const LOCATIONS = [
             "stadium": "King Power Stadium",
             "capacity": 32312,
             "communityArm": "Leicester City Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.lcfc.com/community",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1398,7 +1398,7 @@ const LOCATIONS = [
             "stadium": "Riverside Stadium",
             "capacity": 34742,
             "communityArm": "Middlesbrough Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.mfcfoundation.co.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1426,7 +1426,7 @@ const LOCATIONS = [
             "stadium": "The Den",
             "capacity": 20146,
             "communityArm": "Millwall Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.millwallcommunity.org.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1454,7 +1454,7 @@ const LOCATIONS = [
             "stadium": "Carrow Road",
             "capacity": 27359,
             "communityArm": "Norwich City Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.communitysportsfoundation.org.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1482,7 +1482,7 @@ const LOCATIONS = [
             "stadium": "Kassam Stadium",
             "capacity": 12500,
             "communityArm": "Oxford United Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.ouitc.org/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1510,7 +1510,7 @@ const LOCATIONS = [
             "stadium": "Fratton Park",
             "capacity": 20620,
             "communityArm": "Portsmouth Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.pompeyitc.co.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1538,7 +1538,7 @@ const LOCATIONS = [
             "stadium": "Deepdale",
             "capacity": 23404,
             "communityArm": "Preston North End Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.pnefc.net/PNECET/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1566,7 +1566,7 @@ const LOCATIONS = [
             "stadium": "Loftus Road",
             "capacity": 18439,
             "communityArm": "Queens Park Rangers Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.qpr.co.uk/community/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1594,7 +1594,7 @@ const LOCATIONS = [
             "stadium": "Bramall Lane",
             "capacity": 32050,
             "communityArm": "Sheffield United Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://sufc-community.com/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1622,7 +1622,7 @@ const LOCATIONS = [
             "stadium": "Hillsborough",
             "capacity": 39732,
             "communityArm": "Sheffield Wednesday Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.swfc.co.uk/swfc-community-programme",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1650,7 +1650,7 @@ const LOCATIONS = [
             "stadium": "St Mary's Stadium",
             "capacity": 32384,
             "communityArm": "Southampton Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.southamptonfc.com/en/saints-foundation-home",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1678,7 +1678,7 @@ const LOCATIONS = [
             "stadium": "bet365 Stadium",
             "capacity": 30089,
             "communityArm": "Stoke City Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.stokecityfc.com/community/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1706,7 +1706,7 @@ const LOCATIONS = [
             "stadium": "Swansea.com Stadium",
             "capacity": 21088,
             "communityArm": "Swansea City Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.swanseacity.com/swansea-city-afc-foundation",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1734,7 +1734,7 @@ const LOCATIONS = [
             "stadium": "Vicarage Road",
             "capacity": 22200,
             "communityArm": "Watford Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.watfordfccsetrust.com/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1762,7 +1762,7 @@ const LOCATIONS = [
             "stadium": "The Hawthorns",
             "capacity": 26850,
             "communityArm": "West Bromwich Albion Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.wba.co.uk/foundation",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1790,7 +1790,7 @@ const LOCATIONS = [
             "stadium": "Plough Lane",
             "capacity": 9215,
             "communityArm": "AFC Wimbledon Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "http://afcwimbledonfoundation.com/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1818,7 +1818,7 @@ const LOCATIONS = [
             "stadium": "Bloomfield Road",
             "capacity": 16616,
             "communityArm": "Blackpool Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.bfcct.co.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1846,7 +1846,7 @@ const LOCATIONS = [
             "stadium": "Toughsheet Community Stadium",
             "capacity": 28723,
             "communityArm": "Bolton Wanderers Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "http://www.bwct.org.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1874,7 +1874,7 @@ const LOCATIONS = [
             "stadium": "Valley Parade",
             "capacity": 25136,
             "communityArm": "Bradford City Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.bradfordcitycf.org.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1902,7 +1902,7 @@ const LOCATIONS = [
             "stadium": "Pirelli Stadium",
             "capacity": 6912,
             "communityArm": "Burton Albion Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "http://burtonalbioncommunitytrust.co.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1930,7 +1930,7 @@ const LOCATIONS = [
             "stadium": "Cardiff City Stadium",
             "capacity": 33280,
             "communityArm": "Cardiff City Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.cardiffcityfcfoundation.org.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1958,7 +1958,7 @@ const LOCATIONS = [
             "stadium": "St James Park",
             "capacity": 8696,
             "communityArm": "Exeter City Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://exetercct.org/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -1986,7 +1986,7 @@ const LOCATIONS = [
             "stadium": "John Smith's Stadium",
             "capacity": 24121,
             "communityArm": "Huddersfield Town Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.htafcfoundation.com/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2014,7 +2014,7 @@ const LOCATIONS = [
             "stadium": "Brisbane Road",
             "capacity": 9271,
             "communityArm": "Leyton Orient Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.leytonorienttrust.org.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2042,7 +2042,7 @@ const LOCATIONS = [
             "stadium": "LNER Stadium",
             "capacity": 10669,
             "communityArm": "Lincoln City Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.lincolncityfoundation.com/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2070,7 +2070,7 @@ const LOCATIONS = [
             "stadium": "Kenilworth Road",
             "capacity": 11500,
             "communityArm": "Luton Town Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.lutontowncommunity.co.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2098,7 +2098,7 @@ const LOCATIONS = [
             "stadium": "Sixfields Stadium",
             "capacity": 8199,
             "communityArm": "Northampton Town Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.ntfc.co.uk/community",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2126,7 +2126,7 @@ const LOCATIONS = [
             "stadium": "Weston Homes Stadium",
             "capacity": 15314,
             "communityArm": "Peterborough United Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://theposhfoundation.com/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2154,7 +2154,7 @@ const LOCATIONS = [
             "stadium": "Home Park",
             "capacity": 17900,
             "communityArm": "Plymouth Argyle Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://argylecommunitytrust.co.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2182,7 +2182,7 @@ const LOCATIONS = [
             "stadium": "Vale Park",
             "capacity": 15036,
             "communityArm": "Port Vale Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.port-vale.co.uk/portvalefoundation",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2210,7 +2210,7 @@ const LOCATIONS = [
             "stadium": "Select Car Leasing Stadium",
             "capacity": 24161,
             "communityArm": "Reading Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.readingfc.co.uk/community-trust/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2238,7 +2238,7 @@ const LOCATIONS = [
             "stadium": "Lamex Stadium",
             "capacity": 7800,
             "communityArm": "Stevenage Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://stevenagefcfoundation.com/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2266,7 +2266,7 @@ const LOCATIONS = [
             "stadium": "Edgeley Park",
             "capacity": 10852,
             "communityArm": "Stockport County Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.stockportcounty.com/community/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2294,7 +2294,7 @@ const LOCATIONS = [
             "stadium": "Brick Community Stadium",
             "capacity": 25138,
             "communityArm": "Wigan Athletic Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://wiganathletic.com/wigan-athletic-community-trust/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2322,7 +2322,7 @@ const LOCATIONS = [
             "stadium": "Adams Park",
             "capacity": 10137,
             "communityArm": "Wycombe Wanderers Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://wycombewanderersfoundation.co.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2350,7 +2350,7 @@ const LOCATIONS = [
             "stadium": "The Hive Stadium",
             "capacity": 6500,
             "communityArm": "Barnet Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://thehivefoundation.com/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2378,7 +2378,7 @@ const LOCATIONS = [
             "stadium": "Holker Street",
             "capacity": 5045,
             "communityArm": "Barrow Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.barrowafc.com/our-foundation",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2406,7 +2406,7 @@ const LOCATIONS = [
             "stadium": "Memorial Stadium",
             "capacity": 9832,
             "communityArm": "Bristol Rovers Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "http://www.bristolroverscommunity.org.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2434,7 +2434,7 @@ const LOCATIONS = [
             "stadium": "Hayes Lane",
             "capacity": 5000,
             "communityArm": "Bromley Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.bromleyfc.org/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2462,7 +2462,7 @@ const LOCATIONS = [
             "stadium": "Abbey Stadium",
             "capacity": 8127,
             "communityArm": "Cambridge United Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.cuctrust.co.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2490,7 +2490,7 @@ const LOCATIONS = [
             "stadium": "Whaddon Road",
             "capacity": 7066,
             "communityArm": "Cheltenham Town Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "http://www.ctfccp.com/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2518,7 +2518,7 @@ const LOCATIONS = [
             "stadium": "JobServe Community Stadium",
             "capacity": 10105,
             "communityArm": "Colchester United Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.cu-fc.com/cucf",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2546,7 +2546,7 @@ const LOCATIONS = [
             "stadium": "Broadfield Stadium",
             "capacity": 6134,
             "communityArm": "Crawley Town Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.ctcommunityfoundation.com/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2574,7 +2574,7 @@ const LOCATIONS = [
             "stadium": "Gresty Road",
             "capacity": 10153,
             "communityArm": "Crewe Alexandra Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.crewealex.net/club/crewe-alexandra-in-the-community",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2602,7 +2602,7 @@ const LOCATIONS = [
             "stadium": "Highbury Stadium",
             "capacity": 5327,
             "communityArm": "Fleetwood Town Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "http://www.fleetwoodtownfcct.com/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2630,7 +2630,7 @@ const LOCATIONS = [
             "stadium": "Priestfield Stadium",
             "capacity": 11582,
             "communityArm": "Gillingham Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.gillinghamfootballclub.com/foundation",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2658,7 +2658,7 @@ const LOCATIONS = [
             "stadium": "Wetherby Road",
             "capacity": 5000,
             "communityArm": "Harrogate Town Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.htafccommunity.co.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2686,7 +2686,7 @@ const LOCATIONS = [
             "stadium": "Stadium MK",
             "capacity": 30500,
             "communityArm": "Milton Keynes Dons Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.mkdonsset.com/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2714,7 +2714,7 @@ const LOCATIONS = [
             "stadium": "Meadow Lane",
             "capacity": 19841,
             "communityArm": "Notts County Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.nottscountyfoundation.org.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2742,7 +2742,7 @@ const LOCATIONS = [
             "stadium": "Boundary Park",
             "capacity": 13512,
             "communityArm": "Oldham Athletic Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.oldhamathletic.co.uk/community-trust/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2770,7 +2770,7 @@ const LOCATIONS = [
             "stadium": "Peninsula Stadium",
             "capacity": 5108,
             "communityArm": "Salford City Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://foundation92.co.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2798,7 +2798,7 @@ const LOCATIONS = [
             "stadium": "Croud Meadow",
             "capacity": 9875,
             "communityArm": "Shrewsbury Town Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.shrewsburytown.com/shrewsbury-town-fc-foundation",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2826,7 +2826,7 @@ const LOCATIONS = [
             "stadium": "County Ground",
             "capacity": 15728,
             "communityArm": "Swindon Town Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.stfcfoundation.com/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2854,7 +2854,7 @@ const LOCATIONS = [
             "stadium": "Prenton Park",
             "capacity": 16587,
             "communityArm": "Tranmere Rovers Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.tranmererovers.co.uk/community/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
@@ -2882,7 +2882,7 @@ const LOCATIONS = [
             "stadium": "Bescot Stadium",
             "capacity": 11300,
             "communityArm": "Walsall Community Trust",
-            "communityArmWebsite": "#",
+            "communityArmWebsite": "https://www.walsallfccp.co.uk/",
             "onNeighbourhoodBoard": false
         },
         "notes": "EFL club located outside Phase 1 target areas."
