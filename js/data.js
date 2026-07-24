@@ -3104,6 +3104,7 @@ const LOCATIONS = [
         "lng": -2.838,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://liverpool.gov.uk/council/pride-in-place/neighbourhood-boards/",
             "localAuthority": "Liverpool",
             "region": "England",
             "population": "N/A",
@@ -3124,6 +3125,7 @@ const LOCATIONS = [
         "lng": -2.963,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://liverpool.gov.uk/council/pride-in-place/pride-in-place-everton-east/",
             "localAuthority": "Liverpool",
             "region": "England",
             "population": "N/A",
@@ -3144,6 +3146,7 @@ const LOCATIONS = [
         "lng": -2.918,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://liverpool.gov.uk/council/pride-in-place/pride-in-place-norris-green-east/",
             "localAuthority": "Liverpool",
             "region": "England",
             "population": "N/A",
@@ -3164,6 +3167,7 @@ const LOCATIONS = [
         "lng": -2.946,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://liverpool.gov.uk/council/pride-in-place/pride-in-place-fairfield-west-and-newsham-park/",
             "localAuthority": "Liverpool",
             "region": "England",
             "population": "N/A",
@@ -3184,6 +3188,7 @@ const LOCATIONS = [
         "lng": -2.264,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.manchester.gov.uk/people-and-communities/pride-in-place/about-pride-in-place",
             "localAuthority": "Manchester",
             "region": "England",
             "population": "N/A",
@@ -3204,6 +3209,7 @@ const LOCATIONS = [
         "lng": -2.213,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.manchester.gov.uk/people-and-communities/pride-in-place/about-pride-in-place",
             "localAuthority": "Manchester",
             "region": "England",
             "population": "N/A",
@@ -3224,6 +3230,7 @@ const LOCATIONS = [
         "lng": -2.174,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.manchester.gov.uk/people-and-communities/pride-in-place/about-pride-in-place",
             "localAuthority": "Manchester",
             "region": "England",
             "population": "N/A",
@@ -3244,6 +3251,7 @@ const LOCATIONS = [
         "lng": -2.16,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.manchester.gov.uk/people-and-communities/pride-in-place/about-pride-in-place",
             "localAuthority": "Manchester",
             "region": "England",
             "population": "N/A",
@@ -3264,6 +3272,7 @@ const LOCATIONS = [
         "lng": -1.545,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.leeds.gov.uk/leeds-economy/pride-in-place",
             "localAuthority": "Leeds",
             "region": "England",
             "population": "N/A",
@@ -3284,6 +3293,7 @@ const LOCATIONS = [
         "lng": -1.46,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.leeds.gov.uk/leeds-economy/pride-in-place",
             "localAuthority": "Leeds",
             "region": "England",
             "population": "N/A",
@@ -3304,6 +3314,7 @@ const LOCATIONS = [
         "lng": -1.61,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.leeds.gov.uk/leeds-economy/pride-in-place",
             "localAuthority": "Leeds",
             "region": "England",
             "population": "N/A",
@@ -3324,6 +3335,7 @@ const LOCATIONS = [
         "lng": -1.578,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.leeds.gov.uk/leeds-economy/pride-in-place",
             "localAuthority": "Leeds",
             "region": "England",
             "population": "N/A",
@@ -3344,6 +3356,7 @@ const LOCATIONS = [
         "lng": -0.37,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.hull.gov.uk/regeneration-1/pride-place-programme",
             "localAuthority": "Kingston upon Hull, City of",
             "region": "England",
             "population": "N/A",
@@ -3364,6 +3377,7 @@ const LOCATIONS = [
         "lng": -0.29,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.hull.gov.uk/regeneration-1/pride-place-programme",
             "localAuthority": "Kingston upon Hull, City of",
             "region": "England",
             "population": "N/A",
@@ -3384,6 +3398,7 @@ const LOCATIONS = [
         "lng": -0.36,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.hull.gov.uk/regeneration-1/pride-place-programme",
             "localAuthority": "Kingston upon Hull, City of",
             "region": "England",
             "population": "N/A",
@@ -3404,6 +3419,7 @@ const LOCATIONS = [
         "lng": -3.023,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.wirral.gov.uk/community-and-neighbourhoods/pride-place",
             "localAuthority": "Wirral",
             "region": "England",
             "population": "N/A",
@@ -3424,6 +3440,7 @@ const LOCATIONS = [
         "lng": -3.03,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.wirral.gov.uk/community-and-neighbourhoods/pride-place",
             "localAuthority": "Wirral",
             "region": "England",
             "population": "N/A",
@@ -3444,6 +3461,7 @@ const LOCATIONS = [
         "lng": -3.077,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.wirral.gov.uk/community-and-neighbourhoods/pride-place",
             "localAuthority": "Wirral",
             "region": "England",
             "population": "N/A",
@@ -3464,6 +3482,7 @@ const LOCATIONS = [
         "lng": -1.33,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.durham.gov.uk/article/34660/Peterlee-East-Pride-in-Place-Programme",
             "localAuthority": "County Durham",
             "region": "England",
             "population": "N/A",
@@ -3484,6 +3503,7 @@ const LOCATIONS = [
         "lng": -1.7,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.durham.gov.uk/article/34659/Stanley-South-Pride-in-Place-Programme",
             "localAuthority": "County Durham",
             "region": "England",
             "population": "N/A",
@@ -3504,6 +3524,7 @@ const LOCATIONS = [
         "lng": -1.77,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.durham.gov.uk/article/34657/Crook-North-Tow-Law-Pride-in-Place-Programme",
             "localAuthority": "County Durham",
             "region": "England",
             "population": "N/A",
@@ -3524,6 +3545,7 @@ const LOCATIONS = [
         "lng": -1.15,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.leicester.gov.uk/culture-and-sport/pride-place",
             "localAuthority": "Leicester",
             "region": "England",
             "population": "N/A",
@@ -3544,6 +3566,7 @@ const LOCATIONS = [
         "lng": -1.175,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.leicester.gov.uk/culture-and-sport/pride-place",
             "localAuthority": "Leicester",
             "region": "England",
             "population": "N/A",
@@ -3564,6 +3587,7 @@ const LOCATIONS = [
         "lng": -1.06,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.leicester.gov.uk/culture-and-sport/pride-place",
             "localAuthority": "Leicester",
             "region": "England",
             "population": "N/A",
@@ -3584,6 +3608,7 @@ const LOCATIONS = [
         "lng": -0.72,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.northnorthants.gov.uk/communities/pride-place-programme",
             "localAuthority": "North Northamptonshire",
             "region": "England",
             "population": "N/A",
@@ -3604,6 +3629,7 @@ const LOCATIONS = [
         "lng": -0.7,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.northnorthants.gov.uk/communities/pride-place-programme",
             "localAuthority": "North Northamptonshire",
             "region": "England",
             "population": "N/A",
@@ -3624,6 +3650,7 @@ const LOCATIONS = [
         "lng": -0.735,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.northnorthants.gov.uk/communities/pride-place-programme",
             "localAuthority": "North Northamptonshire",
             "region": "England",
             "population": "N/A",
@@ -3644,6 +3671,7 @@ const LOCATIONS = [
         "lng": -2.96,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.cumberland.gov.uk/your-community/pride-place-programme",
             "localAuthority": "Cumberland",
             "region": "England",
             "population": "N/A",
@@ -3664,6 +3692,7 @@ const LOCATIONS = [
         "lng": -3.47,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.cumberland.gov.uk/your-community/pride-place-programme",
             "localAuthority": "Cumberland",
             "region": "England",
             "population": "N/A",
@@ -3684,6 +3713,7 @@ const LOCATIONS = [
         "lng": -3.585,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.cumberland.gov.uk/your-community/pride-place-programme",
             "localAuthority": "Cumberland",
             "region": "England",
             "population": "N/A",
@@ -3704,6 +3734,7 @@ const LOCATIONS = [
         "lng": -1.23,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.teamdoncaster.org.uk/pride-in-place",
             "localAuthority": "Doncaster",
             "region": "England",
             "population": "N/A",
@@ -3724,6 +3755,7 @@ const LOCATIONS = [
         "lng": -1.06,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.teamdoncaster.org.uk/pride-in-place",
             "localAuthority": "Doncaster",
             "region": "England",
             "population": "N/A",
@@ -3744,6 +3776,7 @@ const LOCATIONS = [
         "lng": -1.3,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.teamdoncaster.org.uk/pride-in-place",
             "localAuthority": "Doncaster",
             "region": "England",
             "population": "N/A",
@@ -3764,6 +3797,7 @@ const LOCATIONS = [
         "lng": -2.13,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.stoke.gov.uk/homepage/210/pride_in_place_programme",
             "localAuthority": "Stoke-on-Trent",
             "region": "England",
             "population": "N/A",
@@ -3784,6 +3818,7 @@ const LOCATIONS = [
         "lng": -2.1,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.stoke.gov.uk/homepage/210/pride_in_place_programme",
             "localAuthority": "Stoke-on-Trent",
             "region": "England",
             "population": "N/A",
@@ -3804,6 +3839,7 @@ const LOCATIONS = [
         "lng": -1.19,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.middlesbrough.gov.uk/about-middlesbrough/improving-middlesbrough/pride-in-place/",
             "localAuthority": "Middlesbrough",
             "region": "England",
             "population": "N/A",
@@ -3824,6 +3860,7 @@ const LOCATIONS = [
         "lng": -1.2,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.middlesbrough.gov.uk/about-middlesbrough/improving-middlesbrough/pride-in-place/",
             "localAuthority": "Middlesbrough",
             "region": "England",
             "population": "N/A",
@@ -3844,6 +3881,7 @@ const LOCATIONS = [
         "lng": -1.47,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://haveyoursay.sheffield.gov.uk/pride-in-place-south",
             "localAuthority": "Sheffield",
             "region": "England",
             "population": "N/A",
@@ -3864,6 +3902,7 @@ const LOCATIONS = [
         "lng": -1.48,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://local-area-committees.sheffield.gov.uk/pride-place",
             "localAuthority": "Sheffield",
             "region": "England",
             "population": "N/A",
@@ -3924,6 +3963,7 @@ const LOCATIONS = [
         "lng": -2.66,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.wigan.gov.uk/Council/Projects/Marsh-Green-and-Laithwaite-Board.aspx",
             "localAuthority": "Wigan",
             "region": "England",
             "population": "N/A",
@@ -3944,6 +3984,7 @@ const LOCATIONS = [
         "lng": -2.61,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.wigan.gov.uk/Council/Projects/Platt-Bridge-and-Spring-View-Board.aspx",
             "localAuthority": "Wigan",
             "region": "England",
             "population": "N/A",
@@ -3964,6 +4005,7 @@ const LOCATIONS = [
         "lng": -1.77,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.swindon.gov.uk/info/20029/people_and_communities/1806/pride_in_place_in_swindon",
             "localAuthority": "Swindon",
             "region": "England",
             "population": "N/A",
@@ -3984,6 +4026,7 @@ const LOCATIONS = [
         "lng": -1.76,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.swindon.gov.uk/info/20029/people_and_communities/1806/pride_in_place_in_swindon",
             "localAuthority": "Swindon",
             "region": "England",
             "population": "N/A",
@@ -4004,6 +4047,7 @@ const LOCATIONS = [
         "lng": -1.55,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://new.newcastle.gov.uk/communities/grants-funding/funding-voluntary-and-community-organisations/pride-place-programme",
             "localAuthority": "Newcastle upon Tyne",
             "region": "England",
             "population": "N/A",
@@ -4024,6 +4068,7 @@ const LOCATIONS = [
         "lng": -1.65,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://new.newcastle.gov.uk/communities/grants-funding/funding-voluntary-and-community-organisations/pride-place-programme",
             "localAuthority": "Newcastle upon Tyne",
             "region": "England",
             "population": "N/A",
@@ -4044,6 +4089,7 @@ const LOCATIONS = [
         "lng": -2.28,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.salfordcvs.co.uk/PiPPendleton",
             "localAuthority": "Salford",
             "region": "England",
             "population": "N/A",
@@ -4064,6 +4110,7 @@ const LOCATIONS = [
         "lng": -2.38,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.salfordcvs.co.uk/PiPBrookhousePeelGreen",
             "localAuthority": "Salford",
             "region": "England",
             "population": "N/A",
@@ -4124,6 +4171,7 @@ const LOCATIONS = [
         "lng": -1.07,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.portsmouth.gov.uk/services/improving-our-city/pride-in-place-programme/",
             "localAuthority": "Portsmouth",
             "region": "England",
             "population": "N/A",
@@ -4144,6 +4192,7 @@ const LOCATIONS = [
         "lng": -1.08,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.portsmouth.gov.uk/services/improving-our-city/pride-in-place-programme/",
             "localAuthority": "Portsmouth",
             "region": "England",
             "population": "N/A",
@@ -4164,6 +4213,7 @@ const LOCATIONS = [
         "lng": -1.53,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.wakefield.gov.uk/regeneration/pride-in-place/pride-in-place-lupset",
             "localAuthority": "Wakefield",
             "region": "England",
             "population": "N/A",
@@ -4184,6 +4234,7 @@ const LOCATIONS = [
         "lng": -1.36,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.wakefield.gov.uk/regeneration/pride-in-place/pride-in-place-featherstone",
             "localAuthority": "Wakefield",
             "region": "England",
             "population": "N/A",
@@ -4204,6 +4255,7 @@ const LOCATIONS = [
         "lng": -4.17,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.plymouth.gov.uk/pride-place-programme",
             "localAuthority": "Plymouth",
             "region": "England",
             "population": "N/A",
@@ -4224,6 +4276,7 @@ const LOCATIONS = [
         "lng": -4.185,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.plymouth.gov.uk/pride-place-programme",
             "localAuthority": "Plymouth",
             "region": "England",
             "population": "N/A",
@@ -4244,6 +4297,7 @@ const LOCATIONS = [
         "lng": -0.99,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.havant.gov.uk/pride-place-programme",
             "localAuthority": "Havant",
             "region": "England",
             "population": "N/A",
@@ -4264,6 +4318,7 @@ const LOCATIONS = [
         "lng": -1.02,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.havant.gov.uk/pride-place-programme",
             "localAuthority": "Havant",
             "region": "England",
             "population": "N/A",
@@ -4284,6 +4339,7 @@ const LOCATIONS = [
         "lng": -0.27,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.peterborough.gov.uk/council/planning-and-development/regeneration/peterborough-pride-in-place-programme/orton-malborne-and-orton-goldhay",
             "localAuthority": "Peterborough",
             "region": "England",
             "population": "N/A",
@@ -4304,6 +4360,7 @@ const LOCATIONS = [
         "lng": -0.26,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.peterborough.gov.uk/council/planning-and-development/regeneration/peterborough-pride-in-place-programme/paston-gunthorpe-and-welland",
             "localAuthority": "Peterborough",
             "region": "England",
             "population": "N/A",
@@ -4324,6 +4381,7 @@ const LOCATIONS = [
         "lng": 1.75,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.eastsuffolk.gov.uk/community-initiatives/pride-in-place/lowestoft-central",
             "localAuthority": "East Suffolk",
             "region": "England",
             "population": "N/A",
@@ -4344,6 +4402,7 @@ const LOCATIONS = [
         "lng": 1.33,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.eastsuffolk.gov.uk/community-initiatives/pride-in-place/felixstowe-west",
             "localAuthority": "East Suffolk",
             "region": "England",
             "population": "N/A",
@@ -4364,6 +4423,7 @@ const LOCATIONS = [
         "lng": -0.2,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.eastriding.gov.uk/council/grants-and-funding/pride-in-place/",
             "localAuthority": "East Riding of Yorkshire",
             "region": "England",
             "population": "N/A",
@@ -4384,6 +4444,7 @@ const LOCATIONS = [
         "lng": 0.03,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.eastriding.gov.uk/council/grants-and-funding/pride-in-place/",
             "localAuthority": "East Riding of Yorkshire",
             "region": "England",
             "population": "N/A",
@@ -4404,6 +4465,7 @@ const LOCATIONS = [
         "lng": -1.365,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.southampton.gov.uk/communities/supporting-communities-and-groups/pride-in-place-programme/",
             "localAuthority": "Southampton",
             "region": "England",
             "population": "N/A",
@@ -4424,6 +4486,7 @@ const LOCATIONS = [
         "lng": -1.46,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.southampton.gov.uk/communities/supporting-communities-and-groups/pride-in-place-programme/",
             "localAuthority": "Southampton",
             "region": "England",
             "population": "N/A",
@@ -4444,6 +4507,7 @@ const LOCATIONS = [
         "lng": 0.5,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.basildon.gov.uk/article/11163/Pride-in-Place",
             "localAuthority": "Basildon",
             "region": "England",
             "population": "N/A",
@@ -4464,6 +4528,7 @@ const LOCATIONS = [
         "lng": 0.42,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.basildon.gov.uk/article/11163/Pride-in-Place",
             "localAuthority": "Basildon",
             "region": "England",
             "population": "N/A",
@@ -4484,6 +4549,7 @@ const LOCATIONS = [
         "lng": -1.42,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.sunderland.gov.uk/article/39055/Thorney-Close-Plains-Farm-and-Springwell-Pride-in-Place-Programme",
             "localAuthority": "Sunderland",
             "region": "England",
             "population": "N/A",
@@ -4504,6 +4570,7 @@ const LOCATIONS = [
         "lng": -1.365,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.sunderland.gov.uk/article/39053/Hendon-Docks-and-East-End-Pride-in-Place-Programme",
             "localAuthority": "Sunderland",
             "region": "England",
             "population": "N/A",
@@ -4524,6 +4591,7 @@ const LOCATIONS = [
         "lng": -2.93,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.cheshirewestandchester.gov.uk/residents/regeneration-of-west-cheshire/chester-regeneration/pride-in-place-proud-of-blacon",
             "localAuthority": "Cheshire West and Chester",
             "region": "England",
             "population": "N/A",
@@ -4544,6 +4612,7 @@ const LOCATIONS = [
         "lng": -2.9,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.cheshirewestandchester.gov.uk/residents/regeneration-of-west-cheshire/ellesmere-port-regeneration/pride-in-ellesmere-port",
             "localAuthority": "Cheshire West and Chester",
             "region": "England",
             "population": "N/A",
@@ -4564,6 +4633,7 @@ const LOCATIONS = [
         "lng": 1.23,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.norwich.gov.uk/prideinplace",
             "localAuthority": "Norwich",
             "region": "England",
             "population": "N/A",
@@ -4584,6 +4654,7 @@ const LOCATIONS = [
         "lng": 1.33,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://gettalking.norwich.gov.uk/heartseaseandpillingpark",
             "localAuthority": "Norwich",
             "region": "England",
             "population": "N/A",
@@ -4624,6 +4695,7 @@ const LOCATIONS = [
         "lng": -2.13,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.stockport.gov.uk/pride-in-place-brinnington",
             "localAuthority": "Stockport",
             "region": "England",
             "population": "N/A",
@@ -4644,6 +4716,7 @@ const LOCATIONS = [
         "lng": -2.04,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.tameside.gov.uk/hattersleyprideinplace",
             "localAuthority": "Tameside",
             "region": "England",
             "population": "N/A",
@@ -4664,6 +4737,7 @@ const LOCATIONS = [
         "lng": -2.6,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.bristol.gov.uk/residents/people-and-communities/pride-in-place",
             "localAuthority": "Bristol, City of",
             "region": "England",
             "population": "N/A",
@@ -4684,6 +4758,7 @@ const LOCATIONS = [
         "lng": -2.19,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.worcester.gov.uk/pride-in-place-warndon",
             "localAuthority": "Worcester",
             "region": "England",
             "population": "N/A",
@@ -4764,6 +4839,7 @@ const LOCATIONS = [
         "lng": -0.59,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.lincoln.gov.uk/government-levelling-funding-2/pride-place-programme",
             "localAuthority": "Lincoln",
             "region": "England",
             "population": "N/A",
@@ -4804,6 +4880,7 @@ const LOCATIONS = [
         "lng": -1.3,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.stockton.gov.uk/article/20360/Pride-in-Place",
             "localAuthority": "Stockton-on-Tees",
             "region": "England",
             "population": "N/A",
@@ -4844,6 +4921,7 @@ const LOCATIONS = [
         "lng": -1.46,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.coventry.gov.uk/willenhallchair",
             "localAuthority": "Coventry",
             "region": "England",
             "population": "N/A",
@@ -4864,6 +4942,7 @@ const LOCATIONS = [
         "lng": -1.31,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.erewash.gov.uk/community-support/cotmanhay-pride-place",
             "localAuthority": "Erewash",
             "region": "England",
             "population": "N/A",
@@ -4924,6 +5003,7 @@ const LOCATIONS = [
         "lng": -2,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://regeneratingsandwell.co.uk/about-1/funding-programmes/7",
             "localAuthority": "Sandwell",
             "region": "England",
             "population": "N/A",
@@ -4964,6 +5044,7 @@ const LOCATIONS = [
         "lng": 0.23,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.havering.gov.uk/community-1/pride-place-harold-hill-east",
             "localAuthority": "Havering",
             "region": "England",
             "population": "N/A",
@@ -4984,6 +5065,7 @@ const LOCATIONS = [
         "lng": -2.45,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.telford.gov.uk/environment/pride-in-place/",
             "localAuthority": "Telford and Wrekin",
             "region": "England",
             "population": "N/A",
@@ -5024,6 +5106,7 @@ const LOCATIONS = [
         "lng": -0.105,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.brighton-hove.gov.uk/people-and-communities/community-support-and-grants/pride-place",
             "localAuthority": "Brighton and Hove",
             "region": "England",
             "population": "N/A",
@@ -5084,6 +5167,7 @@ const LOCATIONS = [
         "lng": -1.74,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.solihull.gov.uk/communities/pride-place",
             "localAuthority": "Solihull",
             "region": "England",
             "population": "N/A",
@@ -5104,6 +5188,7 @@ const LOCATIONS = [
         "lng": -1.2,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.rotherham.gov.uk/local-economy/pride-place-phase-two-maltby-east",
             "localAuthority": "Rotherham",
             "region": "England",
             "population": "N/A",
@@ -5144,6 +5229,7 @@ const LOCATIONS = [
         "lng": -2.27,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.wyreforestdc.gov.uk/planning-and-buildings/regeneration-and-major-developments/pride-in-place-programme",
             "localAuthority": "Wyre Forest",
             "region": "England",
             "population": "N/A",
@@ -5164,6 +5250,7 @@ const LOCATIONS = [
         "lng": -2.65,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.preston.gov.uk/article/12161/Chair-Pride-in-Place-Scheme-Ribbleton-Preston",
             "localAuthority": "Preston",
             "region": "England",
             "population": "N/A",
@@ -5184,6 +5271,7 @@ const LOCATIONS = [
         "lng": -1.58,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.gateshead.gov.uk/article/38030/Beacon-Lough-and-Wrekenton-Pride-in-Place-Neighbourhood-Board-Terms-of-Reference",
             "localAuthority": "Gateshead",
             "region": "England",
             "population": "N/A",
@@ -5204,6 +5292,7 @@ const LOCATIONS = [
         "lng": -2.88,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.northlancashirecab.org.uk/about-us/pride-in-place",
             "localAuthority": "Lancaster",
             "region": "England",
             "population": "N/A",
@@ -5244,6 +5333,7 @@ const LOCATIONS = [
         "lng": -1.91,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://new.calderdale.gov.uk/communities/communities/pride-place",
             "localAuthority": "Calderdale",
             "region": "England",
             "population": "N/A",
@@ -5264,6 +5354,7 @@ const LOCATIONS = [
         "lng": -2.6,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.warrington.gov.uk/pride-place-hulme",
             "localAuthority": "Warrington",
             "region": "England",
             "population": "N/A",
@@ -5284,6 +5375,7 @@ const LOCATIONS = [
         "lng": -3,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.somerset.gov.uk/business-economy-and-licences/bridgwater-south-pride-in-place",
             "localAuthority": "Somerset",
             "region": "England",
             "population": "N/A",
@@ -5304,6 +5396,7 @@ const LOCATIONS = [
         "lng": -0.01,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.croydon.gov.uk/planning-and-regeneration/regeneration/pride-place-independent-chair-neighbourhood-board-new-addington-north",
             "localAuthority": "Croydon",
             "region": "England",
             "population": "N/A",
@@ -5324,6 +5417,7 @@ const LOCATIONS = [
         "lng": -2.73,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.herefordshire.gov.uk/your-council/grants-and-funding/community-development-and-funding/hereford-south-west-pride-in-place-neighbourhood-board/",
             "localAuthority": "Herefordshire, County of",
             "region": "England",
             "population": "N/A",
@@ -5344,6 +5438,7 @@ const LOCATIONS = [
         "lng": -3.01,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.wyre.gov.uk/health-wellbeing/pride-place-fleetwood",
             "localAuthority": "Wyre",
             "region": "England",
             "population": "N/A",
@@ -5364,6 +5459,7 @@ const LOCATIONS = [
         "lng": -1.99,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://blakenall.place/",
             "localAuthority": "Walsall",
             "region": "England",
             "population": "N/A",
@@ -5404,6 +5500,7 @@ const LOCATIONS = [
         "lng": -0.78,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.west-lindsey.gov.uk/communities-safety/grants-funding/pride-place-gainsborough-west",
             "localAuthority": "West Lindsey",
             "region": "England",
             "population": "N/A",
@@ -5444,6 +5541,7 @@ const LOCATIONS = [
         "lng": -1.93,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.redditchbc.gov.uk/residents/my-place/pride-in-place/",
             "localAuthority": "Redditch",
             "region": "England",
             "population": "N/A",
@@ -5464,6 +5562,7 @@ const LOCATIONS = [
         "lng": -2.11,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.wolverhampton.gov.uk/community/pride-place-low-hill",
             "localAuthority": "Wolverhampton",
             "region": "England",
             "population": "N/A",
@@ -5484,6 +5583,7 @@ const LOCATIONS = [
         "lng": -1.47,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://haveyoursay.northtyneside.gov.uk/pride-in-place",
             "localAuthority": "North Tyneside",
             "region": "England",
             "population": "N/A",
@@ -5504,6 +5604,7 @@ const LOCATIONS = [
         "lng": -2.46,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.dorsetcouncil.gov.uk/w/neighbourhood-board",
             "localAuthority": "Dorset",
             "region": "England",
             "population": "N/A",
@@ -5524,6 +5625,7 @@ const LOCATIONS = [
         "lng": -1.67,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.tamworth.gov.uk/index.php/neighbourhood-board-chair-voluntary-job-specification",
             "localAuthority": "Tamworth",
             "region": "England",
             "population": "N/A",
@@ -5544,6 +5646,7 @@ const LOCATIONS = [
         "lng": -1.16,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.gosport.gov.uk/article/3161/Pride-in-Place-Programme-Rowner",
             "localAuthority": "Gosport",
             "region": "England",
             "population": "N/A",
@@ -5564,6 +5667,7 @@ const LOCATIONS = [
         "lng": -1.38,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.ne-derbyshire.gov.uk/community/three-pits-pride-in-place",
             "localAuthority": "North East Derbyshire",
             "region": "England",
             "population": "N/A",
@@ -5604,6 +5708,7 @@ const LOCATIONS = [
         "lng": -0.22,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://crawley.gov.uk/community/community-involvement/pride-place-bewbush",
             "localAuthority": "Crawley",
             "region": "England",
             "population": "N/A",
@@ -5624,6 +5729,7 @@ const LOCATIONS = [
         "lng": -1.44,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.derby.gov.uk/council-and-democracy/neighbourhood-partnerships/pride-in-place-programme/",
             "localAuthority": "Derby",
             "region": "England",
             "population": "N/A",
@@ -5684,6 +5790,7 @@ const LOCATIONS = [
         "lng": -1.82,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.wiltshire.gov.uk/article/14962/Pride-in-Place",
             "localAuthority": "Wiltshire",
             "region": "England",
             "population": "N/A",
@@ -5704,6 +5811,7 @@ const LOCATIONS = [
         "lng": -1.49,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.nuneatonandbedworth.gov.uk/major-projects-1/pride-place-camp-hill",
             "localAuthority": "Nuneaton and Bedworth",
             "region": "England",
             "population": "N/A",
@@ -5724,6 +5832,7 @@ const LOCATIONS = [
         "lng": 0.79,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://yoursay.southend.gov.uk/pride-in-shoeburyness",
             "localAuthority": "Southend-on-Sea",
             "region": "England",
             "population": "N/A",
@@ -5744,6 +5853,7 @@ const LOCATIONS = [
         "lng": -2.33,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.bury.gov.uk/planning-building-control/regeneration/radcliffe-regeneration/radcliffe-pride-in-place-programme",
             "localAuthority": "Bury",
             "region": "England",
             "population": "N/A",
@@ -5764,6 +5874,7 @@ const LOCATIONS = [
         "lng": -1.21,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.oxford.gov.uk/pipp",
             "localAuthority": "Oxford",
             "region": "England",
             "population": "N/A",
@@ -5784,6 +5895,7 @@ const LOCATIONS = [
         "lng": -0.55,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.littlehampton-tc.gov.uk/prideinplace",
             "localAuthority": "Arun",
             "region": "England",
             "population": "N/A",
@@ -5804,6 +5916,7 @@ const LOCATIONS = [
         "lng": -2.4,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.bathnes.gov.uk/pride-place-twerton-and-whiteway",
             "localAuthority": "Bath and North East Somerset",
             "region": "England",
             "population": "N/A",
@@ -5824,6 +5937,7 @@ const LOCATIONS = [
         "lng": 0.52,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.westsuffolk.gov.uk/community/pride-in-place/lakenheath-pride-in-place.cfm",
             "localAuthority": "West Suffolk",
             "region": "England",
             "population": "N/A",
@@ -5844,6 +5958,7 @@ const LOCATIONS = [
         "lng": 1.3,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.dover.gov.uk/Community/Pride-in-Place/Pride-in-Place.aspx",
             "localAuthority": "Dover",
             "region": "England",
             "population": "N/A",
@@ -5884,6 +5999,7 @@ const LOCATIONS = [
         "lng": -3.12,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.edinburgh.gov.uk/funding-opportunities/pride-place",
             "localAuthority": "City of Edinburgh",
             "region": "Scotland",
             "population": "N/A",
@@ -5964,6 +6080,7 @@ const LOCATIONS = [
         "lng": -4.25,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.glasgow.gov.uk/prideinplace",
             "localAuthority": "Glasgow City",
             "region": "Scotland",
             "population": "N/A",
@@ -5984,6 +6101,7 @@ const LOCATIONS = [
         "lng": -4.23,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.glasgow.gov.uk/prideinplace",
             "localAuthority": "Glasgow City",
             "region": "Scotland",
             "population": "N/A",
@@ -6004,6 +6122,7 @@ const LOCATIONS = [
         "lng": -4.4,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.highland.gov.uk/economy-regeneration/uk-government-pride-place-fund",
             "localAuthority": "Highland",
             "region": "Scotland",
             "population": "N/A",
@@ -6024,6 +6143,7 @@ const LOCATIONS = [
         "lng": -4.79,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://northayrshire.community/three-towns-town-board/",
             "localAuthority": "North Ayrshire",
             "region": "Scotland",
             "population": "N/A",
@@ -6044,6 +6164,7 @@ const LOCATIONS = [
         "lng": -4,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.northlanarkshire.gov.uk/regeneration-and-investment/towns-and-communities/town-centre-regeneration/pride-place-motherwell",
             "localAuthority": "North Lanarkshire",
             "region": "Scotland",
             "population": "N/A",
@@ -6124,6 +6245,7 @@ const LOCATIONS = [
         "lng": -3.71,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.westlothian.gov.uk/article/88358/Pride-in-Place-Blackburn-Fauldhouse-and-Whitburn",
             "localAuthority": "West Lothian",
             "region": "Scotland",
             "population": "N/A",
@@ -6164,6 +6286,7 @@ const LOCATIONS = [
         "lng": -3.66,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.npt.gov.uk/business/strategic-funding-programmes/pride-in-place-programme/",
             "localAuthority": "Neath Port Talbot",
             "region": "Wales",
             "population": "N/A",
@@ -6184,6 +6307,7 @@ const LOCATIONS = [
         "lng": -3.94,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://northgateswanseapip.co.uk/",
             "localAuthority": "Swansea",
             "region": "Wales",
             "population": "N/A",
@@ -6244,6 +6368,7 @@ const LOCATIONS = [
         "lng": -3.26,
         "phase": "phase_2",
         "place": {
+   "boardWebsite": "https://www.devandregencardiff.co.uk/pride-in-place/",
             "localAuthority": "Cardiff",
             "region": "Wales",
             "population": "N/A",
@@ -6805,6 +6930,7 @@ const LOCATIONS = [
         "lng": -1.912,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.bcpcouncil.gov.uk/campaigns-and-programmes/pride-in-place",
             "localAuthority": "Bournemouth, Christchurch and Poole",
             "region": "England",
             "population": "N/A",
@@ -6825,6 +6951,7 @@ const LOCATIONS = [
         "lng": -1.841,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.bcpcouncil.gov.uk/campaigns-and-programmes/pride-in-place",
             "localAuthority": "Bournemouth, Christchurch and Poole",
             "region": "England",
             "population": "N/A",
@@ -6845,6 +6972,7 @@ const LOCATIONS = [
         "lng": -2.021,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.bcpcouncil.gov.uk/campaigns-and-programmes/pride-in-place",
             "localAuthority": "Bournemouth, Christchurch and Poole",
             "region": "England",
             "population": "N/A",
@@ -6865,6 +6993,7 @@ const LOCATIONS = [
         "lng": 0.538,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.medway.gov.uk/info/200914/medway_pride_in_place",
             "localAuthority": "Medway",
             "region": "England",
             "population": "N/A",
@@ -6885,6 +7014,7 @@ const LOCATIONS = [
         "lng": 0.583,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.medway.gov.uk/info/200914/medway_pride_in_place",
             "localAuthority": "Medway",
             "region": "England",
             "population": "N/A",
@@ -6905,6 +7035,7 @@ const LOCATIONS = [
         "lng": 0.487,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.medway.gov.uk/info/200914/medway_pride_in_place",
             "localAuthority": "Medway",
             "region": "England",
             "population": "N/A",
@@ -6925,6 +7056,7 @@ const LOCATIONS = [
         "lng": 0.106,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://oneboroughvoice.lbbd.gov.uk/pride-in-place-neighbourhood-board",
             "localAuthority": "Barking and Dagenham",
             "region": "England",
             "population": "N/A",
@@ -6945,6 +7077,7 @@ const LOCATIONS = [
         "lng": 0.145,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://oneboroughvoice.lbbd.gov.uk/pride-in-place-neighbourhood-board",
             "localAuthority": "Barking and Dagenham",
             "region": "England",
             "population": "N/A",
@@ -6965,6 +7098,7 @@ const LOCATIONS = [
         "lng": -0.288,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.brent.gov.uk/neighbourhoods-and-communities/pride-in-place",
             "localAuthority": "Brent",
             "region": "England",
             "population": "N/A",
@@ -6985,6 +7119,7 @@ const LOCATIONS = [
         "lng": -0.245,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.brent.gov.uk/neighbourhoods-and-communities/pride-in-place",
             "localAuthority": "Brent",
             "region": "England",
             "population": "N/A",
@@ -7045,6 +7180,7 @@ const LOCATIONS = [
         "lng": -0.06,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://letstalk.enfield.gov.uk/prideinplace-edmonton",
             "localAuthority": "Enfield",
             "region": "England",
             "population": "N/A",
@@ -7065,6 +7201,7 @@ const LOCATIONS = [
         "lng": -0.043,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://letstalk.enfield.gov.uk/prideinplace-enfieldwash",
             "localAuthority": "Enfield",
             "region": "England",
             "population": "N/A",
@@ -7125,6 +7262,7 @@ const LOCATIONS = [
         "lng": -0.417,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.luton.gov.uk/community-environment/regeneration/pride-place-programme",
             "localAuthority": "Luton",
             "region": "England",
             "population": "N/A",
@@ -7145,6 +7283,7 @@ const LOCATIONS = [
         "lng": -0.443,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.luton.gov.uk/community-environment/regeneration/pride-place-programme",
             "localAuthority": "Luton",
             "region": "England",
             "population": "N/A",
@@ -7165,6 +7304,7 @@ const LOCATIONS = [
         "lng": -1.64,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://new.newcastle.gov.uk/communities/grants-funding/funding-voluntary-and-community-organisations/pride-place-programme-funding/pride-place-programme-fawdon-south",
             "localAuthority": "Newcastle upon Tyne",
             "region": "England",
             "population": "N/A",
@@ -7185,6 +7325,7 @@ const LOCATIONS = [
         "lng": -1.744,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://new.newcastle.gov.uk/communities/grants-funding/funding-voluntary-and-community-organisations/pride-place-programme-funding/pride-place-programme-throckley-newburn-and-walbottle",
             "localAuthority": "Newcastle upon Tyne",
             "region": "England",
             "population": "N/A",
@@ -7305,6 +7446,7 @@ const LOCATIONS = [
         "lng": -2.03,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.cannockchasedc.gov.uk/business/economic-development/pride-place-chadsmoor",
             "localAuthority": "Cannock Chase",
             "region": "England",
             "population": "N/A",
@@ -7325,6 +7467,7 @@ const LOCATIONS = [
         "lng": -0.107,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.croydon.gov.uk/planning-and-regeneration/regeneration/pride-place-programme/croydon-west",
             "localAuthority": "Croydon",
             "region": "England",
             "population": "N/A",
@@ -7345,6 +7488,7 @@ const LOCATIONS = [
         "lng": -1.482,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.derby.gov.uk/council-and-democracy/neighbourhood-partnerships/pride-in-place-programme/",
             "localAuthority": "Derby",
             "region": "England",
             "population": "N/A",
@@ -7405,6 +7549,7 @@ const LOCATIONS = [
         "lng": 0.113,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.royalgreenwich.gov.uk/business-and-licences/economic-development/pride-in-place/thamesmead-birchmere-park",
             "localAuthority": "Greenwich",
             "region": "England",
             "population": "N/A",
@@ -7425,6 +7570,7 @@ const LOCATIONS = [
         "lng": -2.253,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.manchester.gov.uk/consultations-and-surveys/pride-in-place-tell-us-what-you-think-about-your-area",
             "localAuthority": "Manchester",
             "region": "England",
             "population": "N/A",
@@ -7445,6 +7591,7 @@ const LOCATIONS = [
         "lng": 0.062,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://newhamco-create.co.uk/folders/little-ilford-pride-in-place",
             "localAuthority": "Newham",
             "region": "England",
             "population": "N/A",
@@ -7485,6 +7632,7 @@ const LOCATIONS = [
         "lng": -2.058,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://regeneratingsandwell.co.uk/about-1/funding-programmes/8",
             "localAuthority": "Sandwell",
             "region": "England",
             "population": "N/A",
@@ -7505,6 +7653,7 @@ const LOCATIONS = [
         "lng": -0.19,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.stevenage.gov.uk/town-and-community/pride-in-place-for-st-nicholas",
             "localAuthority": "Stevenage",
             "region": "England",
             "population": "N/A",
@@ -7525,6 +7674,7 @@ const LOCATIONS = [
         "lng": -2.185,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.stoke.gov.uk/info/20100/communities_and_safety/840/pride_in_place_in_bradeley_chell_heath_and_fegg_hayes",
             "localAuthority": "Stoke-on-Trent",
             "region": "England",
             "population": "N/A",
@@ -7545,6 +7695,7 @@ const LOCATIONS = [
         "lng": 0.359,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://consult.thurrock.gov.uk/pride-in-place",
             "localAuthority": "Thurrock",
             "region": "England",
             "population": "N/A",
@@ -7585,6 +7736,7 @@ const LOCATIONS = [
         "lng": -2.135,
         "phase": "phase_3",
         "place": {
+   "boardWebsite": "https://www.wolverhampton.gov.uk/community/pride-place-whitmore-reans",
             "localAuthority": "Wolverhampton",
             "region": "England",
             "population": "N/A",
