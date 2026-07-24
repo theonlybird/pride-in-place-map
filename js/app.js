@@ -283,68 +283,58 @@ document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.getElementById('sidebar');
     const closeSidebarBtn = document.getElementById('close-sidebar');
     let minOverlap = 1;
+    let currentLoc = null; // location currently shown in the sidebar
 
-    function isLayerActive(loc) {
-        const showPip = document.getElementById('layer-pip').checked;
-        const showEfl = document.getElementById('layer-efl').checked;
-        const showSe = document.getElementById('layer-se').checked;
-        const showNtc = document.getElementById('layer-ntc').checked;
-        const showAce = document.getElementById('layer-ace').checked;
-
-        let visibleCount = 0;
-        let hasVisibleLayer = false;
-
-        if (loc.pip && showPip) {
+    // Single source of truth: which of this location's layers are visible
+    // given the CURRENT checkbox state. Markers, rings, counts, sidebar and
+    // banner all derive from this — no pre-computed permutations needed.
+    function getVisibleLayers(loc) {
+        const vis = [];
+        if (loc.pip && document.getElementById('layer-pip').checked) {
             const phase = loc.pip.phase;
             const p1 = document.getElementById('pip-phase1').checked;
             const p2 = document.getElementById('pip-phase2').checked;
             const p3 = document.getElementById('pip-phase3').checked;
             if ((phase === 'phase_1' && p1) || (phase === 'phase_2' && p2) || (phase === 'phase_3' && p3) ||
                 (phase !== 'phase_1' && phase !== 'phase_2' && phase !== 'phase_3' && (p1 || p2 || p3))) {
-                visibleCount++;
-                hasVisibleLayer = true;
+                vis.push('pip');
             }
         }
-        if (loc.efl && showEfl) { visibleCount++; hasVisibleLayer = true; }
-        if (loc.se && showSe) {
+        if (loc.efl && document.getElementById('layer-efl').checked) vis.push('efl');
+        if (loc.se && document.getElementById('layer-se').checked) {
             const t = loc.se.type;
             const ldp = document.getElementById('se-existing-ldp').checked;
             const tc = document.getElementById('se-transition-core').checked;
             const exp = document.getElementById('se-expansion').checked;
             if ((t === 'existing_ldp' && ldp) || (t === 'transition_core' && tc) || (t === 'place_expansion' && exp)) {
-                visibleCount++;
-                hasVisibleLayer = true;
+                vis.push('se');
             }
         }
-        if (loc.ntc && showNtc) {
+        if (loc.ntc && document.getElementById('layer-ntc').checked) {
             const nt = loc.ntc.type;
             const acc = document.getElementById('ntc-accredited').checked;
             const gr = document.getElementById('ntc-grant').checked;
             if (((nt === 'accredited_city' || nt === 'accredited_town') && acc) || (nt === 'grant' && gr)) {
-                visibleCount++;
-                hasVisibleLayer = true;
+                vis.push('ntc');
             }
         }
-        if (loc.ace && showAce) {
+        if (loc.ace && document.getElementById('layer-ace').checked) {
             const at = loc.ace.type;
             const nw = document.getElementById('ace-new').checked;
             const ex = document.getElementById('ace-existing').checked;
-            if ((at === 'new' && nw) || (at !== 'new' && ex)) {
-                visibleCount++;
-                hasVisibleLayer = true;
-            }
+            if ((at === 'new' && nw) || (at !== 'new' && ex)) vis.push('ace');
         }
-
-        return hasVisibleLayer && visibleCount >= minOverlap ? visibleCount : 0;
+        return vis;
     }
 
-    function buildMarkerIcon(loc, visCount) {
-        const layers = [];
-        if (loc.pip) layers.push('pip');
-        if (loc.efl) layers.push('efl');
-        if (loc.se) layers.push('se');
-        if (loc.ntc) layers.push('ntc');
-        if (loc.ace) layers.push('ace');
+    function countActiveLayers() {
+        return ['layer-pip', 'layer-efl', 'layer-se', 'layer-ntc', 'layer-ace']
+            .filter(id => document.getElementById(id).checked).length;
+    }
+
+    function buildMarkerIcon(loc, visLayers) {
+        // Icon reflects only the layers currently visible for this location
+        const layers = visLayers;
 
         if (layers.length === 1) {
             const layer = layers[0];
@@ -396,20 +386,16 @@ document.addEventListener('DOMContentLoaded', () => {
         let counts = { pip: 0, efl: 0, se: 0, ntc: 0, ace: 0, total: 0, overlap2: 0, overlap3: 0, overlap4: 0 };
 
         allLocations.forEach(loc => {
-            const visCount = isLayerActive(loc);
-            if (!visCount) return;
+            const visLayers = getVisibleLayers(loc);
+            if (visLayers.length === 0 || visLayers.length < minOverlap) return;
 
-            if (loc.pip) counts.pip++;
-            if (loc.efl) counts.efl++;
-            if (loc.se) counts.se++;
-            if (loc.ntc) counts.ntc++;
-            if (loc.ace) counts.ace++;
+            visLayers.forEach(l => counts[l]++);
             counts.total++;
-            if (loc.overlapCount >= 2) counts.overlap2++;
-            if (loc.overlapCount >= 3) counts.overlap3++;
-            if (loc.overlapCount >= 4) counts.overlap4++;
+            if (visLayers.length >= 2) counts.overlap2++;
+            if (visLayers.length >= 3) counts.overlap3++;
+            if (visLayers.length >= 4) counts.overlap4++;
 
-            const icon = buildMarkerIcon(loc, visCount);
+            const icon = buildMarkerIcon(loc, visLayers);
             const marker = L.marker([loc.lat, loc.lng], { icon });
             marker.locData = loc;
 
@@ -461,27 +447,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Sidebar
     function openSidebar(loc) {
+        currentLoc = loc;
+        const vis = getVisibleLayers(loc);
+
         document.getElementById('sb-default').classList.add('hidden');
 
         // Title
         document.getElementById('sb-title').textContent = loc.name;
 
-        // Badges
+        // Badges (only currently visible layers)
         const badgesEl = document.getElementById('sb-badges');
         badgesEl.innerHTML = '';
-        if (loc.se) badgesEl.innerHTML += '<span class="badge se">Sport England</span>';
-        if (loc.pip) badgesEl.innerHTML += '<span class="badge pip">Pride in Place</span>';
-        if (loc.ntc) badgesEl.innerHTML += '<span class="badge ntc">Nature T&C</span>';
-        if (loc.ace) badgesEl.innerHTML += '<span class="badge ace">Culture Priority</span>';
-        if (loc.efl) badgesEl.innerHTML += '<span class="badge efl">EFL</span>';
+        if (vis.includes('se')) badgesEl.innerHTML += '<span class="badge se">Sport England</span>';
+        if (vis.includes('pip')) badgesEl.innerHTML += '<span class="badge pip">Pride in Place</span>';
+        if (vis.includes('ntc')) badgesEl.innerHTML += '<span class="badge ntc">Nature T&C</span>';
+        if (vis.includes('ace')) badgesEl.innerHTML += '<span class="badge ace">Culture Priority</span>';
+        if (vis.includes('efl')) badgesEl.innerHTML += '<span class="badge efl">EFL</span>';
 
-        // Overlap banner
+        // Overlap banner (based on visible layers vs currently active layers)
         const overlapSection = document.getElementById('sb-overlap');
         const overlapBanner = document.getElementById('overlap-banner');
-        if (loc.overlapCount >= 2) {
+        if (vis.length >= 2) {
             overlapSection.classList.remove('hidden');
-            const level = loc.overlapCount >= 3 ? 'high' : 'medium';
-            overlapBanner.textContent = `This location appears in ${loc.overlapCount} of 5 layers — ${level} crossover potential`;
+            const level = vis.length >= 3 ? 'high' : 'medium';
+            overlapBanner.textContent = `This location appears in ${vis.length} of ${countActiveLayers()} active layers — ${level} crossover potential`;
         } else {
             overlapSection.classList.add('hidden');
         }
@@ -490,7 +479,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const pipSection = document.getElementById('sb-pip-details');
         const pipHoodsEl = document.getElementById('val-pip-neighbourhoods');
         const pipHoodsRow = pipHoodsEl ? pipHoodsEl.closest('.data-item') : null;
-        if (loc.pip) {
+        if (vis.includes('pip')) {
             pipSection.classList.remove('hidden');
             document.getElementById('val-la').textContent = loc.pip.localAuthority;
             document.getElementById('val-region').textContent = loc.pip.region;
@@ -513,7 +502,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // EFL details
         const eflSection = document.getElementById('sb-efl-details');
-        if (loc.efl) {
+        if (vis.includes('efl')) {
             eflSection.classList.remove('hidden');
             document.getElementById('val-clubname').textContent = loc.efl.name;
             document.getElementById('val-league').textContent = loc.efl.league;
@@ -534,7 +523,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // SE details
         const seSection = document.getElementById('sb-se-details');
-        if (loc.se) {
+        if (vis.includes('se')) {
             seSection.classList.remove('hidden');
             const typeLabels = {
                 existing_ldp: 'Existing Place Partner (LDP)',
@@ -549,7 +538,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // NTC details
         const ntcSection = document.getElementById('sb-ntc-details');
-        if (loc.ntc) {
+        if (vis.includes('ntc')) {
             ntcSection.classList.remove('hidden');
             const ntcLabels = {
                 accredited_city: 'Accredited Nature City',
@@ -564,7 +553,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Culture Priority Place details
         const aceSection = document.getElementById('sb-ace-details');
-        if (loc.ace) {
+        if (vis.includes('ace')) {
             aceSection.classList.remove('hidden');
             const aceLabels = {
                 new: 'New Culture Priority Place (2026 addition)',
@@ -598,8 +587,58 @@ document.addEventListener('DOMContentLoaded', () => {
 
     closeSidebarBtn.addEventListener('click', () => {
         sidebar.classList.add('closed');
+        currentLoc = null;
         document.querySelectorAll('.custom-marker').forEach(el => el.classList.remove('active'));
     });
+
+    // Keep an open sidebar in sync with the filters: refresh its contents,
+    // or close it if its location is no longer visible at all.
+    function refreshSidebar() {
+        if (!currentLoc || sidebar.classList.contains('closed')) return;
+        const vis = getVisibleLayers(currentLoc);
+        if (vis.length === 0 || vis.length < minOverlap) {
+            sidebar.classList.add('closed');
+            currentLoc = null;
+            document.querySelectorAll('.custom-marker').forEach(el => el.classList.remove('active'));
+        } else {
+            openSidebar(currentLoc);
+        }
+    }
+
+    // Re-enable whichever filters are needed to make a location visible
+    // (used when clicking a search result for a currently hidden location)
+    function ensureLocVisible(loc) {
+        const check = id => {
+            const el = document.getElementById(id);
+            if (el) el.checked = true;
+        };
+        if (getVisibleLayers(loc).length === 0) {
+            if (loc.pip) {
+                check('layer-pip');
+                const phaseId = { phase_1: 'pip-phase1', phase_2: 'pip-phase2', phase_3: 'pip-phase3' }[loc.pip.phase];
+                if (phaseId) { check(phaseId); } else { check('pip-phase1'); check('pip-phase2'); check('pip-phase3'); }
+            }
+            if (loc.efl) check('layer-efl');
+            if (loc.se) {
+                check('layer-se');
+                check({ existing_ldp: 'se-existing-ldp', transition_core: 'se-transition-core', place_expansion: 'se-expansion' }[loc.se.type]);
+            }
+            if (loc.ntc) {
+                check('layer-ntc');
+                check(loc.ntc.type === 'grant' ? 'ntc-grant' : 'ntc-accredited');
+            }
+            if (loc.ace) {
+                check('layer-ace');
+                check(loc.ace.type === 'new' ? 'ace-new' : 'ace-existing');
+            }
+        }
+        // Relax the overlap filter if it would still hide this location
+        if (getVisibleLayers(loc).length < minOverlap) {
+            minOverlap = 1;
+            document.querySelectorAll('.overlap-btn').forEach(b => b.classList.toggle('active', b.dataset.min === '1'));
+        }
+        renderMarkers();
+    }
 
     // 5. Search
     const searchInput = document.getElementById('searchInput');
@@ -637,6 +676,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 div.addEventListener('click', () => {
                     searchInput.value = match.name;
                     searchResults.classList.add('hidden');
+                    ensureLocVisible(match);
                     const targetMarker = markersMap.get(match.id);
                     if (targetMarker) {
                         markersGroup.zoomToShowLayer(targetMarker, () => { targetMarker.fire('click'); });
@@ -655,7 +695,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 6. Wire up layer toggles
     const allCheckboxes = document.querySelectorAll('.layers-panel input[type="checkbox"]');
-    allCheckboxes.forEach(cb => cb.addEventListener('change', renderMarkers));
+    allCheckboxes.forEach(cb => cb.addEventListener('change', () => {
+        renderMarkers();
+        refreshSidebar();
+    }));
 
     // Overlap finder buttons
     document.querySelectorAll('.overlap-btn').forEach(btn => {
@@ -664,6 +707,7 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.classList.add('active');
             minOverlap = parseInt(btn.dataset.min);
             renderMarkers();
+            refreshSidebar();
         });
     });
 
