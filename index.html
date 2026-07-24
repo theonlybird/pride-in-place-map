@@ -80,6 +80,19 @@
 
             <div class="layer-group">
                 <label class="layer-toggle">
+                    <input type="checkbox" id="layer-ace" checked>
+                    <span class="layer-swatch ace"></span>
+                    <span class="layer-label">Culture Priority Places</span>
+                    <span class="layer-count" id="count-ace"></span>
+                </label>
+                <div class="layer-sub" id="sub-ace">
+                    <label><input type="checkbox" id="ace-new" checked> New Additions (2026, 23)</label>
+                    <label><input type="checkbox" id="ace-existing" checked> Existing ACE Priority Places (58)</label>
+                </div>
+            </div>
+
+            <div class="layer-group">
+                <label class="layer-toggle">
                     <input type="checkbox" id="layer-efl" checked>
                     <span class="layer-swatch efl"></span>
                     <span class="layer-label">EFL Clubs</span>
@@ -93,7 +106,7 @@
                     <button class="overlap-btn active" data-min="1">All</button>
                     <button class="overlap-btn" data-min="2">2+</button>
                     <button class="overlap-btn" data-min="3">3+</button>
-                    <button class="overlap-btn" data-min="4">4</button>
+                    <button class="overlap-btn" data-min="4">4+</button>
                 </div>
                 <div class="overlap-result" id="overlap-result"></div>
             </div>
@@ -114,6 +127,7 @@
         <div class="legend-item"><span class="layer-swatch se small"></span><span><strong>Sport England</strong> — Place Partnerships</span></div>
         <div class="legend-item"><span class="layer-swatch pip small"></span><span><strong>Pride in Place</strong> — Gov't neighbourhood funding</span></div>
         <div class="legend-item"><span class="layer-swatch ntc small"></span><span><strong>Nature Towns</strong> — Nat. Lottery / Natural England</span></div>
+        <div class="legend-item"><span class="layer-swatch ace small"></span><span><strong>Culture Priority</strong> — DCMS / Arts Council places</span></div>
         <div class="legend-item"><span class="layer-swatch efl small"></span><span><strong>EFL Clubs</strong> — Football League presence</span></div>
         <hr>
         <div class="legend-item"><span class="overlap-indicator-demo">3</span><span>Number = active layers at location</span></div>
@@ -164,6 +178,14 @@
                 <div class="data-grid">
                     <div class="data-item"><span class="label">Status</span><span class="value" id="val-ntc-type"></span></div>
                     <div class="data-item full-width"><span class="label">Project</span><span class="value" id="val-ntc-project"></span></div>
+                </div>
+            </div>
+
+            <div id="sb-ace-details" class="sb-section hidden">
+                <h3><span class="layer-swatch ace small"></span> Culture Priority Place</h3>
+                <div class="data-grid">
+                    <div class="data-item full-width"><span class="label">Status</span><span class="value" id="val-ace-type"></span></div>
+                    <div class="data-item full-width hidden"><span class="label">Note</span><span class="value" id="val-ace-note"></span></div>
                 </div>
             </div>
 

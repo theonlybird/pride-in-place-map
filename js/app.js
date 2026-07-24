@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const rawLocations = window.getLocations();
     const sePlaces = window.SE_PLACES || [];
     const ntcPlaces = window.NTC_PLACES || [];
+    const acePlaces = window.ACE_PLACES || [];
 
     function normalise(str) {
         return str.toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -41,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function getOrCreate(name, lat, lng) {
         const key = normalise(name);
         if (locMap.has(key)) return locMap.get(key);
-        const loc = { id: key, name, lat, lng, pip: null, efl: null, se: null, ntc: null, notes: '' };
+        const loc = { id: key, name, lat, lng, pip: null, efl: null, se: null, ntc: null, ace: null, notes: '' };
         locMap.set(key, loc);
         return loc;
     }
@@ -137,6 +138,13 @@ document.addEventListener('DOMContentLoaded', () => {
             loc = getOrCreate(ntc.name, ntc.lat, ntc.lng);
         }
         loc.ntc = { type: ntc.type, project: ntc.project };
+    });
+
+    // Import Culture Priority Places (DCMS / Arts Council) - LA-level places
+    acePlaces.forEach(ace => {
+        const key = normalise(ace.name);
+        const loc = locMap.has(key) ? locMap.get(key) : getOrCreate(ace.name, ace.lat, ace.lng);
+        loc.ace = { type: ace.type, note: ace.note || '' };
     });
 
     // Link PiP neighbourhoods to parent LA locations
@@ -241,12 +249,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Compute overlap counts
     const allLocations = [];
     locMap.forEach(loc => {
-        loc.overlapCount = (loc.pip ? 1 : 0) + (loc.efl ? 1 : 0) + (loc.se ? 1 : 0) + (loc.ntc ? 1 : 0);
+        loc.overlapCount = (loc.pip ? 1 : 0) + (loc.efl ? 1 : 0) + (loc.se ? 1 : 0) + (loc.ntc ? 1 : 0) + (loc.ace ? 1 : 0);
         loc.activeLayers = [];
         if (loc.pip) loc.activeLayers.push('pip');
         if (loc.efl) loc.activeLayers.push('efl');
         if (loc.se) loc.activeLayers.push('se');
         if (loc.ntc) loc.activeLayers.push('ntc');
+        if (loc.ace) loc.activeLayers.push('ace');
         allLocations.push(loc);
     });
 
@@ -280,6 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const showEfl = document.getElementById('layer-efl').checked;
         const showSe = document.getElementById('layer-se').checked;
         const showNtc = document.getElementById('layer-ntc').checked;
+        const showAce = document.getElementById('layer-ace').checked;
 
         let visibleCount = 0;
         let hasVisibleLayer = false;
@@ -315,6 +325,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 hasVisibleLayer = true;
             }
         }
+        if (loc.ace && showAce) {
+            const at = loc.ace.type;
+            const nw = document.getElementById('ace-new').checked;
+            const ex = document.getElementById('ace-existing').checked;
+            if ((at === 'new' && nw) || (at !== 'new' && ex)) {
+                visibleCount++;
+                hasVisibleLayer = true;
+            }
+        }
 
         return hasVisibleLayer && visibleCount >= minOverlap ? visibleCount : 0;
     }
@@ -325,6 +344,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (loc.efl) layers.push('efl');
         if (loc.se) layers.push('se');
         if (loc.ntc) layers.push('ntc');
+        if (loc.ace) layers.push('ace');
 
         if (layers.length === 1) {
             const layer = layers[0];
@@ -340,7 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (layer === 'efl') {
                 innerHtml = `<svg class="marker-icon-overlay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16l4-3-1.5-5h-5L8 13z"></path></svg>`;
             } else if (!isTier2) {
-                const icons = { pip: '●', se: '▲', ntc: '🌿' };
+                const icons = { pip: '●', se: '▲', ntc: '🌿', ace: '🎭' };
                 innerHtml = `<span style="font-size:8px;color:white">${icons[layer] || '●'}</span>`;
             }
             const size = isTier2 ? 12 : 22;
@@ -352,7 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Multi-layer marker with stacked rings
-        const colors = { pip: 'var(--color-pip)', efl: 'var(--color-efl)', se: 'var(--color-se)', ntc: 'var(--color-ntc)' };
+        const colors = { pip: 'var(--color-pip)', efl: 'var(--color-efl)', se: 'var(--color-se)', ntc: 'var(--color-ntc)', ace: 'var(--color-ace)' };
         let ringsHtml = '';
         const ringCount = layers.length;
         layers.forEach((l, i) => {
@@ -373,7 +393,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderMarkers() {
         markersGroup.clearLayers();
         markersMap.clear();
-        let counts = { pip: 0, efl: 0, se: 0, ntc: 0, total: 0, overlap2: 0, overlap3: 0, overlap4: 0 };
+        let counts = { pip: 0, efl: 0, se: 0, ntc: 0, ace: 0, total: 0, overlap2: 0, overlap3: 0, overlap4: 0 };
 
         allLocations.forEach(loc => {
             const visCount = isLayerActive(loc);
@@ -383,6 +403,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (loc.efl) counts.efl++;
             if (loc.se) counts.se++;
             if (loc.ntc) counts.ntc++;
+            if (loc.ace) counts.ace++;
             counts.total++;
             if (loc.overlapCount >= 2) counts.overlap2++;
             if (loc.overlapCount >= 3) counts.overlap3++;
@@ -430,6 +451,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('count-efl').textContent = counts.efl;
         document.getElementById('count-se').textContent = counts.se;
         document.getElementById('count-ntc').textContent = counts.ntc;
+        document.getElementById('count-ace').textContent = counts.ace;
 
         const overlapText = minOverlap > 1
             ? `Showing ${counts.total} locations in ${minOverlap}+ layers`
@@ -450,6 +472,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (loc.se) badgesEl.innerHTML += '<span class="badge se">Sport England</span>';
         if (loc.pip) badgesEl.innerHTML += '<span class="badge pip">Pride in Place</span>';
         if (loc.ntc) badgesEl.innerHTML += '<span class="badge ntc">Nature T&C</span>';
+        if (loc.ace) badgesEl.innerHTML += '<span class="badge ace">Culture Priority</span>';
         if (loc.efl) badgesEl.innerHTML += '<span class="badge efl">EFL</span>';
 
         // Overlap banner
@@ -457,7 +480,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const overlapBanner = document.getElementById('overlap-banner');
         if (loc.overlapCount >= 2) {
             overlapSection.classList.remove('hidden');
-            overlapBanner.textContent = `⭐ This location appears in ${loc.overlapCount} of 4 layers — high crossover potential`;
+            const level = loc.overlapCount >= 3 ? 'high' : 'medium';
+            overlapBanner.textContent = `This location appears in ${loc.overlapCount} of 5 layers — ${level} crossover potential`;
         } else {
             overlapSection.classList.add('hidden');
         }
@@ -538,6 +562,28 @@ document.addEventListener('DOMContentLoaded', () => {
             ntcSection.classList.add('hidden');
         }
 
+        // Culture Priority Place details
+        const aceSection = document.getElementById('sb-ace-details');
+        if (loc.ace) {
+            aceSection.classList.remove('hidden');
+            const aceLabels = {
+                new: 'New Culture Priority Place (2026 addition)',
+                existing_dcms: 'Existing ACE Priority Place — also identified by DCMS methodology',
+                existing_ace: 'Existing ACE Priority Place'
+            };
+            document.getElementById('val-ace-type').textContent = aceLabels[loc.ace.type] || loc.ace.type;
+            const aceNoteEl = document.getElementById('val-ace-note');
+            const aceNoteRow = aceNoteEl.closest('.data-item');
+            if (loc.ace.note) {
+                aceNoteRow.classList.remove('hidden');
+                aceNoteEl.textContent = loc.ace.note;
+            } else {
+                aceNoteRow.classList.add('hidden');
+            }
+        } else {
+            aceSection.classList.add('hidden');
+        }
+
         // Notes
         const contextSection = document.getElementById('sb-context');
         if (loc.notes) {
@@ -581,6 +627,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (match.efl) badges += '<span class="micro-badge efl">EFL</span>';
                 if (match.se) badges += '<span class="micro-badge se">SE</span>';
                 if (match.ntc) badges += '<span class="micro-badge ntc">NTC</span>';
+                if (match.ace) badges += '<span class="micro-badge ace">CPP</span>';
 
                 div.innerHTML = `
                     <div class="search-result-name">${match.name}${match.efl ? ' — ' + match.efl.name : ''}</div>

@@ -14,6 +14,8 @@
     --color-se-glow: rgba(59, 130, 246, 0.4);
     --color-ntc: #10b981;
     --color-ntc-glow: rgba(16, 185, 129, 0.4);
+    --color-ace: #ec4899;
+    --color-ace-glow: rgba(236, 72, 153, 0.4);
     --color-accent: #6366f1;
     --color-overlap-gold: #fbbf24;
 }
@@ -108,6 +110,7 @@ body.light-theme .search-result-item:hover { background: rgba(0,0,0,0.04); }
 .micro-badge.efl { background: rgba(99,102,241,0.2); color: #818cf8; }
 .micro-badge.se { background: rgba(59,130,246,0.2); color: #60a5fa; }
 .micro-badge.ntc { background: rgba(16,185,129,0.2); color: #34d399; }
+.micro-badge.ace { background: rgba(236,72,153,0.2); color: #f472b6; }
 
 /* Layers Panel */
 .layers-panel {
@@ -167,6 +170,7 @@ body.light-theme .layer-count { background: rgba(0,0,0,0.06); }
 .layer-swatch.efl { background: var(--color-efl); box-shadow: 0 0 6px var(--color-efl-glow); }
 .layer-swatch.se { background: var(--color-se); box-shadow: 0 0 6px var(--color-se-glow); }
 .layer-swatch.ntc { background: var(--color-ntc); box-shadow: 0 0 6px var(--color-ntc-glow); }
+.layer-swatch.ace { background: var(--color-ace); box-shadow: 0 0 6px var(--color-ace-glow); }
 
 /* Sub-filters */
 .layer-sub {
@@ -320,6 +324,7 @@ body.light-theme .appearance-section select { background: rgba(255,255,255,0.5);
 .badge.efl { background: rgba(99,102,241,0.2); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.3); }
 .badge.se { background: rgba(59,130,246,0.2); color: #93c5fd; border: 1px solid rgba(59,130,246,0.3); }
 .badge.ntc { background: rgba(16,185,129,0.2); color: #6ee7b7; border: 1px solid rgba(16,185,129,0.3); }
+.badge.ace { background: rgba(236,72,153,0.2); color: #f9a8d4; border: 1px solid rgba(236,72,153,0.3); }
 
 .close-btn {
     background: none; border: none;
@@ -344,14 +349,19 @@ body.light-theme .close-btn:hover { color: var(--text-primary); }
 }
 
 .overlap-banner {
-    background: linear-gradient(135deg, rgba(251,191,36,0.15), rgba(251,191,36,0.05));
-    border: 1px solid rgba(251,191,36,0.3);
+    background: rgba(148, 163, 184, 0.08);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 10px 14px;
     font-size: 13px;
-    font-weight: 500;
-    color: var(--color-overlap-gold);
+    font-weight: 600;
+    color: #93c5fd; /* readable blue on dark theme */
     text-align: center;
+}
+body.light-theme .overlap-banner {
+    color: #1e3a8a; /* dark blue */
+    background: rgba(30, 58, 138, 0.05);
+    border-color: rgba(30, 58, 138, 0.15);
 }
 
 .data-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -410,6 +420,7 @@ body.light-theme .marker-inner { box-shadow: 0 0 8px rgba(0,0,0,0.15); }
 .layer-efl-only .marker-inner { border-color: var(--color-efl); box-shadow: 0 0 10px var(--color-efl-glow); }
 .layer-se-only .marker-inner { border-color: var(--color-se); box-shadow: 0 0 10px var(--color-se-glow); }
 .layer-ntc-only .marker-inner { border-color: var(--color-ntc); box-shadow: 0 0 10px var(--color-ntc-glow); }
+.layer-ace-only .marker-inner { border-color: var(--color-ace); box-shadow: 0 0 10px var(--color-ace-glow); }
 
 /* Multi-layer markers */
 .marker-inner .overlap-count {
@@ -432,6 +443,7 @@ body.light-theme .marker-inner { box-shadow: 0 0 8px rgba(0,0,0,0.15); }
 .marker-multi .marker-inner .ring.r-efl { border-color: var(--color-efl); }
 .marker-multi .marker-inner .ring.r-se { border-color: var(--color-se); }
 .marker-multi .marker-inner .ring.r-ntc { border-color: var(--color-ntc); }
+.marker-multi .marker-inner .ring.r-ace { border-color: var(--color-ace); }
 
 /* Pulse for 3+ overlap */
 .marker-multi-3 .marker-inner {
