@@ -463,8 +463,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Badges (only currently visible layers)
         const badgesEl = document.getElementById('sb-badges');
         badgesEl.innerHTML = '';
-        if (vis.includes('se')) badgesEl.innerHTML += '<span class="badge se">Sport England</span>';
         if (vis.includes('pip')) badgesEl.innerHTML += '<span class="badge pip">Pride in Place</span>';
+        if (vis.includes('se')) badgesEl.innerHTML += '<span class="badge se">Sport England</span>';
         if (vis.includes('ntc')) badgesEl.innerHTML += '<span class="badge ntc">Nature T&C</span>';
         if (vis.includes('ace')) badgesEl.innerHTML += '<span class="badge ace">Culture Priority</span>';
         if (vis.includes('efl')) badgesEl.innerHTML += '<span class="badge efl">EFL</span>';

@@ -60,20 +60,6 @@
             
             <div class="layer-group">
                 <label class="layer-toggle">
-                    <input type="checkbox" id="layer-se" checked>
-                    <span class="layer-swatch se"></span>
-                    <span class="layer-label">Sport England Places</span>
-                    <span class="layer-count" id="count-se"></span>
-                </label>
-                <div class="layer-sub" id="sub-se">
-                    <label><input type="checkbox" id="se-existing-ldp" checked> Existing Partner (LDP)</label>
-                    <label><input type="checkbox" id="se-transition-core" checked> Transition / Core City</label>
-                    <label><input type="checkbox" id="se-expansion" checked> Place Expansion</label>
-                </div>
-            </div>
-
-            <div class="layer-group">
-                <label class="layer-toggle">
                     <input type="checkbox" id="layer-pip" checked>
                     <span class="layer-swatch pip"></span>
                     <span class="layer-label">Pride in Place</span>
@@ -83,6 +69,20 @@
                     <label><input type="checkbox" id="pip-phase1" checked> Phase 1 (Original 75)</label>
                     <label><input type="checkbox" id="pip-phase2" checked> Phase 2 (169 areas)</label>
                     <label><input type="checkbox" id="pip-phase3" checked> Phase 3 (2026 Expansion, 40)</label>
+                </div>
+            </div>
+
+            <div class="layer-group">
+                <label class="layer-toggle">
+                    <input type="checkbox" id="layer-se" checked>
+                    <span class="layer-swatch se"></span>
+                    <span class="layer-label">Sport England Places</span>
+                    <span class="layer-count" id="count-se"></span>
+                </label>
+                <div class="layer-sub" id="sub-se">
+                    <label><input type="checkbox" id="se-existing-ldp" checked> Existing Partner (LDP)</label>
+                    <label><input type="checkbox" id="se-transition-core" checked> Transition / Core City</label>
+                    <label><input type="checkbox" id="se-expansion" checked> Place Expansion</label>
                 </div>
             </div>
 
@@ -144,8 +144,8 @@
 
     <!-- Legend (horizontal bar, bottom centre) -->
     <div class="legend glass-panel" aria-label="Layer legend">
-        <div class="legend-item" title="Sport England — Place Partnerships"><span class="layer-swatch se small"></span><span><strong>Sport England</strong></span></div>
         <div class="legend-item" title="Pride in Place — Gov't neighbourhood funding"><span class="layer-swatch pip small"></span><span><strong>Pride in Place</strong></span></div>
+        <div class="legend-item" title="Sport England — Place Partnerships"><span class="layer-swatch se small"></span><span><strong>Sport England</strong></span></div>
         <div class="legend-item" title="Nature Towns &amp; Cities — Nat. Lottery / Natural England"><span class="layer-swatch ntc small"></span><span><strong>Nature Towns</strong></span></div>
         <div class="legend-item" title="Culture Priority Places — DCMS / Arts Council"><span class="layer-swatch ace small"></span><span><strong>Culture Priority</strong></span></div>
         <div class="legend-item" title="EFL Clubs — Football League presence"><span class="layer-swatch efl small"></span><span><strong>EFL Clubs</strong></span></div>
@@ -170,14 +170,6 @@
                 <div class="overlap-banner" id="overlap-banner"></div>
             </div>
 
-            <div id="sb-se-details" class="sb-section hidden">
-                <h3><span class="layer-swatch se small"></span> Sport England Place</h3>
-                <div class="data-grid">
-                    <div class="data-item"><span class="label">Partnership Type</span><span class="value" id="val-se-type"></span></div>
-                    <div class="data-item"><span class="label">Coverage</span><span class="value" id="val-se-coverage"></span></div>
-                </div>
-            </div>
-
             <div id="sb-pip-details" class="sb-section hidden">
                 <h3><span class="layer-swatch pip small"></span> Pride in Place</h3>
                 <div class="data-grid">
@@ -189,6 +181,14 @@
                     <div class="data-item full-width"><span class="label">Board Status</span><span class="value" id="val-board"></span></div>
                     <div class="data-item full-width hidden"><span class="label">Board Website</span><span class="value"><a href="#" target="_blank" rel="noopener" id="val-pip-website"></a></span></div>
                     <div class="data-item full-width hidden"><span class="label">PiP Neighbourhoods</span><span class="value" id="val-pip-neighbourhoods"></span></div>
+                </div>
+            </div>
+
+            <div id="sb-se-details" class="sb-section hidden">
+                <h3><span class="layer-swatch se small"></span> Sport England Place</h3>
+                <div class="data-grid">
+                    <div class="data-item"><span class="label">Partnership Type</span><span class="value" id="val-se-type"></span></div>
+                    <div class="data-item"><span class="label">Coverage</span><span class="value" id="val-se-coverage"></span></div>
                 </div>
             </div>
 
