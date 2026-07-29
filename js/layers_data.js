@@ -123,7 +123,7 @@ const NTC_PLACES = [
     {name:"Norwich",type:"grant",lat:52.63,lng:1.30,project:"NatureCityNorwich",website:"https://naturetownsandcities.org.uk/grants/"},
     {name:"Walsall",type:"grant",lat:52.585,lng:-1.982,project:"Green Vision: Nature & Health",website:"https://naturetownsandcities.org.uk/grants/"},
     {name:"Coventry",type:"grant",lat:52.407,lng:-1.510,project:"Green Renaissance",website:"https://naturetownsandcities.org.uk/grants/"},
-    {name:"Torfaen",type:"grant",lat:51.654,lng:-3.021,project:"Torfaen Nature Masterplan",website:"https://naturetownsandcities.org.uk/grants/"},
+    {name:"Torfaen",type:"grant",lat:51.710,lng:-3.045,project:"Torfaen Nature Masterplan",website:"https://naturetownsandcities.org.uk/grants/"},
     {name:"Neath Port Talbot",type:"grant",lat:51.595,lng:-3.782,project:"Nature's Back in Town",website:"https://naturetownsandcities.org.uk/grants/"},
     {name:"Fife",type:"grant",lat:56.07,lng:-3.46,project:"Transforming Fife's Greenspace",website:"https://naturetownsandcities.org.uk/grants/"},
     {name:"North Lanarkshire",type:"grant",lat:55.86,lng:-3.96,project:"NL Nearer to Nature",website:"https://naturetownsandcities.org.uk/grants/"},
