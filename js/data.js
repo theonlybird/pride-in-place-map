@@ -5201,12 +5201,12 @@ const LOCATIONS = [
         "notes": "Phase 2 neighbourhood in Rotherham. 1 neighbourhood selected in this local authority."
     },
     {
-        "id": "biddick_hill",
-        "name": "Biddick Hill",
+        "id": "biddick_hall",
+        "name": "Biddick Hall",
         "type": "pip_only",
         "status": "orange",
-        "lat": 54.96,
-        "lng": -1.44,
+        "lat": 54.9721,
+        "lng": -1.4352,
         "phase": "phase_2",
         "place": {
             "localAuthority": "South Tyneside",
