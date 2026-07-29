@@ -456,6 +456,9 @@ body.light-theme .marker-inner { box-shadow: 0 0 8px rgba(0,0,0,0.15); }
     box-shadow: 0 0 6px var(--color-se-glow);
 }
 .layer-efl-only .marker-inner { border-color: var(--color-efl); box-shadow: 0 0 10px var(--color-efl-glow); }
+
+/* Multi-club cities: EFL purple ring (matching the key) with an empty centre —
+   no football icon, because it aggregates clubs rather than being one. */
 .layer-se-only .marker-inner { border-color: var(--color-se); box-shadow: 0 0 10px var(--color-se-glow); }
 .layer-ntc-only .marker-inner { border-color: var(--color-ntc); box-shadow: 0 0 10px var(--color-ntc-glow); }
 .layer-ace-only .marker-inner { border-color: var(--color-ace); box-shadow: 0 0 10px var(--color-ace-glow); }

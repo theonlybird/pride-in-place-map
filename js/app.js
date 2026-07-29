@@ -189,6 +189,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (mapping[1]) parent.laAlias = mapping[1];
                         if (!parent.efl) {
                             parent.efl = {
+                                // Aggregate = not a club in its own right, just a marker of
+                                // crossover potential. Rendered hollow and excluded from the
+                                // EFL layer count so the club total stays accurate.
+                                aggregate: true,
                                 name: cityClubs.map(c => c.name).join(' & '),
                                 league: cityClubs.map(c => c.league).join(' / '),
                                 stadium: cityClubs.map(c => c.stadium).join(' / '),
@@ -348,16 +352,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 (layer === 'pip' && loc.pip && !loc.pip.inherited &&
                     (loc.pip.phase === 'phase_2' || loc.pip.phase === 'phase_3')) ||
                 layer === 'se';
+            const isEflAggregate = layer === 'efl' && loc.efl && loc.efl.aggregate;
             let innerHtml = '';
             if (layer === 'efl') {
-                innerHtml = `<svg class="marker-icon-overlay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16l4-3-1.5-5h-5L8 13z"></path></svg>`;
+                // Aggregate city markers get no football icon — they represent two or more
+                // clubs, each of which has its own marker at its stadium.
+                if (!isEflAggregate) {
+                    innerHtml = `<svg class="marker-icon-overlay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16l4-3-1.5-5h-5L8 13z"></path></svg>`;
+                }
             } else if (!isTier2) {
                 const icons = { pip: '●', se: '▲', ntc: '🌿', ace: '🎭' };
                 innerHtml = `<span style="font-size:8px;color:white">${icons[layer] || '●'}</span>`;
             }
             const size = isTier2 ? 12 : 22;
             return L.divIcon({
-                className: `custom-marker layer-${layer}-only${isTier2 ? ' marker-tier2 marker-tier2-' + layer : ''}`,
+                className: `custom-marker layer-${layer}-only${isTier2 ? ' marker-tier2 marker-tier2-' + layer : ''}${isEflAggregate ? ' marker-efl-aggregate' : ''}`,
                 html: `<div class="marker-inner">${innerHtml}</div>`,
                 iconSize: [size, size], iconAnchor: [size / 2, size / 2]
             });
@@ -394,7 +403,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const visLayers = getVisibleLayers(loc);
             if (visLayers.length === 0 || visLayers.length < minOverlap) return;
 
-            visLayers.forEach(l => counts[l]++);
+            // Aggregate multi-club city markers aren't clubs, so they don't add to the EFL count
+            visLayers.forEach(l => {
+                if (l === 'efl' && loc.efl && loc.efl.aggregate) return;
+                counts[l]++;
+            });
             counts.total++;
             if (visLayers.length >= 2) counts.overlap2++;
             if (visLayers.length >= 3) counts.overlap3++;
