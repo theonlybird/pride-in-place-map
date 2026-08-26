@@ -3,13 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const map = L.map('map', { zoomControl: false }).setView([53.8, -2.0], 6);
     L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-    const darkTiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd', maxZoom: 20
+    // Basemap: Stadia Maps (Alidade Smooth). Authentication is domain-based --
+    // strategicfundingmap.uk must be listed under Manage Properties in the Stadia
+    // dashboard. localhost/127.0.0.1 works without any setup (rate limited).
+    // If you ever need key-based auth instead, append '?api_key=YOUR_KEY' to the URLs.
+    const STADIA_ATTRIB = '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+
+    const darkTiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
+        attribution: STADIA_ATTRIB, maxZoom: 20
     });
-    const lightTiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd', maxZoom: 20
+    const lightTiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
+        attribution: STADIA_ATTRIB, maxZoom: 20
     });
     lightTiles.addTo(map);
 
