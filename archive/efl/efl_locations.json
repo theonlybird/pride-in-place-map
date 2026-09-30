@@ -1,0 +1,2017 @@
+[
+  {
+    "id": "chesterfield",
+    "name": "Chesterfield",
+    "type": "pip_efl",
+    "status": "green",
+    "lat": 53.235666,
+    "lng": -1.4290929,
+    "phase": "phase_1",
+    "place": {
+      "boardWebsite": "https://chesterfield.gov.uk/business-and-economic-growth/regeneration-and-economic-growth/pride-in-place-chesterfield-town-board/",
+      "localAuthority": "Chesterfield Borough",
+      "region": "UK",
+      "population": "104,000",
+      "imdDecile": 2,
+      "deprivationNotes": "Phase 1 area.",
+      "boardStatus": "Established",
+      "pipFunding": "£20m (10 years)"
+    },
+    "club": {
+      "name": "Chesterfield",
+      "league": "League Two",
+      "stadium": "Local Stadium",
+      "capacity": 10600,
+      "communityArm": "Chesterfield Community Trust",
+      "communityArmWebsite": "https://cfcct.org.uk/",
+      "onNeighbourhoodBoard": true
+    },
+    "notes": "Generated from UK Parliament Phase 1 list."
+  },
+  {
+    "id": "mansfield",
+    "name": "Mansfield",
+    "type": "pip_efl",
+    "status": "green",
+    "lat": 53.1443785,
+    "lng": -1.1964165,
+    "phase": "phase_1",
+    "place": {
+      "localAuthority": "Mansfield District",
+      "region": "UK",
+      "population": "110,000",
+      "imdDecile": 2,
+      "deprivationNotes": "Phase 1 area.",
+      "boardStatus": "Established",
+      "pipFunding": "£20m (10 years)"
+    },
+    "club": {
+      "name": "Mansfield Town",
+      "league": "League One",
+      "stadium": "Local Stadium",
+      "capacity": 9186,
+      "communityArm": "Mansfield Town Community Trust",
+      "communityArmWebsite": "https://mansfieldtownfitc.net/",
+      "onNeighbourhoodBoard": true
+    },
+    "notes": "Generated from UK Parliament Phase 1 list."
+  },
+  {
+    "id": "accrington",
+    "name": "Accrington",
+    "type": "pip_efl",
+    "status": "green",
+    "lat": 53.7541156,
+    "lng": -2.3655434,
+    "phase": "phase_1",
+    "place": {
+      "boardWebsite": "https://accringtontownsquare.com/plan-for-neighbourhoods/",
+      "localAuthority": "Hyndburn",
+      "region": "UK",
+      "population": "35,000",
+      "imdDecile": 1,
+      "deprivationNotes": "Phase 1 area.",
+      "boardStatus": "Established",
+      "pipFunding": "£20m (10 years)"
+    },
+    "club": {
+      "name": "Accrington Stanley",
+      "league": "League Two",
+      "stadium": "Local Stadium",
+      "capacity": 5450,
+      "communityArm": "Accrington Stanley Community Trust",
+      "communityArmWebsite": "http://www.stanleytrust.co.uk/",
+      "onNeighbourhoodBoard": true
+    },
+    "notes": "Generated from UK Parliament Phase 1 list."
+  },
+  {
+    "id": "newport",
+    "name": "Newport",
+    "type": "efl_only",
+    "status": "blue",
+    "lat": 51.5886,
+    "lng": -2.988,
+    "phase": "none",
+    "place": null,
+    "club": {
+      "name": "Newport County",
+      "league": "League Two",
+      "stadium": "Rodney Parade",
+      "capacity": 8700,
+      "communityArm": "Newport County Community Trust",
+      "communityArmWebsite": "https://www.countyinthecommunity.co.uk/",
+      "onNeighbourhoodBoard": true
+    },
+    "notes": "EFL club location. Removed from Pride in Place Phase 1 (not in official list — verified Jul 2026)."
+  },
+  {
+    "id": "wrexham",
+    "name": "Wrexham",
+    "type": "pip_efl",
+    "status": "green",
+    "lat": 53.0465084,
+    "lng": -2.9937869,
+    "phase": "phase_1",
+    "place": {
+      "boardWebsite": "https://www.wrexham.gov.uk/service/plan-neighbourhoods",
+      "localAuthority": "Wrexham",
+      "region": "UK",
+      "population": "61,000",
+      "imdDecile": 3,
+      "deprivationNotes": "Phase 1 area.",
+      "boardStatus": "Established",
+      "pipFunding": "£20m (10 years)"
+    },
+    "club": {
+      "name": "Wrexham",
+      "league": "Championship",
+      "stadium": "Local Stadium",
+      "capacity": 12600,
+      "communityArm": "Wrexham Community Trust",
+      "communityArmWebsite": "https://www.wrexhamafc.co.uk/wrexham-afc-foundation",
+      "onNeighbourhoodBoard": true
+    },
+    "notes": "Generated from UK Parliament Phase 1 list."
+  },
+  {
+    "id": "barnsley",
+    "name": "Barnsley",
+    "type": "pip_efl",
+    "status": "green",
+    "lat": 53.5527719,
+    "lng": -1.4827755,
+    "phase": "phase_1",
+    "place": {
+      "boardWebsite": "https://barnsleymbc.moderngov.co.uk/mgCommitteeDetails.aspx?ID=662",
+      "localAuthority": "Barnsley",
+      "region": "UK",
+      "population": "91,000",
+      "imdDecile": 2,
+      "deprivationNotes": "Phase 1 area.",
+      "boardStatus": "Established",
+      "pipFunding": "£20m (10 years)"
+    },
+    "club": {
+      "name": "Barnsley",
+      "league": "League One",
+      "stadium": "Local Stadium",
+      "capacity": 23287,
+      "communityArm": "Barnsley Community Trust",
+      "communityArmWebsite": "http://www.barnsleyfccommunity.co.uk/",
+      "onNeighbourhoodBoard": true
+    },
+    "notes": "Generated from UK Parliament Phase 1 list."
+  },
+  {
+    "id": "doncaster",
+    "name": "Doncaster",
+    "type": "pip_efl",
+    "status": "green",
+    "lat": 53.5227681,
+    "lng": -1.1335312,
+    "phase": "phase_1",
+    "place": {
+      "boardWebsite": "https://www.teamdoncaster.org.uk/pride-in-place",
+      "localAuthority": "Doncaster",
+      "region": "UK",
+      "population": "109,000",
+      "imdDecile": 2,
+      "deprivationNotes": "Phase 1 area.",
+      "boardStatus": "Established",
+      "pipFunding": "£20m (10 years)"
+    },
+    "club": {
+      "name": "Doncaster Rovers",
+      "league": "League One",
+      "stadium": "Local Stadium",
+      "capacity": 15231,
+      "communityArm": "Doncaster Rovers Community Trust",
+      "communityArmWebsite": "https://www.clubdoncasterfoundation.co.uk/",
+      "onNeighbourhoodBoard": true
+    },
+    "notes": "Generated from UK Parliament Phase 1 list."
+  },
+  {
+    "id": "grimsby",
+    "name": "Grimsby",
+    "type": "pip_efl",
+    "status": "green",
+    "lat": 53.5671407,
+    "lng": -0.0788045,
+    "phase": "phase_1",
+    "place": {
+      "boardWebsite": "https://www.our-future.io/grimsby-together",
+      "localAuthority": "North East Lincolnshire",
+      "region": "UK",
+      "population": "88,000",
+      "imdDecile": 1,
+      "deprivationNotes": "Phase 1 area.",
+      "boardStatus": "Established",
+      "pipFunding": "£20m (10 years)"
+    },
+    "club": {
+      "name": "Grimsby Town",
+      "league": "League Two",
+      "stadium": "Local Stadium",
+      "capacity": 9052,
+      "communityArm": "Grimsby Town Community Trust",
+      "communityArmWebsite": "https://grimsbytownfoundation.co.uk/",
+      "onNeighbourhoodBoard": true
+    },
+    "notes": "Generated from UK Parliament Phase 1 list."
+  },
+  {
+    "id": "rotherham",
+    "name": "Rotherham",
+    "type": "pip_efl",
+    "status": "green",
+    "lat": 53.4314507,
+    "lng": -1.3562051,
+    "phase": "phase_1",
+    "place": {
+      "boardWebsite": "https://www.rotherham.gov.uk/local-economy/pride-in-place",
+      "localAuthority": "Rotherham",
+      "region": "UK",
+      "population": "109,000",
+      "imdDecile": 2,
+      "deprivationNotes": "Phase 1 area.",
+      "boardStatus": "Established",
+      "pipFunding": "£20m (10 years)"
+    },
+    "club": {
+      "name": "Rotherham United",
+      "league": "League One",
+      "stadium": "Local Stadium",
+      "capacity": 12021,
+      "communityArm": "Rotherham United Community Trust",
+      "communityArmWebsite": "https://www.themillers.co.uk/club/community/",
+      "onNeighbourhoodBoard": true
+    },
+    "notes": "Generated from UK Parliament Phase 1 list."
+  },
+  {
+    "id": "birmingham_city",
+    "name": "Birmingham City",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.4756,
+    "lng": -1.8683,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Birmingham City",
+      "league": "Championship",
+      "stadium": "St Andrew's @ Knighthead Park",
+      "capacity": 29409,
+      "communityArm": "Birmingham City Community Trust",
+      "communityArmWebsite": "https://bcfcfoundation.com/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "blackburn_rovers",
+    "name": "Blackburn Rovers",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.7286,
+    "lng": -2.4893,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Blackburn Rovers",
+      "league": "Championship",
+      "stadium": "Ewood Park",
+      "capacity": 31367,
+      "communityArm": "Blackburn Rovers Community Trust",
+      "communityArmWebsite": "https://www.rovers.co.uk/community/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "bristol_city",
+    "name": "Bristol City",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.44,
+    "lng": -2.6202,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Bristol City",
+      "league": "Championship",
+      "stadium": "Ashton Gate",
+      "capacity": 27000,
+      "communityArm": "Bristol City Community Trust",
+      "communityArmWebsite": "https://www.bcfc.co.uk/robins-foundation/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "charlton_athletic",
+    "name": "Charlton Athletic",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.4865,
+    "lng": 0.0364,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Charlton Athletic",
+      "league": "Championship",
+      "stadium": "The Valley",
+      "capacity": 27111,
+      "communityArm": "Charlton Athletic Community Trust",
+      "communityArmWebsite": "http://www.cact.org.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "coventry_city",
+    "name": "Coventry City",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.4481,
+    "lng": -1.4956,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Coventry City",
+      "league": "Championship",
+      "stadium": "Coventry Building Society Arena",
+      "capacity": 32609,
+      "communityArm": "Coventry City Community Trust",
+      "communityArmWebsite": "https://www.ccfc.co.uk/community/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "derby_county",
+    "name": "Derby County",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.9149,
+    "lng": -1.4472,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Derby County",
+      "league": "Championship",
+      "stadium": "Pride Park Stadium",
+      "capacity": 33597,
+      "communityArm": "Derby County Community Trust",
+      "communityArmWebsite": "https://www.derbycountycommunitytrust.com/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "hull_city",
+    "name": "Hull City",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.7466,
+    "lng": -0.3676,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Hull City",
+      "league": "Championship",
+      "stadium": "MKM Stadium",
+      "capacity": 25586,
+      "communityArm": "Hull City Community Trust",
+      "communityArmWebsite": "https://www.tigerstrust.co.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "ipswich_town",
+    "name": "Ipswich Town",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.055,
+    "lng": 1.1447,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Ipswich Town",
+      "league": "Championship",
+      "stadium": "Portman Road",
+      "capacity": 30056,
+      "communityArm": "Ipswich Town Community Trust",
+      "communityArmWebsite": "https://www.itfcfoundation.co.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "leicester_city",
+    "name": "Leicester City",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.6204,
+    "lng": -1.1422,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Leicester City",
+      "league": "Championship",
+      "stadium": "King Power Stadium",
+      "capacity": 32312,
+      "communityArm": "Leicester City Community Trust",
+      "communityArmWebsite": "https://www.lcfc.com/community",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "middlesbrough",
+    "name": "Middlesbrough",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 54.5781,
+    "lng": -1.217,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Middlesbrough",
+      "league": "Championship",
+      "stadium": "Riverside Stadium",
+      "capacity": 34742,
+      "communityArm": "Middlesbrough Community Trust",
+      "communityArmWebsite": "https://www.mfcfoundation.co.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "millwall",
+    "name": "Millwall",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.4859,
+    "lng": -0.0509,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Millwall",
+      "league": "Championship",
+      "stadium": "The Den",
+      "capacity": 20146,
+      "communityArm": "Millwall Community Trust",
+      "communityArmWebsite": "https://www.millwallcommunity.org.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "norwich_city",
+    "name": "Norwich City",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.6221,
+    "lng": 1.3091,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Norwich City",
+      "league": "Championship",
+      "stadium": "Carrow Road",
+      "capacity": 27359,
+      "communityArm": "Norwich City Community Trust",
+      "communityArmWebsite": "https://www.communitysportsfoundation.org.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "oxford_united",
+    "name": "Oxford United",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.7166,
+    "lng": -1.2087,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Oxford United",
+      "league": "Championship",
+      "stadium": "Kassam Stadium",
+      "capacity": 12500,
+      "communityArm": "Oxford United Community Trust",
+      "communityArmWebsite": "https://www.ouitc.org/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "portsmouth",
+    "name": "Portsmouth",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 50.7964,
+    "lng": -1.0639,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Portsmouth",
+      "league": "Championship",
+      "stadium": "Fratton Park",
+      "capacity": 20620,
+      "communityArm": "Portsmouth Community Trust",
+      "communityArmWebsite": "https://www.pompeyitc.co.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "preston_north_end",
+    "name": "Preston North End",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.7722,
+    "lng": -2.6881,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Preston North End",
+      "league": "Championship",
+      "stadium": "Deepdale",
+      "capacity": 23404,
+      "communityArm": "Preston North End Community Trust",
+      "communityArmWebsite": "https://www.pnefc.net/PNECET/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "queens_park_rangers",
+    "name": "Queens Park Rangers",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.5093,
+    "lng": -0.2321,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Queens Park Rangers",
+      "league": "Championship",
+      "stadium": "Loftus Road",
+      "capacity": 18439,
+      "communityArm": "Queens Park Rangers Community Trust",
+      "communityArmWebsite": "https://www.qpr.co.uk/community/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "sheffield_united",
+    "name": "Sheffield United",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.3703,
+    "lng": -1.4709,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Sheffield United",
+      "league": "Championship",
+      "stadium": "Bramall Lane",
+      "capacity": 32050,
+      "communityArm": "Sheffield United Community Trust",
+      "communityArmWebsite": "https://sufc-community.com/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "sheffield_wednesday",
+    "name": "Sheffield Wednesday",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.4114,
+    "lng": -1.5006,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Sheffield Wednesday",
+      "league": "Championship",
+      "stadium": "Hillsborough",
+      "capacity": 39732,
+      "communityArm": "Sheffield Wednesday Community Trust",
+      "communityArmWebsite": "https://www.swfc.co.uk/swfc-community-programme",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "southampton",
+    "name": "Southampton",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 50.9058,
+    "lng": -1.3911,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Southampton",
+      "league": "Championship",
+      "stadium": "St Mary's Stadium",
+      "capacity": 32384,
+      "communityArm": "Southampton Community Trust",
+      "communityArmWebsite": "https://www.southamptonfc.com/en/saints-foundation-home",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "stoke_city",
+    "name": "Stoke City",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.9884,
+    "lng": -2.1754,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Stoke City",
+      "league": "Championship",
+      "stadium": "bet365 Stadium",
+      "capacity": 30089,
+      "communityArm": "Stoke City Community Trust",
+      "communityArmWebsite": "https://www.stokecityfc.com/community/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "swansea_city",
+    "name": "Swansea City",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.6423,
+    "lng": -3.9351,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Swansea City",
+      "league": "Championship",
+      "stadium": "Swansea.com Stadium",
+      "capacity": 21088,
+      "communityArm": "Swansea City Community Trust",
+      "communityArmWebsite": "https://www.swanseacity.com/swansea-city-afc-foundation",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "watford",
+    "name": "Watford",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.6499,
+    "lng": -0.4015,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Watford",
+      "league": "Championship",
+      "stadium": "Vicarage Road",
+      "capacity": 22200,
+      "communityArm": "Watford Community Trust",
+      "communityArmWebsite": "https://www.watfordfccsetrust.com/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "west_bromwich_albion",
+    "name": "West Bromwich Albion",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.509,
+    "lng": -1.9639,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "West Bromwich Albion",
+      "league": "Championship",
+      "stadium": "The Hawthorns",
+      "capacity": 26850,
+      "communityArm": "West Bromwich Albion Community Trust",
+      "communityArmWebsite": "https://www.wba.co.uk/foundation",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "afc_wimbledon",
+    "name": "AFC Wimbledon",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.4318,
+    "lng": -0.1872,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "AFC Wimbledon",
+      "league": "League One",
+      "stadium": "Plough Lane",
+      "capacity": 9215,
+      "communityArm": "AFC Wimbledon Community Trust",
+      "communityArmWebsite": "http://afcwimbledonfoundation.com/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "blackpool",
+    "name": "Blackpool",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.8046,
+    "lng": -3.048,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Blackpool",
+      "league": "League One",
+      "stadium": "Bloomfield Road",
+      "capacity": 16616,
+      "communityArm": "Blackpool Community Trust",
+      "communityArmWebsite": "https://www.bfcct.co.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "bolton_wanderers",
+    "name": "Bolton Wanderers",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.5805,
+    "lng": -2.5355,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Bolton Wanderers",
+      "league": "League One",
+      "stadium": "Toughsheet Community Stadium",
+      "capacity": 28723,
+      "communityArm": "Bolton Wanderers Community Trust",
+      "communityArmWebsite": "http://www.bwct.org.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "bradford_city",
+    "name": "Bradford City",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.8044,
+    "lng": -1.759,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Bradford City",
+      "league": "League One",
+      "stadium": "Valley Parade",
+      "capacity": 25136,
+      "communityArm": "Bradford City Community Trust",
+      "communityArmWebsite": "https://www.bradfordcitycf.org.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "burton_albion",
+    "name": "Burton Albion",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.8218,
+    "lng": -1.627,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Burton Albion",
+      "league": "League One",
+      "stadium": "Pirelli Stadium",
+      "capacity": 6912,
+      "communityArm": "Burton Albion Community Trust",
+      "communityArmWebsite": "http://burtonalbioncommunitytrust.co.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "cardiff_city",
+    "name": "Cardiff City",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.4728,
+    "lng": -3.203,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Cardiff City",
+      "league": "League One",
+      "stadium": "Cardiff City Stadium",
+      "capacity": 33280,
+      "communityArm": "Cardiff City Community Trust",
+      "communityArmWebsite": "https://www.cardiffcityfcfoundation.org.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "exeter_city",
+    "name": "Exeter City",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 50.7307,
+    "lng": -3.5211,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Exeter City",
+      "league": "League One",
+      "stadium": "St James Park",
+      "capacity": 8696,
+      "communityArm": "Exeter City Community Trust",
+      "communityArmWebsite": "https://exetercct.org/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "huddersfield_town",
+    "name": "Huddersfield Town",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.6543,
+    "lng": -1.7683,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Huddersfield Town",
+      "league": "League One",
+      "stadium": "John Smith's Stadium",
+      "capacity": 24121,
+      "communityArm": "Huddersfield Town Community Trust",
+      "communityArmWebsite": "https://www.htafcfoundation.com/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "leyton_orient",
+    "name": "Leyton Orient",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.5601,
+    "lng": -0.0126,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Leyton Orient",
+      "league": "League One",
+      "stadium": "Brisbane Road",
+      "capacity": 9271,
+      "communityArm": "Leyton Orient Community Trust",
+      "communityArmWebsite": "https://www.leytonorienttrust.org.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "lincoln_city",
+    "name": "Lincoln City",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.2184,
+    "lng": -0.5407,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Lincoln City",
+      "league": "League One",
+      "stadium": "LNER Stadium",
+      "capacity": 10669,
+      "communityArm": "Lincoln City Community Trust",
+      "communityArmWebsite": "https://www.lincolncityfoundation.com/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "luton_town",
+    "name": "Luton Town",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.8842,
+    "lng": -0.4316,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Luton Town",
+      "league": "League One",
+      "stadium": "Kenilworth Road",
+      "capacity": 11500,
+      "communityArm": "Luton Town Community Trust",
+      "communityArmWebsite": "https://www.lutontowncommunity.co.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "northampton_town",
+    "name": "Northampton Town",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.2354,
+    "lng": -0.9335,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Northampton Town",
+      "league": "League One",
+      "stadium": "Sixfields Stadium",
+      "capacity": 8199,
+      "communityArm": "Northampton Town Community Trust",
+      "communityArmWebsite": "https://www.ntfc.co.uk/community",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "peterborough_united",
+    "name": "Peterborough United",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.5648,
+    "lng": -0.2405,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Peterborough United",
+      "league": "League One",
+      "stadium": "Weston Homes Stadium",
+      "capacity": 15314,
+      "communityArm": "Peterborough United Community Trust",
+      "communityArmWebsite": "https://theposhfoundation.com/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "plymouth_argyle",
+    "name": "Plymouth Argyle",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 50.3881,
+    "lng": -4.1509,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Plymouth Argyle",
+      "league": "League One",
+      "stadium": "Home Park",
+      "capacity": 17900,
+      "communityArm": "Plymouth Argyle Community Trust",
+      "communityArmWebsite": "https://argylecommunitytrust.co.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "port_vale",
+    "name": "Port Vale",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.0499,
+    "lng": -2.1925,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Port Vale",
+      "league": "League One",
+      "stadium": "Vale Park",
+      "capacity": 15036,
+      "communityArm": "Port Vale Community Trust",
+      "communityArmWebsite": "https://www.port-vale.co.uk/portvalefoundation",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "reading",
+    "name": "Reading",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.4222,
+    "lng": -0.9826,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Reading",
+      "league": "League One",
+      "stadium": "Select Car Leasing Stadium",
+      "capacity": 24161,
+      "communityArm": "Reading Community Trust",
+      "communityArmWebsite": "https://www.readingfc.co.uk/community-trust/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "stevenage",
+    "name": "Stevenage",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.8898,
+    "lng": -0.1937,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Stevenage",
+      "league": "League One",
+      "stadium": "Lamex Stadium",
+      "capacity": 7800,
+      "communityArm": "Stevenage Community Trust",
+      "communityArmWebsite": "https://stevenagefcfoundation.com/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "stockport_county",
+    "name": "Stockport County",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.4004,
+    "lng": -2.1688,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Stockport County",
+      "league": "League One",
+      "stadium": "Edgeley Park",
+      "capacity": 10852,
+      "communityArm": "Stockport County Community Trust",
+      "communityArmWebsite": "https://www.stockportcounty.com/community/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "wigan_athletic",
+    "name": "Wigan Athletic",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.5477,
+    "lng": -2.6538,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Wigan Athletic",
+      "league": "League One",
+      "stadium": "Brick Community Stadium",
+      "capacity": 25138,
+      "communityArm": "Wigan Athletic Community Trust",
+      "communityArmWebsite": "https://wiganathletic.com/wigan-athletic-community-trust/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "wycombe_wanderers",
+    "name": "Wycombe Wanderers",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.6306,
+    "lng": -0.8002,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Wycombe Wanderers",
+      "league": "League One",
+      "stadium": "Adams Park",
+      "capacity": 10137,
+      "communityArm": "Wycombe Wanderers Community Trust",
+      "communityArmWebsite": "https://wycombewanderersfoundation.co.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "barnet",
+    "name": "Barnet",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.603,
+    "lng": -0.2933,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Barnet",
+      "league": "League Two",
+      "stadium": "The Hive Stadium",
+      "capacity": 6500,
+      "communityArm": "Barnet Community Trust",
+      "communityArmWebsite": "https://thehivefoundation.com/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "barrow",
+    "name": "Barrow",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 54.1225,
+    "lng": -3.2337,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Barrow",
+      "league": "League Two",
+      "stadium": "Holker Street",
+      "capacity": 5045,
+      "communityArm": "Barrow Community Trust",
+      "communityArmWebsite": "https://www.barrowafc.com/our-foundation",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "bristol_rovers",
+    "name": "Bristol Rovers",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.4862,
+    "lng": -2.583,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Bristol Rovers",
+      "league": "League Two",
+      "stadium": "Memorial Stadium",
+      "capacity": 9832,
+      "communityArm": "Bristol Rovers Community Trust",
+      "communityArmWebsite": "http://www.bristolroverscommunity.org.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "bromley",
+    "name": "Bromley",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.391,
+    "lng": 0.0217,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Bromley",
+      "league": "League Two",
+      "stadium": "Hayes Lane",
+      "capacity": 5000,
+      "communityArm": "Bromley Community Trust",
+      "communityArmWebsite": "https://www.bromleyfc.org/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "cambridge_united",
+    "name": "Cambridge United",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.2122,
+    "lng": 0.1544,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Cambridge United",
+      "league": "League Two",
+      "stadium": "Abbey Stadium",
+      "capacity": 8127,
+      "communityArm": "Cambridge United Community Trust",
+      "communityArmWebsite": "https://www.cuctrust.co.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "cheltenham_town",
+    "name": "Cheltenham Town",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.9062,
+    "lng": -2.0602,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Cheltenham Town",
+      "league": "League Two",
+      "stadium": "Whaddon Road",
+      "capacity": 7066,
+      "communityArm": "Cheltenham Town Community Trust",
+      "communityArmWebsite": "http://www.ctfccp.com/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "colchester_united",
+    "name": "Colchester United",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.9234,
+    "lng": 0.8977,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Colchester United",
+      "league": "League Two",
+      "stadium": "JobServe Community Stadium",
+      "capacity": 10105,
+      "communityArm": "Colchester United Community Trust",
+      "communityArmWebsite": "https://www.cu-fc.com/cucf",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "crawley_town",
+    "name": "Crawley Town",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.0995,
+    "lng": -0.1949,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Crawley Town",
+      "league": "League Two",
+      "stadium": "Broadfield Stadium",
+      "capacity": 6134,
+      "communityArm": "Crawley Town Community Trust",
+      "communityArmWebsite": "https://www.ctcommunityfoundation.com/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "crewe_alexandra",
+    "name": "Crewe Alexandra",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.0875,
+    "lng": -2.4356,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Crewe Alexandra",
+      "league": "League Two",
+      "stadium": "Gresty Road",
+      "capacity": 10153,
+      "communityArm": "Crewe Alexandra Community Trust",
+      "communityArmWebsite": "https://www.crewealex.net/club/crewe-alexandra-in-the-community",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "fleetwood_town",
+    "name": "Fleetwood Town",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.9166,
+    "lng": -3.0246,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Fleetwood Town",
+      "league": "League Two",
+      "stadium": "Highbury Stadium",
+      "capacity": 5327,
+      "communityArm": "Fleetwood Town Community Trust",
+      "communityArmWebsite": "http://www.fleetwoodtownfcct.com/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "gillingham",
+    "name": "Gillingham",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.3842,
+    "lng": 0.5606,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Gillingham",
+      "league": "League Two",
+      "stadium": "Priestfield Stadium",
+      "capacity": 11582,
+      "communityArm": "Gillingham Community Trust",
+      "communityArmWebsite": "https://www.gillinghamfootballclub.com/foundation",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "harrogate_town",
+    "name": "Harrogate Town",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.988,
+    "lng": -1.5127,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Harrogate Town",
+      "league": "League Two",
+      "stadium": "Wetherby Road",
+      "capacity": 5000,
+      "communityArm": "Harrogate Town Community Trust",
+      "communityArmWebsite": "https://www.htafccommunity.co.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "milton_keynes_dons",
+    "name": "Milton Keynes Dons",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.0096,
+    "lng": -0.7334,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Milton Keynes Dons",
+      "league": "League Two",
+      "stadium": "Stadium MK",
+      "capacity": 30500,
+      "communityArm": "Milton Keynes Dons Community Trust",
+      "communityArmWebsite": "https://www.mkdonsset.com/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "notts_county",
+    "name": "Notts County",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.9425,
+    "lng": -1.1373,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Notts County",
+      "league": "League Two",
+      "stadium": "Meadow Lane",
+      "capacity": 19841,
+      "communityArm": "Notts County Community Trust",
+      "communityArmWebsite": "https://www.nottscountyfoundation.org.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "oldham_athletic",
+    "name": "Oldham Athletic",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.5551,
+    "lng": -2.1284,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Oldham Athletic",
+      "league": "League Two",
+      "stadium": "Boundary Park",
+      "capacity": 13512,
+      "communityArm": "Oldham Athletic Community Trust",
+      "communityArmWebsite": "https://www.oldhamathletic.co.uk/community-trust/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "salford_city",
+    "name": "Salford City",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.5133,
+    "lng": -2.2765,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Salford City",
+      "league": "League Two",
+      "stadium": "Peninsula Stadium",
+      "capacity": 5108,
+      "communityArm": "Salford City Community Trust",
+      "communityArmWebsite": "https://foundation92.co.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "shrewsbury_town",
+    "name": "Shrewsbury Town",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.6886,
+    "lng": -2.7494,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Shrewsbury Town",
+      "league": "League Two",
+      "stadium": "Croud Meadow",
+      "capacity": 9875,
+      "communityArm": "Shrewsbury Town Community Trust",
+      "communityArmWebsite": "https://www.shrewsburytown.com/shrewsbury-town-fc-foundation",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "swindon_town",
+    "name": "Swindon Town",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 51.5645,
+    "lng": -1.771,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Swindon Town",
+      "league": "League Two",
+      "stadium": "County Ground",
+      "capacity": 15728,
+      "communityArm": "Swindon Town Community Trust",
+      "communityArmWebsite": "https://www.stfcfoundation.com/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "tranmere_rovers",
+    "name": "Tranmere Rovers",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 53.3736,
+    "lng": -3.0326,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Tranmere Rovers",
+      "league": "League Two",
+      "stadium": "Prenton Park",
+      "capacity": 16587,
+      "communityArm": "Tranmere Rovers Community Trust",
+      "communityArmWebsite": "https://www.tranmererovers.co.uk/community/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  },
+  {
+    "id": "walsall",
+    "name": "Walsall",
+    "type": "efl_only",
+    "status": "grey",
+    "lat": 52.5654,
+    "lng": -1.9905,
+    "phase": "none",
+    "place": {
+      "localAuthority": "N/A",
+      "region": "UK",
+      "population": "N/A",
+      "imdDecile": "N/A",
+      "deprivationNotes": "N/A",
+      "boardStatus": "N/A",
+      "pipFunding": "None directly"
+    },
+    "club": {
+      "name": "Walsall",
+      "league": "League Two",
+      "stadium": "Bescot Stadium",
+      "capacity": 11300,
+      "communityArm": "Walsall Community Trust",
+      "communityArmWebsite": "https://www.walsallfccp.co.uk/",
+      "onNeighbourhoodBoard": false
+    },
+    "notes": "EFL club located outside Phase 1 target areas."
+  }
+]

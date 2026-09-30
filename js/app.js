@@ -36,6 +36,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const ntcPlaces = window.NTC_PLACES || [];
     const acePlaces = window.ACE_PLACES || [];
 
+    // EFL layer switch. Temporarily OFF (Sep 2026) — the club data is still in js/data.js
+    // and a backup is in archive/efl/. Set to true to bring the EFL layer back.
+    const SHOW_EFL = false;
+    if (!SHOW_EFL) {
+        const eflToggle = document.getElementById('layer-efl');
+        if (eflToggle) {
+            eflToggle.checked = false;
+            const grp = eflToggle.closest('.layer-group');
+            if (grp) grp.style.display = 'none';
+        }
+        document.querySelectorAll('.legend .layer-swatch.efl').forEach(el => {
+            const item = el.closest('.legend-item');
+            if (item) item.style.display = 'none';
+        });
+    }
+
     function normalise(str) {
         return str.toLowerCase().replace(/[^a-z0-9]/g, '');
     }
@@ -70,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 deprivationNotes: raw.place?.deprivationNotes || ''
             };
         }
-        if (raw.club) {
+        if (SHOW_EFL && raw.club) {
             loc.efl = {
                 name: raw.club.name,
                 league: raw.club.league,
@@ -170,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // overlap with combined club info.
     const clubsPerPlace = new Map();
     rawLocations.forEach(raw => {
-        if (raw.type === 'efl_only' && raw.club && EFL_PLACE_MAP[raw.club.name]) {
+        if (SHOW_EFL && raw.type === 'efl_only' && raw.club && EFL_PLACE_MAP[raw.club.name]) {
             const k = normalise(EFL_PLACE_MAP[raw.club.name][0]);
             if (!clubsPerPlace.has(k)) clubsPerPlace.set(k, []);
             clubsPerPlace.get(k).push(raw.club);
@@ -178,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     rawLocations.forEach(raw => {
-        if (raw.type === 'efl_only') {
+        if (SHOW_EFL && raw.type === 'efl_only') {
             let loc = null;
             const mapping = raw.club ? EFL_PLACE_MAP[raw.club.name] : null;
             if (mapping) {
@@ -348,14 +364,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (layers.length === 1) {
             const layer = layers[0];
-            // Tier 2: localised single-layer areas render as smaller SOLID dots —
-            // PiP phase 2/3 neighbourhoods (orange) and standalone SE places (blue).
-            // Tier 1 keeps the larger ring style: phase 1 towns, standalone NTC (leaf icon)
-            // and standalone EFL clubs (football icon).
+            // Tier 2: single-layer areas that render as smaller SOLID dots —
+            // PiP phase 2/3 neighbourhoods (orange), standalone SE places (blue),
+            // Nature Towns & Cities (green) and Culture Priority Places (pink).
+            // Tier 1 keeps the larger ring style: phase 1 towns and standalone EFL clubs
+            // (football icon).
             const isTier2 =
                 (layer === 'pip' && loc.pip && !loc.pip.inherited &&
                     (loc.pip.phase === 'phase_2' || loc.pip.phase === 'phase_3')) ||
-                layer === 'se';
+                layer === 'se' || layer === 'ntc' || layer === 'ace';
             const isEflAggregate = layer === 'efl' && loc.efl && loc.efl.aggregate;
             let innerHtml = '';
             if (layer === 'efl') {
